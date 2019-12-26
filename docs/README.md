@@ -6,6 +6,8 @@
 
 ## 所有点
 
+> 我面试的时候，是我最聪明的时候
+
 熟悉所有主流源码、读过主流书籍、熟悉所有主流工具。算个中级的。
 
 ## 2019-12-26 01:36:10
@@ -30,7 +32,6 @@ webpack - https://webpack.wuhaolin.cn/
 - https://www.nowcoder.com/discuss/356532?type=2 58 前端社招一二面面经
 - https://www.nowcoder.com/discuss/204314 记一次字节跳动前端面试，四轮技术面通过，已拿 offer
 - https://github.com/dongyuanxin/blog 专注前端与算法
-- https://segmentfault.com/a/1190000019760531 BFC
 - https://zhuanlan.zhihu.com/p/20346379 React 源码剖析系列 － 不可思议的 react diff
 - https://zhuanlan.zhihu.com/p/58863799 浅析 React Diff 与 Fiber
 - https://segmentfault.com/a/1190000021281507 「超全」手写 Promise 的相关方法
