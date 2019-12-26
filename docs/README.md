@@ -23,5 +23,3 @@
 - https://segmentfault.com/a/1190000021407782 12 道 vue 高频原理面试题,你能答出几道?
 
 ## list
-
-<img src="https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true" alt="avatar" width="200"/>
