@@ -6,6 +6,8 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  base: '/log-log-log/',
+  // https://limichange.github.io/log-log-log/
   themeConfig: {
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
