@@ -1,0 +1,24 @@
+{
+  "name": "log-log-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "sh build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limichange/log-log-log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limichange/log-log-log/issues"
+  },
+  "homepage": "https://github.com/limichange/log-log-log#readme"
+}
