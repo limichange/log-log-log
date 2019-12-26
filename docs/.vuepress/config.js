@@ -1,3 +1,5 @@
+// https://limichange.github.io/log-log-log/
+
 module.exports = {
   title: 'log log log',
   description: 'null',
@@ -7,7 +9,6 @@ module.exports = {
     lineNumbers: true
   },
   base: '/log-log-log/',
-  // https://limichange.github.io/log-log-log/
   themeConfig: {
     repo: 'limichange.github.io/log-log-log',
     docsDir: 'docs',
@@ -38,6 +39,10 @@ module.exports = {
       {
         title: 'Vue',
         children: [['vue/start', 'Vue']]
+      },
+      {
+        title: 'xxx',
+        children: [['shit/start', 'yyy']]
       }
     ],
     nav: [
