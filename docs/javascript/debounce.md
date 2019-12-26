@@ -1,3 +1,15 @@
+```js
+const debounce = (func, delay) => {
+  let inDebounce
+  return function() {
+    const context = this
+    const args = arguments
+    clearTimeout(inDebounce)
+    inDebounce = setTimeout(() => func.apply(context, args), delay)
+  }
+}
+```
+
 ## vue3 版本
 
 [地址](https://github.com/vuejs/vue-next/blob/32499b16e7d88b0c6f53c6a0e0998e4a40d1c1f3/packages/template-explorer/src/index.ts#L212)
