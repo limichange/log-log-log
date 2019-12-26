@@ -12,10 +12,6 @@
 
 webpack - https://webpack.wuhaolin.cn/
 
-## book
-
-- https://github.com/wanlixi/javascript-learn-book js 权威指南(犀牛书)
-
 ## todo
 
 - https://github.com/NLRX-WJC/Learn-Vue-Source-Code
