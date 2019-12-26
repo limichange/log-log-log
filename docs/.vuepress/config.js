@@ -20,7 +20,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    repo: 'limichange.github.io/log-log-log',
+    repo: 'limichange/log-log-log',
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdated: '上次更新',
@@ -56,16 +56,16 @@ module.exports = {
       }
     ],
     nav: [
-      {
-        text: 'External',
-        link: 'https://google.com',
-        target: '_self',
-        rel: ''
-      },
-      { text: 'Guide', link: '/guide/', target: '_blank' },
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' }
+      // {
+      //   text: 'External',
+      //   link: 'https://google.com',
+      //   target: '_self',
+      //   rel: ''
+      // },
+      // { text: 'Guide', link: '/guide/', target: '_blank' },
+      // { text: 'Home', link: '/' },
+      // { text: 'Guide', link: '/guide/' },
+      // { text: 'External', link: 'https://google.com' }
     ]
   }
 }
