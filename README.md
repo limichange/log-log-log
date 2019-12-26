@@ -25,3 +25,4 @@ webpack - https://webpack.wuhaolin.cn/
 - https://zhuanlan.zhihu.com/p/58863799 浅析 React Diff 与 Fiber
 - https://segmentfault.com/a/1190000021281507 「超全」手写 Promise 的相关方法
 - https://segmentfault.com/a/1190000021264557#item-4-7 盘点 ES7、ES8、ES9、ES10 新特性
+- https://segmentfault.com/a/1190000021407782 12 道 vue 高频原理面试题,你能答出几道?
