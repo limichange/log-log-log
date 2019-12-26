@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/limichange/log-log-log/issues"
   },
-  "homepage": "https://github.com/limichange/log-log-log#readme"
+  "homepage": "https://github.com/limichange/log-log-log#readme",
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  }
 }
