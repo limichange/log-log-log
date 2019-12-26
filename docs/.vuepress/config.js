@@ -4,7 +4,7 @@ module.exports = {
   title: 'log log log',
   description: 'null',
   dest: 'dist',
-  plugins: ['tag', 'category'],
+  plugins: ['tag', 'category', 'autobar'],
   markdown: {
     lineNumbers: true
   },

@@ -23,5 +23,8 @@
   "homepage": "https://github.com/limichange/log-log-log#readme",
   "dependencies": {
     "vuepress": "^1.2.0"
+  },
+  "devDependencies": {
+    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar"
   }
 }
