@@ -40,4 +40,4 @@ webpack - https://webpack.wuhaolin.cn/
 
 ## list
 
-![](https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true =200x200)
+<img src="https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true" alt="avatar" width="200"/>
