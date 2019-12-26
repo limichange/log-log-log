@@ -18,6 +18,7 @@ webpack - https://webpack.wuhaolin.cn/
 
 ## todo
 
+- https://github.com/NLRX-WJC/Learn-Vue-Source-Code
 - https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/common.md Node interview of ElemeFE
 - https://segmentfault.com/a/1190000017890529 超详细的 webpack 原理解读
 - https://segmentfault.com/a/1190000021390890 吐血整理！！！2019 最强前端面试合集(编程题)

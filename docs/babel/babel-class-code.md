@@ -1,12 +1,4 @@
 ```js
-// async function a() {
-
-// }
-
-// async function b() {
-// 	await a()
-// }
-
 class father {
   a() {
     console.log(this)
@@ -15,6 +7,8 @@ class father {
 
 class son extends father {}
 ```
+
+编译后的代码
 
 ```js
 'use strict'
@@ -25,11 +19,6 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass
 }
 
-// async function a() {
-// }
-// async function b() {
-// 	await a()
-// }
 var father =
   /*#__PURE__*/
   (function() {
