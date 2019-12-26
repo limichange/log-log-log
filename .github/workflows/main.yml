@@ -1,4 +1,5 @@
-name: Deploy Github Page
+name: GitHub Actions Build and Deploy
+
 on:
   push:
     branches:
@@ -8,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: limichange/log-log-log@master
+        uses: actions/checkout@master
 
-      - name: Build and Deploy
-        uses: limichange/log-log-log@master
+      - name: Deploy to vuepress
+        uses: grasilife/github-pages-deploy-action@v1.2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
