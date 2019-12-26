@@ -8,6 +8,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  serviceWorker: false,
   base: '/log-log-log/',
   themeConfig: {
     repo: 'limichange.github.io/log-log-log',
