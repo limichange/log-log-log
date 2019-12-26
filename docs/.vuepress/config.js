@@ -1,8 +1,10 @@
 // https://limichange.github.io/log-log-log/
 
+const path = require('path')
+
 module.exports = {
   title: 'log log log',
-  description: 'null',
+  description: '一份涵盖大部分前端程序员所需要掌握的核心知识',
   dest: 'dist',
   plugins: ['tag', 'category', 'autobar'],
   markdown: {
@@ -10,6 +12,13 @@ module.exports = {
   },
   serviceWorker: false,
   base: '/log-log-log/',
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.join(__dirname, 'public', 'assets')
+      }
+    }
+  },
   themeConfig: {
     repo: 'limichange.github.io/log-log-log',
     docsDir: 'docs',
