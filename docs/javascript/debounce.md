@@ -36,6 +36,24 @@ function debounce<T extends (...args: any[]) => any>(
 }
 ```
 
+简化后
+
+```js
+function debounce(fn, delay = 300) {
+  let prevTimer = null
+
+  return (...args) => {
+    if (prevTimer) {
+      clearTimeout(prevTimer)
+    }
+    prevTimer = window.setTimeout(() => {
+      fn(...args)
+      prevTimer = null
+    }, delay)
+  }
+}
+```
+
 ## lodash 版本
 
 [地址](https://unpkg.com/lodash.debounce@4.0.8/index.js)

@@ -29,6 +29,10 @@ module.exports = {
           ['css/BFC', 'BFC'],
           ['css/position', 'position']
         ]
+      },
+      {
+        title: 'Vue',
+        children: [['vue/start', 'Vue']]
       }
     ],
     nav: [
