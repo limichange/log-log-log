@@ -13,11 +13,12 @@ module.exports = {
     displayAllHeaders: true, // Default: false
     sidebar: [
       {
-        title: 'javascript',
-        collapsable: false,
+        title: 'JavaScript',
         children: [
           ['javascript/debounce', 'debounce'],
-          ['javascript/prototype', 'prototype']
+          ['javascript/prototype', 'prototype'],
+          ['javascript/prototype', 'throttle'],
+          ['javascript/prototype', 'questions']
         ]
       }
     ],
