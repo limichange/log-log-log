@@ -1,0 +1,2 @@
+- https://juejin.im/post/5b73d7a6518825610072b42b 微任务、宏任务与 Event-Loop
+- https://juejin.im/post/5b498d245188251b193d4059 JS 事件循环机制（event loop）之宏任务/微任务
