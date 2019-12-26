@@ -2,18 +2,6 @@
 
 ## 目录
 
-[]
-
-## 所有点
-
-> 我面试的时候，是我最聪明的时候
-
-熟悉所有主流源码、读过主流书籍、熟悉所有主流工具。算个中级的。
-
-## 2019-12-26 01:36:10
-
-webpack - https://webpack.wuhaolin.cn/
-
 ## todo
 
 - https://github.com/NLRX-WJC/Learn-Vue-Source-Code
