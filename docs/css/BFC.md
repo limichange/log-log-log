@@ -2,6 +2,8 @@
 
 > 块格式化上下文（Block Formatting Context，BFC）
 
+CSS2.1 中只有 BFC 和 IFC, CSS3 中还增加了 GFC 和 FFC
+
 它是一个独立的渲染区域，只有 Block-level box 参与， 它规定了内部的 Block-level Box 如何布局，并且与这个区域外部毫不相干。
 
 文档流 影响的是这个元素的排列顺序
