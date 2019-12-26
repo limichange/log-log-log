@@ -2,6 +2,8 @@
 
 ## 目录
 
+[]
+
 ## 所有点
 
 熟悉所有主流源码、读过主流书籍、熟悉所有主流工具。算个中级的。
@@ -12,7 +14,7 @@ webpack - https://webpack.wuhaolin.cn/
 
 ## book
 
-- https://github.com/wanlixi/javascript-learn-book js 权威指南
+- https://github.com/wanlixi/javascript-learn-book js 权威指南(犀牛书)
 
 ## todo
 
