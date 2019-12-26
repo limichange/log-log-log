@@ -12,8 +12,6 @@
 - https://segmentfault.com/a/1190000017329980 你真的了解回流和重绘吗
 - https://segmentfault.com/a/1190000018452924 JavaScript：回流（重排）与重绘
 - https://segmentfault.com/a/1190000021381200 讲给前端的正则表达式(3)：使用 ES6 特性
-- https://www.nowcoder.com/discuss/356532?type=2 58 前端社招一二面面经
-- https://www.nowcoder.com/discuss/204314 记一次字节跳动前端面试，四轮技术面通过，已拿 offer
 - https://github.com/dongyuanxin/blog 专注前端与算法
 - https://segmentfault.com/a/1190000021281507 「超全」手写 Promise 的相关方法
 - https://segmentfault.com/a/1190000021264557#item-4-7 盘点 ES7、ES8、ES9、ES10 新特性

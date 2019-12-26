@@ -13,3 +13,4 @@
 - 当浏览器地址栏输入一个 url 到页面展现，这个过程？
 - https 过程
 - http 和 tcp 的关系
+- 实现 导航栏 + 侧边栏 + 内容栏，其中侧边栏固定宽度，内容栏中有一个水平垂直居中的 div；写出你认为可以的解决方案，以及每种解决方案带来的问题，以及兼容性 两栏布局，使用 float，双飞翼和圣杯；侧边栏使用 absolute 或者 float，内容栏使用 margin-left；使用 BFC 不与 float box 重叠的原理实现自适应，侧边栏 float，内容栏使用 overflow: hidden 触发 BFC；使用 flex(固比定律，一个固定宽度，一个自动占余下的宽度)；使用 table；使用 grid(固定宽度+auto)；
