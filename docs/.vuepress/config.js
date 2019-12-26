@@ -17,8 +17,9 @@ module.exports = {
         children: [
           ['javascript/debounce', 'debounce'],
           ['javascript/prototype', 'prototype'],
-          ['javascript/prototype', 'throttle'],
-          ['javascript/prototype', 'questions']
+          ['javascript/throttle', 'throttle'],
+          ['javascript/promise', 'promise'],
+          ['javascript/questions', 'questions']
         ]
       }
     ],
