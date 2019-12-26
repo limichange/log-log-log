@@ -1,5 +1,9 @@
 # log-log-log
 
+## 所有点
+
+熟悉所有主流源码、读过主流书籍
+
 ## 2019-12-26 01:36:10
 
 webpack - https://webpack.wuhaolin.cn/
