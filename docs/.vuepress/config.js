@@ -19,6 +19,7 @@ module.exports = {
           ['javascript/prototype', 'prototype'],
           ['javascript/throttle', 'throttle'],
           ['javascript/promise', 'promise'],
+          ['javascript/clone', 'clone'],
           ['javascript/questions', 'questions']
         ]
       },
