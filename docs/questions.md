@@ -31,3 +31,4 @@
 - 做过哪些静态网页的网页优化？
 - 数组的 splice、slice 的区别，substring 与 substr 的区别。
 - 如何设置一个未知宽、高的对话框在页面中绝对居中。
+- JavaScript 规定了几种语言类型
