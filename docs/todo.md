@@ -14,3 +14,5 @@
 - https://segmentfault.com/a/1190000021281507 「超全」手写 Promise 的相关方法
 - https://segmentfault.com/a/1190000021264557#item-4-7 盘点 ES7、ES8、ES9、ES10 新特性
 - https://segmentfault.com/a/1190000021407782 12 道 vue 高频原理面试题,你能答出几道?
+- https://juejin.im/post/5cc1da82f265da036023b628
+- https://juejin.im/entry/58ad2fc9b123db00672c965a 也许是史上最全的前端资源大汇总
