@@ -16,3 +16,4 @@
 - https://segmentfault.com/a/1190000021407782 12 道 vue 高频原理面试题,你能答出几道?
 - https://juejin.im/post/5cc1da82f265da036023b628
 - https://juejin.im/entry/58ad2fc9b123db00672c965a 也许是史上最全的前端资源大汇总
+- https://juejin.im/post/59278e312f301e006c2e1510 JavaScript 深入系列 15 篇正式完结！
