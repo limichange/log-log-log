@@ -17,3 +17,5 @@
 - https://juejin.im/post/5cc1da82f265da036023b628
 - https://juejin.im/entry/58ad2fc9b123db00672c965a 也许是史上最全的前端资源大汇总
 - https://juejin.im/post/59278e312f301e006c2e1510 JavaScript 深入系列 15 篇正式完结！
+- https://www.nowcoder.com/discuss/346789 2 年前端阿里社招 3 面面经
+- https://www.nowcoder.com/discuss/325197 一年经验初探阿里前端社招
