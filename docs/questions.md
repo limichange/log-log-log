@@ -49,3 +49,10 @@
 - TCP 三次握手的过程, get post 请求的区别 ?
 - DOM 基础知识,添加元素,删除元素
 - 移动端优化方式? 离线包是如何实现的?
+- webpack 的 loaders 的配置有哪些
+- webpack3 和 webpack4 区别
+- vue 中的 mixins
+- vue 的 extend()
+- node 中的 js 和浏览器中的 js 区别，从区别，相同，性能，分析？
+- 目前的小程序和 H5 的区别，从性能，渲染方式来说？
+- react 和 vue 怎么选型

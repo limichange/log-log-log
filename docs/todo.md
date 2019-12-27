@@ -20,3 +20,5 @@
 - https://www.nowcoder.com/discuss/346789 2 年前端阿里社招 3 面面经
 - https://www.nowcoder.com/discuss/325197 一年经验初探阿里前端社招
 - https://www.nowcoder.com/discuss/327928 阿里前端社招面经分享
+- https://xin-tan.com/passages/2019-03-26-javascript-first/
+- https://www.nowcoder.com/discuss/296979?type=2&order=0&pos=10&page=1
