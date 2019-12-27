@@ -3,3 +3,7 @@
 ```
 git config --global core.quotepath false
 ```
+
+## link
+
+- http://xstarcd.github.io/wiki/shell/git_chinese.html
