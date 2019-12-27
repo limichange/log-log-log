@@ -19,3 +19,4 @@
 - https://juejin.im/post/59278e312f301e006c2e1510 JavaScript 深入系列 15 篇正式完结！
 - https://www.nowcoder.com/discuss/346789 2 年前端阿里社招 3 面面经
 - https://www.nowcoder.com/discuss/325197 一年经验初探阿里前端社招
+- https://www.nowcoder.com/discuss/327928 阿里前端社招面经分享
