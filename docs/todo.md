@@ -23,3 +23,9 @@
 - https://xin-tan.com/passages/2019-03-26-javascript-first/
 - https://www.nowcoder.com/discuss/296979
 - https://github.com/huyaocode/webKnowledge
+- https://segmentfault.com/a/1190000013365426#item-4 React 是怎样炼成的
+- https://juejin.im/post/5bd697cfe51d454c791cd1d5
+- https://zhuanlan.zhihu.com/p/93528023 (2.4w 字,建议收藏)😇 原生 JS 灵魂之问(下), 冲刺 🚀 进阶最后一公里(附个人成长经验分享)
+- https://juejin.im/post/5d94bfbf5188256db95589be 深入浅出 Babel 上篇：架构和原理 + 实战
+- https://segmentfault.com/a/1190000021431311 从 React 历史的长河来聊如何理解虚拟 DOM
+- https://juejin.im/post/5de87444518825124c50cd36 2020 年了,再不会 webpack 敲得代码就不香了(近万字实战)
