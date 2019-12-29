@@ -4,4 +4,6 @@
 
 笔记内的所有链接，如果有时间的话，都推荐看看。
 
+预计 2 月中旬完成
+
 <!-- <img src="https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true" alt="avatar" width="300"/> -->
