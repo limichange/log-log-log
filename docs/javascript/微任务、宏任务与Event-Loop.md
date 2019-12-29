@@ -54,7 +54,27 @@ setTimeout 则是通过计算一个延迟时间后进行执行。
 | MutationObserver           | ✅     | ❌   |
 | Promise.then catch finally | ✅     | ✅   |
 
+## async/await 函数
+
+因为，async/await 本质上还是基于 Promise 的一些封装，而 Promise 是属于微任务的一种。所以在使用 await 关键字与 Promise.then 效果类似：
+
+```js
+setTimeout(_ => console.log(4))
+
+async function main() {
+  console.log(1)
+  await Promise.resolve()
+  console.log(3)
+}
+
+main()
+
+console.log(2)
+```
+
+async 函数在 await 之前的代码都是同步执行的，可以理解为 await 之前的代码属于 new Promise 时传入的代码，await 之后的所有代码都是在 Promise.then 中的回调
+
 ## links
 
-- https://juejin.im/post/5b73d7a6518825610072b42b 微任务、宏任务与 Event-Loop
-- https://juejin.im/post/5b498d245188251b193d4059 JS 事件循环机制（event loop）之宏任务/微任务
+- [微任务、宏任务与 Event-Loop](https://juejin.im/post/5b73d7a6518825610072b42b)
+- [JS 事件循环机制（event loop）之宏任务/微任务](https://juejin.im/post/5b498d245188251b193d4059)
