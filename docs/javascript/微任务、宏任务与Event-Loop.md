@@ -43,6 +43,9 @@ requestAnimationFrame 姑且也算是宏任务吧，requestAnimationFrame 在 MD
 
 `setTimeout`就是作为宏任务来存在的，而`Promise.then`则是具有代表性的微任务
 
+在官方文档中的定义，setImmediate 为一次 Event Loop 执行完毕后调用。
+setTimeout 则是通过计算一个延迟时间后进行执行。
+
 ### 微任务
 
 | #                          | 浏览器 | Node |
