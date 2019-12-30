@@ -8,6 +8,8 @@ React Hooks 要解决的问题是状态共享，是继 render-props 和 higher-o
 - Hooks 可以引用其他 Hooks。
 - 更容易将组件的 UI 与状态分离。
 
+Hooks 方便的地方是在组件销毁时移除副作用，所以我们可以安心的利用 Hooks 做一些副作用。
+
 ## links
 
 - [一篇看懂 React Hooks](https://zhuanlan.zhihu.com/p/50597236)
