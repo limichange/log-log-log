@@ -1,0 +1,13 @@
+# react hooks 是为了解决什么
+
+React Hooks 要解决的问题是状态共享，是继 render-props 和 higher-order components 之后的第三种状态共享方案，不会产生 JSX 嵌套地狱问题。
+
+这个状态指的是状态逻辑，所以称为状态逻辑复用会更恰当，因为只共享数据处理逻辑，不会共享数据本身。
+
+- 多个状态不会产生嵌套，写法还是平铺的（renderProps 可以通过 compose 解决，可不但使用略为繁琐，而且因为强制封装一个新对象而增加了实体数量）。
+- Hooks 可以引用其他 Hooks。
+- 更容易将组件的 UI 与状态分离。
+
+## links
+
+- [一篇看懂 React Hooks](https://zhuanlan.zhihu.com/p/50597236)
