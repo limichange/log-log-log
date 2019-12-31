@@ -27,6 +27,18 @@
 - 使用这两个属性的脚本中不能调用 document.write 方法
 - 有脚本的 onload 的事件回调
 
+### 不同点
+
+- html 的版本 html4.0 中定义了 defer；html5.0 中定义了 async
+- 执行时刻每一个 async 属性的脚本都在它下载结束之后立刻执行，同时会在 window 的 load 事件之前执行。所以就有可能出现脚本执行顺序被打乱的情况；每一个 defer 属性的脚本都是在页面解析完毕之后，按照原本的顺序执行，同时会在 document 的 DOMContentLoaded 之前执行。
+
+## 结论
+
+- 如果 async 为 true，那么脚本在下载完成后异步执行。
+- 如果 async 为 false，defer 为 true，那么脚本会在页面解析完毕之后执行。
+- 如果 async 和 defer 都为 false，那么脚本会在页面解析中，停止页面解析，立刻下载并且执行。
+
 ## links
 
--[浅谈 script 标签的 defer 和 async](https://segmentfault.com/a/1190000006778717)
+- [浅谈 script 标签的 defer 和 async](https://segmentfault.com/a/1190000006778717)
+- [](https://juejin.im/post/5a1229596fb9a0451704cae8)
