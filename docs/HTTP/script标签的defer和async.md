@@ -41,4 +41,4 @@
 ## links
 
 - [浅谈 script 标签的 defer 和 async](https://segmentfault.com/a/1190000006778717)
-- [](https://juejin.im/post/5a1229596fb9a0451704cae8)
+- [script 中 defer 和 async 的区别](https://juejin.im/post/5a1229596fb9a0451704cae8)
