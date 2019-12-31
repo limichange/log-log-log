@@ -78,3 +78,4 @@ console.log(2)
 
 - [微任务、宏任务与 Event-Loop](https://juejin.im/post/5b73d7a6518825610072b42b)
 - [JS 事件循环机制（event loop）之宏任务/微任务](https://juejin.im/post/5b498d245188251b193d4059)
+- [【动画演示】：事件循环 形象深动(JavaScript)](https://juejin.im/post/5e0a8d57f265da33a55fb33c)
