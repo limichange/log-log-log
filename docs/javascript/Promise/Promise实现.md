@@ -11,6 +11,8 @@ new Promise((resolve, reject) => {
 
 除此之外，输出了 `promise 1`，说明 `promise` 构造函数是立即执行的。
 
+## 代码实现
+
 ```js
 // 3中状态
 const STATUS_PENDING = Symbol('pending')
@@ -41,6 +43,42 @@ function MyPromise(executor) {
     // 如果回调函数的执行发生错误，抛出异常
     // promise会“主动”扭转状态
     reject(error)
+  }
+}
+```
+
+### resolve 和 reject 实现
+
+resolve 的两个作用就是：
+
+- 改变 promise 状态
+- 更新 promise 的值
+
+```js
+function resolve(value) {
+  if (that.status !== STATUS_PENDING) {
+    return
+  }
+
+  that.data = value
+  that.status = STATUS_RESOLVED
+  for (let callback of that.onResolvedCallback) {
+    // 这里that指的是指向promise实例的指针
+    callback(that.data)
+  }
+}
+```
+
+```js
+function reject(error) {
+  if (that.status !== STATUS_PENDING) {
+    return
+  }
+
+  that.data = error
+  that.status = STATUS_REJECTED
+  for (let callback of that.onRejectedCallback) {
+    callback(that.data)
   }
 }
 ```
