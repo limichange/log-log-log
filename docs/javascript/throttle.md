@@ -1,3 +1,5 @@
+# throttle
+
 ## codeburst 版本
 
 [地址](https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf)
