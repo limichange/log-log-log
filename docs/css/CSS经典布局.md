@@ -262,6 +262,18 @@
 
 ### 不定宽 自适应
 
+```html
+<div class="parent">
+  <div class="left">
+    <p>left</p>
+  </div>
+  <div class="right">
+    <p>right</p>
+    <p>right</p>
+  </div>
+</div>
+```
+
 ```css
 .left {
   float: left;
@@ -272,6 +284,38 @@
 }
 .left p {
   width: 200px;
+}
+```
+
+### 两列不定宽 一列自适应
+
+```html
+<div class="parent">
+  <div class="left">
+    <p>left</p>
+  </div>
+  <div class="center">
+    <p>center</p>
+  </div>
+  <div class="right">
+    <p>right</p>
+    <p>right</p>
+  </div>
+</div>
+```
+
+```css
+.left,
+.center {
+  float: left;
+  margin-right: 20px;
+}
+.right {
+  overflow: hidden;
+}
+.left p,
+.center p {
+  width: 100px;
 }
 ```
 
