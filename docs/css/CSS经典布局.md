@@ -107,7 +107,7 @@
 
 ```css
 .parent {
-  position: flex;
+  display: flex;
   align-items: center;
 }
 ```
@@ -365,9 +365,6 @@ body,
   height: 100%;
   overflow: hidden;
 }
-body {
-  color: white;
-}
 .top {
   position: absolute;
   top: 0;
@@ -403,6 +400,56 @@ body {
   bottom: 0;
   height: 50px;
   background: black;
+}
+```
+
+### flex
+
+```html
+<div class="parent">
+  <div class="top">top</div>
+  <div class="middle">
+    <div class="left">left</div>
+    <div class="right">
+      <div class="inner">right</div>
+    </div>
+  </div>
+  <div class="bottom">bottom</div>
+</div>
+```
+
+```css
+html,
+body,
+.parent {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  background: blue;
+}
+.bottom {
+  background: black;
+}
+.middle {
+  flex: 1;
+  display: flex;
+}
+.left {
+  background: red;
+}
+.right {
+  flex: 1;
+  overflow: auto;
+  background: pink;
+}
+.right .inner {
+  min-height: 1000px;
 }
 ```
 
