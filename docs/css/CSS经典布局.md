@@ -319,6 +319,93 @@
 }
 ```
 
+### 等分布局
+
+```html
+<div class="parent">
+  <div class="column"><p>1</p></div>
+  <div class="column"><p>2</p></div>
+  <div class="column"><p>3</p></div>
+  <div class="column"><p>4</p></div>
+</div>
+```
+
+```css
+.parent {
+  display: flex;
+}
+.column {
+  flex: 1;
+}
+.column + .column {
+  margin-left: 20px;
+}
+```
+
+## 全屏布局
+
+### position
+
+```html
+<div class="parent">
+  <div class="top">top</div>
+  <div class="left">left</div>
+  <div class="right">
+    <div class="inner">right</div>
+  </div>
+  <div class="bottom">bottom</div>
+</div>
+```
+
+```css
+html,
+body,
+.parent {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  color: white;
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: blue;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  bottom: 50px;
+  width: 200px;
+  background: red;
+}
+.right {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  bottom: 50px;
+  right: 0;
+  background: pink;
+  overflow: auto;
+}
+.right .inner {
+  min-height: 1000px;
+}
+.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background: black;
+}
+```
+
 ## links
 
 - [一篇全面的 CSS 布局学习指南 [译]](https://juejin.im/post/5b3b56a1e51d4519646204bb)
