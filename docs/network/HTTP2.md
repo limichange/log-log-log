@@ -6,6 +6,8 @@
 
 ### 首部压缩（Header Compression）
 
+HTTP/1.1 并不支持 HTTP 首部压缩，为此 SPDY 和 HTTP/2 应运而生，SPDY 使用的是通用的 DEFLATE 算法，而 HTTP/2 则使用了专门为首部压缩而设计的 HPACK 算法。
+
 ### 服务端推送（Server Push）
 
 ### 多路复用
