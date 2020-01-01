@@ -2,6 +2,12 @@
 
 > HTTP2 即超文本传输协议 2.0。是由互联网工程任务组（IETF）的 Hypertext Transfer Protocol Bis (httpbis)工作小组进行开发。主要是为了优化性能，前身是 Google 的 SPDY 。是兼容 HTTP1.1 的 HTTP1.1 发布于 1999 年。HTTP2 发布于 2015 年 5 月
 
+## 改进
+
+### 首部压缩（Header Compression）
+
+### 服务端推送（Server Push）
+
 ## 总结
 
 HTTP2 与 HTTP1.1 最重要的区别就是解决了线头阻塞的问题！其中最重要的改动是：多路复用 (Multiplexing)
