@@ -453,6 +453,35 @@ body,
 }
 ```
 
+### 圣杯布局
+
+```html
+<div class="left">左栏</div>
+<div class="right">右栏</div>
+<div class="middle">中间栏</div>
+```
+
+```css
+.left {
+  width: 200px;
+  height: 300px;
+  background: red;
+  float: left;
+}
+.right {
+  width: 150px;
+  height: 300px;
+  background: green;
+  float: right;
+}
+.middle {
+  height: 300px;
+  background: yellow;
+  margin-left: 220px;
+  margin-right: 160px;
+}
+```
+
 ## links
 
 - [一篇全面的 CSS 布局学习指南 [译]](https://juejin.im/post/5b3b56a1e51d4519646204bb)
