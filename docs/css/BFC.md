@@ -24,5 +24,7 @@ BFC 影响的是这个元素的宽高
 - 多列容器（元素的 column-count 或 column-width 不为 auto，包括 column-count 为 1）
 - column-span 为 all 的元素始终会创建一个新的 BFC，即使该元素没有包裹在一个多列容器中（标准变更，Chrome bug）。
 
+比较重要的作用就是清除浮动
+
 https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
 https://segmentfault.com/a/1190000019760531
