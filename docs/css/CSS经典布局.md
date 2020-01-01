@@ -482,6 +482,46 @@ body,
 }
 ```
 
+### 粘连布局
+
+```html
+<div id="wrap">
+  <div class="main">
+    main <br />
+    main <br />
+    main <br />
+  </div>
+</div>
+<div id="footer">footer</div>
+```
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%; //高度一层层继承下来
+}
+#wrap {
+  min-height: 100%;
+  background: pink;
+  text-align: center;
+  overflow: hidden;
+}
+#wrap .main {
+  padding-bottom: 50px;
+}
+#footer {
+  height: 50px;
+  line-height: 50px;
+  background: deeppink;
+  text-align: center;
+  margin-top: -50px;
+}
+```
+
 ## links
 
 - [一篇全面的 CSS 布局学习指南 [译]](https://juejin.im/post/5b3b56a1e51d4519646204bb)
