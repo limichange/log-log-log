@@ -6,6 +6,10 @@
 
 HTTP2 与 HTTP1.1 最重要的区别就是解决了线头阻塞的问题！其中最重要的改动是：多路复用 (Multiplexing)
 
+多路复用允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息。
+
+众所周知，在 HTTP/1.1 协议中「浏览器客户端在同-时间，针对同一域名下的请求有一定数量限制。超过限制数目的请求会被阻塞」 。
+
 ### HTTP1.1 新改动
 
 持久连接
@@ -26,3 +30,4 @@ HTTP2 与 HTTP1.1 最重要的区别就是解决了线头阻塞的问题！其�
 - [HTTP2 详解](https://juejin.im/post/5b88a4f56fb9a01a0b31a67e)
 - [HTTP2 和 HTTPS 来不来了解一下？](https://juejin.im/post/5b5ef5a25188251af86bfebf)
 - [http2 简介](https://juejin.im/post/5aaccf8f51882555784dbabc)
+- [HTTP/2 相比 1.0 有哪些重大改进？](https://www.zhihu.com/question/34074946)
