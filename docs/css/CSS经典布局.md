@@ -482,6 +482,47 @@ body,
 }
 ```
 
+### 双飞翼布局
+
+```html
+<article class="container">
+  <div class="center">
+    <div class="inner">双飞翼布局</div>
+  </div>
+  <div class="left"></div>
+  <div class="right"></div>
+</article>
+```
+
+```css
+.container {
+  min-width: 600px;
+}
+.left {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: red;
+  margin-left: -100%;
+}
+.center {
+  float: left;
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+.center .inner {
+  margin: 0 200px; //新增部分
+}
+.right {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: blue;
+  margin-left: -200px;
+}
+```
+
 ### 粘连布局
 
 ```html
