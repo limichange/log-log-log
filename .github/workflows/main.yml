@@ -15,6 +15,7 @@ jobs:
         env:
           CLEAN: true
           ACCESS_TOKEN: ${{ secrets.vuepress }}
+          GITHUB_TOKEN: ${{ secrets.vuepress }}
           BRANCH: gh-pages
           FOLDER: dist
           BUILD_SCRIPT: npm install && npm run build
