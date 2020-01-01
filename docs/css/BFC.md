@@ -17,7 +17,7 @@ BFC 影响的是这个元素的宽高
 - 表格标题（元素的 display 为 table-caption，HTML 表格标题默认为该值）
 - 匿名表格单元格元素（元素的 display 为 table、table-row、 table-row-group、table-header-group、table-footer-group（分别是 HTML table、row、tbody、thead、tfoot 的默认属性）或 inline-table）
 - `overflow 值不为 visible 的块元素`
-- display 值为 flow-root 的元素
+- `display 值为 flow-root 的元素`
 - contain 值为 layout、content 或 paint 的元素
 - 弹性元素（display 为 flex 或 inline-flex 元素的直接子元素）
 - 网格元素（display 为 grid 或 inline-grid 元素的直接子元素）
