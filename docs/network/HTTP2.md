@@ -2,11 +2,15 @@
 
 > HTTP2 即超文本传输协议 2.0。是由互联网工程任务组（IETF）的 Hypertext Transfer Protocol Bis (httpbis)工作小组进行开发。主要是为了优化性能，前身是 Google 的 SPDY 。是兼容 HTTP1.1 的 HTTP1.1 发布于 1999 年。HTTP2 发布于 2015 年 5 月
 
+理解 http 协议之前一定要对 TCP 有一定基础的了解。HTTP 是建立在 TCP 协议之上，TCP 协议作为传输层协议其实离应用层并不远。HTTP 协议的瓶颈及其优化技巧都是基于 TCP 协议本身的特性。比如 TCP 建立连接时三次握手有 1.5 个 RTT（round-trip time）的延迟，为了避免每次请求的都经历握手带来的延迟，应用层会选择不同策略的 http 长链接方案。又比如 TCP 在建立连接的初期有慢启动（slow start）的特性，所以连接的重用总是比新建连接性能要好。
+
 ## 改进
 
 ### 首部压缩（Header Compression）
 
 `HTTP/1.1` 并不支持 `HTTP` 首部压缩，为此 `SPDY` 和 `HTTP/2` 应运而生，SPDY 使用的是通用的 `DEFLATE` 算法，而 `HTTP/2` 则使用了专门为首部压缩而设计的 `HPACK` 算法。
+
+前面提到过 `http1.x` 的 `header` 由于 `cookie` 和 `user agent` 很容易膨胀，而且每次都要重复发送。http2.0 使用 `encoder` 来减少需要传输的 `header` 大小，通讯双方各自 cache 一份 `header fields` 表，既避免了重复 `header` 的传输，又减小了需要传输的大小。高效的压缩算法可以很大的压缩 `header`，减少发送包的数量从而降低延迟。
 
 ### 服务端推送（Server Push）
 
