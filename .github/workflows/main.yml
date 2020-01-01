@@ -17,5 +17,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.vuepress }}
-          BRANCH: gh-pages
+          PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./dist
