@@ -6,8 +6,6 @@
 
 预计 2 月中旬完成
 
-<!-- <img src="https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true" alt="avatar" width="300"/> -->
-
 ## 记录
 
 | Date       | Title                      | #   |
@@ -36,3 +34,5 @@
 [4]: https://limichange.github.io/log-log-log/webpack/%E6%A8%A1%E5%9D%97%E5%8C%96.html
 [5]: https://limichange.github.io/log-log-log/webpack/webpack%20to%20v4%20from%20v3.html
 [6]: https://limichange.github.io/log-log-log/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%88%AA%E6%96%AD%E7%9C%81%E7%95%A5.html
+
+<img src="https://github.com/limichange/log-log-log/blob/master/images/avatar.jpg?raw=true" alt="avatar" width="128px"/>
