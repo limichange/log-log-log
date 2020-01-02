@@ -29,3 +29,4 @@
 - https://juejin.im/post/5d94bfbf5188256db95589be 深入浅出 Babel 上篇：架构和原理 + 实战
 - https://segmentfault.com/a/1190000021431311 从 React 历史的长河来聊如何理解虚拟 DOM
 - https://juejin.im/post/5de87444518825124c50cd36 2020 年了,再不会 webpack 敲得代码就不香了(近万字实战)
+- https://segmentfault.com/a/1190000021466416 GMTC | 《小程序跨框架开发的探索与实践》 演讲全文
