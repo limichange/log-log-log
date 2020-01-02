@@ -1,7 +1,5 @@
 # Log Log Log
 
-链接出错了请告诉我
-
 ## 记录
 
 | Date       | Title                   | #    |
