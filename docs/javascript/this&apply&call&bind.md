@@ -1,1 +1,0 @@
-# this、apply、call、bind
