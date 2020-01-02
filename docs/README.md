@@ -17,6 +17,7 @@
 | 2020-01-02 | [CSS triangle][3]          | ✅  |
 | 2020-01-02 | [webpack modules][4]       | ✅  |
 | 2020-01-02 | [webpack to v3 from v4][5] | ✅  |
+| 2020-01-02 | [CSS 文本溢出截断省略][6]  | ✅  |
 
 ## todo
 
