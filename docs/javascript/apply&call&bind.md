@@ -34,3 +34,5 @@ console.log(min)
 ## links
 
 - [this、apply、call、bind](https://juejin.im/post/59bfe84351882531b730bac2)
+- [js 中 call、apply、bind 那些事](https://qianlongo.github.io/2016/04/26/js%E4%B8%ADcall%E3%80%81apply%E3%80%81bind%E9%82%A3%E4%BA%9B%E4%BA%8B/#more)
+- [回味 JS 基础:call apply 与 bind](https://juejin.im/post/57dc97f35bbb50005e5b39bd)
