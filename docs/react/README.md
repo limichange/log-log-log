@@ -1,2 +1,3 @@
 - https://zhuanlan.zhihu.com/p/20346379 React 源码剖析系列 － 不可思议的 react diff
 - https://zhuanlan.zhihu.com/p/58863799 浅析 React Diff 与 Fiber
+- https://juejin.im/post/5def4831e51d45584b585000 10 行代码看尽 redux 原理 —— 全面剖析 redux | react-redux | redux 中间件设计实现（近 8k 字）
