@@ -8,7 +8,7 @@
 | 2020-01-01 | [CSS classic layout][2] | ✅   |
 | 2020-01-02 | [CSS triangle][3]       | ✅   |
 | 2020-01-02 | [webpack modules][4]    | ✅   |
-| 2020-01-02 | [webpack]               | todo |
+| 2020-01-02 | [webpack to v3 from v4] | ✅   |
 | 2020-01-02 | [UDP]                   | todo |
 
 [1]: https://limichange.github.io/log-log-log/network/HTTP2.html
