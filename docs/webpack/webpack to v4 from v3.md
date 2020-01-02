@@ -52,3 +52,27 @@ module.exports = {
 ## CommonsChunkPlugin
 
 The CommonsChunkPlugin was removed. Instead the optimization.splitChunks options can be used.
+
+## import() and CommonJS
+
+When using import() to load non-ESM the result has changed in webpack 4. Now you need to access the default property to get the value of module.exports.
+
+non-esm.js
+
+```js
+module.exports = {
+  sayHello: () => {
+    console.log('hello world')
+  }
+}
+```
+
+example.js
+
+```js
+function sayHello() {
+  import('./non-esm.js').then(module => {
+    module.default.sayHello()
+  })
+}
+```
