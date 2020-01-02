@@ -24,7 +24,7 @@ module.exports = {
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdated: '上次更新',
-    displayAllHeaders: true, // Default: false
+    displayAllHeaders: false, // Default: false
     editLinks: true,
     sidebarDepth: 2,
     sidebar: [
