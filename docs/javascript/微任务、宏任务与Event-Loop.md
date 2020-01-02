@@ -54,6 +54,11 @@ setTimeout 则是通过计算一个延迟时间后进行执行。
 | MutationObserver           | ✅     | ❌   |
 | Promise.then catch finally | ✅     | ✅   |
 
+### 区别
+
+微任务进入主线程执行是一队一队的, 而宏任务进入主线程是一个一个的。
+微任务是在主线程空闲时批量执行, 宏任务是在事件循环下一轮的最开始执行
+
 ## async/await 函数
 
 因为，async/await 本质上还是基于 Promise 的一些封装，而 Promise 是属于微任务的一种。所以在使用 await 关键字与 Promise.then 效果类似：
