@@ -2,14 +2,19 @@
 
 ## 记录
 
-| Date       | Title                   | #    |
-| ---------- | ----------------------- | ---- |
-| 2020-01-01 | [HTTP2][1]              | ✅   |
-| 2020-01-01 | [CSS classic layout][2] | ✅   |
-| 2020-01-02 | [CSS triangle][3]       | ✅   |
-| 2020-01-02 | [webpack modules][4]    | ✅   |
-| 2020-01-02 | [webpack to v3 from v4] | ✅   |
-| 2020-01-02 | [UDP]                   | todo |
+| Date       | Title                   | #   |
+| ---------- | ----------------------- | --- |
+| 2020-01-01 | [HTTP2][1]              | ✅  |
+| 2020-01-01 | [CSS classic layout][2] | ✅  |
+| 2020-01-02 | [CSS triangle][3]       | ✅  |
+| 2020-01-02 | [webpack modules][4]    | ✅  |
+| 2020-01-02 | [webpack to v3 from v4] | ✅  |
+
+## todo
+
+| Date       | Title | #    |
+| ---------- | ----- | ---- |
+| 2020-01-02 | [UDP] | todo |
 
 [1]: https://limichange.github.io/log-log-log/network/HTTP2.html
 [2]: https://limichange.github.io/log-log-log/css/CSS%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80.html
