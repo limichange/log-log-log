@@ -1,6 +1,6 @@
 # todo
 
-- https://github.com/NLRX-WJC/Learn-Vue-Source-Code
+- https://github.com/NLRX-WJC/Learn-Vue-Source-Code Learn-Vue-Source-Code
 - https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/common.md Node interview of ElemeFE
 - https://segmentfault.com/a/1190000017890529 超详细的 webpack 原理解读
 - https://segmentfault.com/a/1190000021390890 吐血整理！！！2019 最强前端面试合集(编程题)
@@ -20,7 +20,7 @@
 - https://www.nowcoder.com/discuss/346789 2 年前端阿里社招 3 面面经
 - https://www.nowcoder.com/discuss/325197 一年经验初探阿里前端社招
 - https://www.nowcoder.com/discuss/327928 阿里前端社招面经分享
-- https://xin-tan.com/passages/2019-03-26-javascript-first/
+- https://xin-tan.com/passages/2019-03-26-javascript-first/ 心谭博客
 - https://www.nowcoder.com/discuss/296979
 - https://github.com/huyaocode/webKnowledge
 - https://segmentfault.com/a/1190000013365426#item-4 React 是怎样炼成的
