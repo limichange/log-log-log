@@ -126,3 +126,5 @@ Function.prototype.bind2 = function(context) {
 - [js 中 call、apply、bind 那些事](https://qianlongo.github.io/2016/04/26/js%E4%B8%ADcall%E3%80%81apply%E3%80%81bind%E9%82%A3%E4%BA%9B%E4%BA%8B/#more)
 - [回味 JS 基础:call apply 与 bind](https://juejin.im/post/57dc97f35bbb50005e5b39bd)
 - [JavaScript 深入之 call 和 apply 的模拟实现](https://juejin.im/post/5907eb99570c3500582ca23c)
+- [不能使用 call,apply,bind，如何用 js 实现 call 或者 apply 的功能？](https://www.zhihu.com/question/35787390)
+- [JavaScript 深入之 bind 的模拟实现](https://juejin.im/post/59093b1fa0bb9f006517b906)
