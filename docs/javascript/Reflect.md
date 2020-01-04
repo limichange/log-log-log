@@ -345,5 +345,6 @@ console.log(r2) // false
 
 ## links
 
+- [Metaprogramming in ES6: Part 2 - Reflect](https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-2-reflect/)
 - [ES6 Reflect](https://zhuanlan.zhihu.com/p/24778807)
 - [Reflect MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
