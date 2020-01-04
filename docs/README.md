@@ -19,6 +19,7 @@
 | 2020-01-03 | [apply call bind][7]                     |
 | 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
 | 2020-01-04 | [Reflect][9]                             |
+| 2020-01-05 | [Currying][9]                            |
 
 ## TODO
 
