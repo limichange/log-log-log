@@ -1,0 +1,32 @@
+# 柯里化
+
+```js
+var curry = fn => {
+  return function judge (...args) {
+    return args.length === fn.length
+      ? fn(...args)
+      : arg => {
+          return judge(...args, arg)
+        }
+  })
+}
+
+fn('a', 'b')('c') // ["a", "b", "c"]
+
+var fn = curry(function(a, b, c) {
+  console.log([a, b, c])
+})
+```
+
+```js
+const curry = (fn, arity = fn.length, ...args) =>
+  arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args)
+
+curry(Math.pow)(2)(10) // 1024
+curry(Math.min, 3)(10)(50)(2) // 2
+```
+
+## links
+
+- [curry](https://www.30secondsofcode.org/js/s/curry)
+- [JavaScript 专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
