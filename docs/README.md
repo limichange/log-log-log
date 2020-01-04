@@ -29,6 +29,7 @@
 | #    | [Lazyload]  | todo |
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
+| #    | [Reflect]   | todo |
 
 [1]: https://limichange.github.io/log-log-log/network/HTTP2.html
 [2]: https://limichange.github.io/log-log-log/css/CSS%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80.html
