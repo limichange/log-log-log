@@ -1,5 +1,17 @@
 # debounce
 
+## 30secondsofcode
+
+```js
+const debounce = (fn, ms = 0) => {
+  let timeoutId
+  return function(...args) {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => fn.apply(this, args), ms)
+  }
+}
+```
+
 ## codeburst 版本
 
 [地址](https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf)
