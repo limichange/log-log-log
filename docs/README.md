@@ -20,6 +20,9 @@
 | 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
 | 2020-01-04 | [Reflect][9]                             |
 | 2020-01-05 | [Currying][9]                            |
+| 2020-01-05 | [debounce][9]                            |
+| 2020-01-05 | [throttle][9]                            |
+| 2020-01-05 | [Url-loader vs File-loader Webpack][9]   |
 
 ## TODO
 
