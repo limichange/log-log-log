@@ -19,10 +19,10 @@
 | 2020-01-03 | [apply call bind][7]                     |
 | 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
 | 2020-01-04 | [Reflect][9]                             |
-| 2020-01-05 | [Currying][9]                            |
-| 2020-01-05 | [debounce][9]                            |
-| 2020-01-05 | [throttle][9]                            |
-| 2020-01-05 | [Url-loader vs File-loader Webpack][9]   |
+| 2020-01-05 | [Currying][11]                           |
+| 2020-01-05 | [debounce][10]                           |
+| 2020-01-05 | [throttle][12]                           |
+| 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
 
 ## TODO
 
@@ -35,6 +35,10 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[13]: https://limichange.github.io/log-log-log/webpack/Url-loader%20vs%20File-loader%20Webpack.html
+[12]: https://limichange.github.io/log-log-log/javascript/throttle.html
+[11]: https://limichange.github.io/log-log-log/javascript/Currying%20%E6%9F%AF%E9%87%8C%E5%8C%96.html
+[10]: https://limichange.github.io/log-log-log/javascript/debounce.html
 [1]: https://limichange.github.io/log-log-log/network/HTTP2.html
 [2]: https://limichange.github.io/log-log-log/css/CSS%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80.html
 [3]: https://limichange.github.io/log-log-log/css/%E7%94%BB%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%B8%89%E8%A7%92.html
