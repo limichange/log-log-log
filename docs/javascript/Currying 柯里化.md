@@ -33,3 +33,24 @@ curry(Math.min, 3)(10)(50)(2) // 2
 
 - [curry](https://www.30secondsofcode.org/js/s/curry)
 - [JavaScript 专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
+
+```js
+function curry(fn, fnArgL = fn.length, ...args) {
+  return args.length >= fnArgL
+    ? fn(...args)
+    ? curry.bind(null, fn, fnArgL, ...args)
+}
+```
+
+```js
+function debounce(fn, ms) {
+  let timeId
+
+  return function(...args) {
+    clearTimeout(timeId)
+    timeId = window.setTimeout(() => {
+      fn.apply(this, args)
+    }, ms)
+  }
+}
+```
