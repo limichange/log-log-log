@@ -14,71 +14,129 @@ new Promise((resolve, reject) => {
 ## 代码实现
 
 ```js
-// 3中状态
-const STATUS_PENDING = Symbol('pending')
-const STATUS_RESOLVED = Symbol('resolved')
-const STATUS_REJECTED = Symbol('rejected')
+const status = {
+  pending: Symbol('pending'),
+  resolved: Symbol('resolved'),
+  rejected: Symbol('rejected')
+}
 
-function MyPromise(executor) {
-  const that = this
-  that.data = null
-  that.status = STATUS_PENDING
-
-  // TODO: 下一节解释，promise实例的回调函数集
-  that.onResolvedCallback = []
-  that.onRejectedCallback = []
+function Promise(fn) {
+  const self = this
+  self.value = null
+  self.status = status.pending
+  self.reason = null
+  self.onResolvedCallback = []
+  // Promise resolve时的回调函数集，因为在Promise结束之前有可能有多个回调添加到它上面
+  self.onRejectedCallback = []
+  // Promise reject时的回调函数集，因为在Promise结束之前有可能有多个回调添加到它上面
 
   function resolve(value) {
-    // TODO: 下一节实现
+    if (self.status !== status.pending) return
+
+    self.status = status.resolved
+    self.value = value
+
+    for (var i = 0; i < self.onResolvedCallback.length; i++) {
+      self.onResolvedCallback[i](value)
+    }
   }
 
-  function reject(error) {
-    // TODO: 下一节实现
+  function reject(reason) {
+    if (self.status !== status.pending) return
+
+    self.status = status.reject
+    self.reason = reason
+
+    for (var i = 0; i < self.onRejectedCallback.length; i++) {
+      self.onRejectedCallback[i](reason)
+    }
   }
 
   try {
-    // 默认是交给参数传入的回调函数来执行状态的变更
     executor(resolve, reject)
-  } catch (error) {
-    // 如果回调函数的执行发生错误，抛出异常
-    // promise会“主动”扭转状态
-    reject(error)
+  } catch (e) {
+    reject(e)
   }
+}
+
+Promise.prototype.then = function(onfulfilled, onRejected) {
+  const self = this
+
+  onResolved =
+    typeof onResolved === 'function'
+      ? onResolved
+      : function(v) {
+          return v
+        }
+  onRejected =
+    typeof onRejected === 'function'
+      ? onRejected
+      : function(r) {
+          return r
+        }
+
+  if (self.status === status.resolved) {
+    return new Promise(function(resolve, reject) {
+      try {
+        var x = onfulfilled(self.data)
+
+        if (x instanceof Promise) {
+          x.then(resolve, reject)
+        } else {
+          resolve(x)
+        }
+      } catch (e) {
+        reject(e)
+      }
+    })
+  }
+  if (self.status === status.rejected) {
+    return new Promise(function(resolve, reject) {
+      try {
+        var x = onRejected(self.data)
+        if (x instanceof Promise) {
+          x.then(resolve, reject)
+        }
+      } catch (e) {
+        reject(e)
+      }
+    })
+  }
+  if (self.status === status.pending) {
+    self.onResolvedCallback.push(function(value) {
+      try {
+        var x = onResolved(self.data)
+        if (x instanceof Promise) {
+          x.then(resolve, reject)
+        } else {
+          resolve(value)
+        }
+      } catch (e) {
+        reject(e)
+      }
+    })
+
+    self.onRejectedCallback.push(function(reason) {
+      try {
+        var x = onRejected(self.data)
+        if (x instanceof Promise) {
+          x.then(resolve, reject)
+        } else {
+          resolve(value)
+        }
+      } catch (e) {
+        reject(e)
+      }
+    })
+  }
+}
+
+Promise.prototype.catch = function(onRejected) {
+  return this.then(null, onRejected)
 }
 ```
 
-### resolve 和 reject 实现
+## links
 
-resolve 的两个作用就是：
-
-- 改变 promise 状态
-- 更新 promise 的值
-
-```js
-function resolve(value) {
-  if (that.status !== STATUS_PENDING) {
-    return
-  }
-
-  that.data = value
-  that.status = STATUS_RESOLVED
-  for (let callback of that.onResolvedCallback) {
-    // 这里that指的是指向promise实例的指针
-    callback(that.data)
-  }
-}
-```
-
-```js
-function reject(error) {
-  if (that.status !== STATUS_PENDING) {
-    return
-  }
-
-  that.data = error
-  that.status = STATUS_REJECTED
-  for (let callback of that.onRejectedCallback) {
-    callback(that.data)
-  }
-}
-```
+- [Promise](https://xin-tan.com/passages/2019-11-25-promise-a-plus/#resolve-%E5%92%8C-reject-%E5%AE%9E%E7%8E%B0)
+- [Promise](https://github.com/lqt0223/promise)
