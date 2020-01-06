@@ -23,7 +23,8 @@
 | 2020-01-05 | [debounce][10]                           |
 | 2020-01-05 | [throttle][12]                           |
 | 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
-| 2020-01-05 | [Symbol][14]                             |
+| 2020-01-06 | [Symbol][14]                             |
+| 2020-01-06 | [Promise][15]                            |
 
 ## TODO
 
@@ -36,6 +37,8 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[15]: https://limichange.github.io/log-log-log/javascript/Promise/Promise%E5%AE%9E%E7%8E%B0
+[14]: https://limichange.github.io/log-log-log/javascript/Symbol.htm
 [13]: https://limichange.github.io/log-log-log/webpack/Url-loader%20vs%20File-loader%20Webpack.html
 [12]: https://limichange.github.io/log-log-log/javascript/throttle.html
 [11]: https://limichange.github.io/log-log-log/javascript/Currying%20%E6%9F%AF%E9%87%8C%E5%8C%96.html
