@@ -23,6 +23,7 @@
 | 2020-01-05 | [debounce][10]                           |
 | 2020-01-05 | [throttle][12]                           |
 | 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
+| 2020-01-05 | [Symbol][14]                             |
 
 ## TODO
 
