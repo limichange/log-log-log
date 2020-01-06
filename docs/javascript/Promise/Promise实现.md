@@ -136,6 +136,70 @@ Promise.prototype.catch = function(onRejected) {
 }
 ```
 
+## Promise.all
+
+```js
+Promise.all = function(iterators) {
+  const promises = Array.from(iterators)
+  const resolvedList = new Array(num)
+  let resolvedNum = 0
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then(value => {
+          resolvedList[index] = value
+
+          if (++resolvedNum === promises.length) {
+            resolve(resolvedList)
+          }
+        })
+        .catch(reject)
+    })
+  })
+}
+```
+
+## Promise.race
+
+```js
+Promise.race = function(iterators) {
+  const promises = Array.from(iterators)
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then(resolve)
+        .catch(reject)
+    })
+  })
+}
+```
+
+## Promise.any
+
+```js
+Promise.any = function(iterators) {
+  const promises = Array.from(iterators)
+  const rejectedList = new Array(num)
+  let rejectedNum = 0
+
+  return new Promise((resolve, reject) => {
+    promsies.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then(resolve)
+        .catch(error => {
+          rejectedList[index] = error
+
+          if (++rejectedNum === promises.length) {
+            reject(rejectedList)
+          }
+        })
+    })
+  })
+}
+```
+
 ## links
 
 - [Promise](https://xin-tan.com/passages/2019-11-25-promise-a-plus/#resolve-%E5%92%8C-reject-%E5%AE%9E%E7%8E%B0)
