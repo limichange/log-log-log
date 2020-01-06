@@ -200,6 +200,41 @@ Promise.any = function(iterators) {
 }
 ```
 
+## Promise.allSettled
+
+```js
+const fotmatSettledResult = (success, value) => {
+  success
+    ? { status: 'fulfilled', vlaue }
+    : { status: 'rejected', reason: value }
+}
+
+Promise.allSettled = function(iterators) {
+  const promises = Array.from(iterators)
+  const num = promises.length
+  const settledList = new Array(num)
+  let settledNum = 0
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then(value => {
+          settledList[index] = fotmatSettledResult(true, value)
+          if (++settledNum === num) {
+            resolve(settledList)
+          }
+        })
+        .catch(e => {
+          settledList[index] = fotmatSettledResult(false, value)
+          if (++settledNum === num) {
+            resolve(settledList)
+          }
+        })
+    })
+  })
+}
+```
+
 ## links
 
 - [Promise](https://xin-tan.com/passages/2019-11-25-promise-a-plus/#resolve-%E5%92%8C-reject-%E5%AE%9E%E7%8E%B0)
