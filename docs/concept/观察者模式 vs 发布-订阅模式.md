@@ -2,8 +2,6 @@
 
 > 观察者模式和发布订阅模式的有什么区别？
 
-![a](https://user-gold-cdn.xitu.io/2017/11/22/15fe1b1f174cd376?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-
 ## 观察者模式
 
 观察者模式 在软件设计中是一个对象，维护一个依赖列表，当任何状态发生改变自动通知它们。
