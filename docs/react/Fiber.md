@@ -29,20 +29,20 @@ React Fiber 也被称为虚拟栈帧(Virtual Stack Frame)
 
 - 协调阶段: 可以认为是 Diff 阶段, 这个阶段可以被中断, 这个阶段会找出所有节点变更，例如节点新增、删除、属性变更等等, 这些变更 React 称之为'副作用(Effect)' . 以下生命周期钩子会在协调阶段被调用：
 
-  - constructor
-  - componentWillMount 废弃
-  - componentWillReceiveProps 废弃
-  - static getDerivedStateFromProps
-  - shouldComponentUpdate
-  - componentWillUpdate 废弃
-  - render
+  - `constructor`
+  - `componentWillMount` `废弃`
+  - `componentWillReceiveProps` `废弃`
+  - `static getDerivedStateFromProps`
+  - `shouldComponentUpdate`
+  - `componentWillUpdate` `废弃`
+  - `render`
 
 - 提交阶段: 将上一个阶段计算出来的需要处理的**副作用(Effects)**一次性执行了。这个阶段必须同步执行，不能被打断. 这些生命周期钩子在提交阶段被执行:
 
-  - getSnapshotBeforeUpdate() 严格来说，这个是在进入 commit 阶段前调用
-  - componentDidMount
-  - componentDidUpdate
-  - componentWillUnmount
+  - `getSnapshotBeforeUpdate` 严格来说，这个是在进入 commit 阶段前调用
+  - `componentDidMount`
+  - `componentDidUpdate`
+  - `componentWillUnmount`
 
 ## links
 
