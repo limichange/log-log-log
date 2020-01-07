@@ -25,7 +25,7 @@
 | 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
 | 2020-01-06 | [Symbol][14]                             |
 | 2020-01-06 | [Promise][15]                            |
-| 2020-01-06 | [观察者模式 vs 发布-订阅模式][15]        |
+| 2020-01-07 | [观察者模式 vs 发布-订阅模式][16]        |
 
 ## TODO
 
@@ -38,6 +38,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[16]: https://limichange.github.io/log-log-log/concept/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%20vs%20%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.html
 [15]: https://limichange.github.io/log-log-log/javascript/Promise/Promise%E5%AE%9E%E7%8E%B0
 [14]: https://limichange.github.io/log-log-log/javascript/Symbol.htm
 [13]: https://limichange.github.io/log-log-log/webpack/Url-loader%20vs%20File-loader%20Webpack.html
