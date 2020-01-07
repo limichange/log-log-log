@@ -16,10 +16,33 @@
 
 React 通过 Fiber 将树的遍历变成了链表的遍历
 
+Reconciliation(协调阶段) 和 Commit(提交阶段).
+
+React Fiber 也被称为虚拟栈帧(Virtual Stack Frame)
+
 - React 应用中的基础单元是组件，应用以组件树形式组织，渲染组件；
 - Fiber 调和器基础单元则是 fiber（调和单元），应用以 fiber 树形式组织，应用 Fiber 算法；
 - 组件树和 fiber 树结构对应，一个组件实例有一个对应的 fiber 实例；
 - Fiber 负责整个应用层面的调和，fiber 实例负责对应组件的调和；
+
+除了 Fiber 工作单元的拆分，两阶段的拆分也是一个非常重要的改造，在此之前都是一边 Diff 一边提交的。先来看看这两者的区别:
+
+- 协调阶段: 可以认为是 Diff 阶段, 这个阶段可以被中断, 这个阶段会找出所有节点变更，例如节点新增、删除、属性变更等等, 这些变更 React 称之为'副作用(Effect)' . 以下生命周期钩子会在协调阶段被调用：
+
+  - constructor
+  - componentWillMount 废弃
+  - componentWillReceiveProps 废弃
+  - static getDerivedStateFromProps
+  - shouldComponentUpdate
+  - componentWillUpdate 废弃
+  - render
+
+- 提交阶段: 将上一个阶段计算出来的需要处理的**副作用(Effects)**一次性执行了。这个阶段必须同步执行，不能被打断. 这些生命周期钩子在提交阶段被执行:
+
+  - getSnapshotBeforeUpdate() 严格来说，这个是在进入 commit 阶段前调用
+  - componentDidMount
+  - componentDidUpdate
+  - componentWillUnmount
 
 ## links
 
