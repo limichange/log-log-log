@@ -25,6 +25,7 @@
 | 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
 | 2020-01-06 | [Symbol][14]                             |
 | 2020-01-06 | [Promise][15]                            |
+| 2020-01-06 | [观察者模式 vs 发布-订阅模式][15]        |
 
 ## TODO
 
