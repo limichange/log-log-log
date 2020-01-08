@@ -36,7 +36,6 @@
 | ---- | ----------- | ---- |
 | #    | [UDP]       | todo |
 | #    | [TCP]       | todo |
-| #    | [Fiber]     | todo |
 | #    | [Lazyload]  | todo |
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
