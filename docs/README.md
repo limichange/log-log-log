@@ -10,25 +10,25 @@
 
 | Date       | Title                                    |
 | ---------- | ---------------------------------------- |
-| 2020-01-01 | [HTTP2][1]                               |
-| 2020-01-01 | [CSS classic layout][2]                  |
-| 2020-01-02 | [CSS triangle][3]                        |
-| 2020-01-02 | [webpack modules][4]                     |
-| 2020-01-02 | [webpack to v3 from v4][5]               |
-| 2020-01-02 | [CSS 文本溢出截断省略][6]                |
-| 2020-01-03 | [apply call bind][7]                     |
-| 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
-| 2020-01-04 | [Reflect][9]                             |
+| 2020-01-08 | [React diff][19]                         |
+| 2020-01-08 | [HTTPS][18]                              |
+| 2020-01-07 | [React Fiber][17]                        |
+| 2020-01-07 | [观察者模式 vs 发布-订阅模式][16]        |
+| 2020-01-06 | [Promise][15]                            |
+| 2020-01-06 | [Symbol][14]                             |
+| 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
+| 2020-01-05 | [throttle][12]                           |
 | 2020-01-05 | [Currying][11]                           |
 | 2020-01-05 | [debounce][10]                           |
-| 2020-01-05 | [throttle][12]                           |
-| 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
-| 2020-01-06 | [Symbol][14]                             |
-| 2020-01-06 | [Promise][15]                            |
-| 2020-01-07 | [观察者模式 vs 发布-订阅模式][16]        |
-| 2020-01-07 | [React Fiber][17]                        |
-| 2020-01-08 | [HTTPS][18]                              |
-| 2020-01-08 | [React diff][19]                         |
+| 2020-01-04 | [Reflect][9]                             |
+| 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
+| 2020-01-03 | [apply call bind][7]                     |
+| 2020-01-02 | [CSS 文本溢出截断省略][6]                |
+| 2020-01-02 | [webpack to v3 from v4][5]               |
+| 2020-01-02 | [webpack modules][4]                     |
+| 2020-01-02 | [CSS triangle][3]                        |
+| 2020-01-01 | [CSS classic layout][2]                  |
+| 2020-01-01 | [HTTP2][1]                               |
 
 ## TODO
 
