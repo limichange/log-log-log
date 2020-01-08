@@ -32,3 +32,6 @@
 - https://segmentfault.com/a/1190000021466416 GMTC | 《小程序跨框架开发的探索与实践》 演讲全文
 - https://www.nowcoder.com/discuss/356871 字节跳动前端面试（三面）
 - https://www.nowcoder.com/discuss/357853 字节跳动社招一二面面经
+- https://juejin.im/post/5ca9de22e51d452b5372ed90 【周刊-1】三年大厂面试官-面试题精选及答案
+- [面试分享：两年工作经验成功面试阿里 P6 总结](https://juejin.im/post/5d690c726fb9a06b155dd40d#heading-132)
+- [要去大厂应该把这些面试题搞(bei)懂(hui)](https://segmentfault.com/a/1190000021519901)
