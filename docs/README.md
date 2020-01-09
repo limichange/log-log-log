@@ -10,7 +10,7 @@
 
 | Date       | Title                                    |
 | ---------- | ---------------------------------------- |
-| 2020-01-09 | [React diff][19]                         |
+| 2020-01-09 | [Cookie][20]                             |
 | 2020-01-08 | [React diff][19]                         |
 | 2020-01-08 | [HTTPS][18]                              |
 | 2020-01-07 | [React Fiber][17]                        |
@@ -41,6 +41,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[20]: https://limichange.github.io/log-log-log/browser/cookie.html
 [19]: https://limichange.github.io/log-log-log/react/react%20diff.html
 [18]: https://limichange.github.io/log-log-log/network/HTTPS.html
 [17]: https://limichange.github.io/log-log-log/react/Fiber.html
