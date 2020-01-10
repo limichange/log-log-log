@@ -10,7 +10,8 @@
 
 | Date       | Title                                    |
 | ---------- | ---------------------------------------- |
-| 2020-01-10 | [Set WeakSet Map WeakMap][20]            |
+| 2020-01-10 | [Deep Clone][22]                         |
+| 2020-01-10 | [Set WeakSet Map WeakMap][21]            |
 | 2020-01-09 | [Cookie][20]                             |
 | 2020-01-08 | [React diff][19]                         |
 | 2020-01-08 | [HTTPS][18]                              |
@@ -42,6 +43,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[22]: https://limichange.github.io/log-log-log/javascript/deepClone.html
 [21]: https://limichange.github.io/log-log-log/javascript/Set%E3%80%81WeakSet%E3%80%81Map%E5%8F%8AWeakMap.html
 [20]: https://limichange.github.io/log-log-log/browser/cookie.html
 [19]: https://limichange.github.io/log-log-log/react/react%20diff.html
