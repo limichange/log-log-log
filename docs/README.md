@@ -8,31 +8,31 @@
 
 ## 记录
 
-| Date       | Title                                    |
-| ---------- | ---------------------------------------- |
-| 2020-01-10 | [Deep Clone][22]                         |
-| 2020-01-10 | [Deep Clone][22]                         |
-| 2020-01-10 | [Set WeakSet Map WeakMap][21]            |
-| 2020-01-09 | [Cookie][20]                             |
-| 2020-01-08 | [React diff][19]                         |
-| 2020-01-08 | [HTTPS][18]                              |
-| 2020-01-07 | [React Fiber][17]                        |
-| 2020-01-07 | [观察者模式 vs 发布-订阅模式][16]        |
-| 2020-01-06 | [Promise][15]                            |
-| 2020-01-06 | [Symbol][14]                             |
-| 2020-01-05 | [Url-loader vs File-loader Webpack][13]  |
-| 2020-01-05 | [throttle][12]                           |
-| 2020-01-05 | [Currying][11]                           |
-| 2020-01-05 | [debounce][10]                           |
-| 2020-01-04 | [Reflect][9]                             |
-| 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8] |
-| 2020-01-03 | [apply call bind][7]                     |
-| 2020-01-02 | [CSS 文本溢出截断省略][6]                |
-| 2020-01-02 | [webpack to v3 from v4][5]               |
-| 2020-01-02 | [webpack modules][4]                     |
-| 2020-01-02 | [CSS triangle][3]                        |
-| 2020-01-01 | [CSS classic layout][2]                  |
-| 2020-01-01 | [HTTP2][1]                               |
+| Date       | Title                                     |
+| ---------- | ----------------------------------------- |
+| 2020-01-10 | [在浏览器输入 URL 回车之后发生了什么][23] |
+| 2020-01-10 | [Deep Clone][22]                          |
+| 2020-01-10 | [Set WeakSet Map WeakMap][21]             |
+| 2020-01-09 | [Cookie][20]                              |
+| 2020-01-08 | [React diff][19]                          |
+| 2020-01-08 | [HTTPS][18]                               |
+| 2020-01-07 | [React Fiber][17]                         |
+| 2020-01-07 | [观察者模式 vs 发布-订阅模式][16]         |
+| 2020-01-06 | [Promise][15]                             |
+| 2020-01-06 | [Symbol][14]                              |
+| 2020-01-05 | [Url-loader vs File-loader Webpack][13]   |
+| 2020-01-05 | [throttle][12]                            |
+| 2020-01-05 | [Currying][11]                            |
+| 2020-01-05 | [debounce][10]                            |
+| 2020-01-04 | [Reflect][9]                              |
+| 2020-01-03 | [useEffect 和 useLayoutEffect 的区别][8]  |
+| 2020-01-03 | [apply call bind][7]                      |
+| 2020-01-02 | [CSS 文本溢出截断省略][6]                 |
+| 2020-01-02 | [webpack to v3 from v4][5]                |
+| 2020-01-02 | [webpack modules][4]                      |
+| 2020-01-02 | [CSS triangle][3]                         |
+| 2020-01-01 | [CSS classic layout][2]                   |
+| 2020-01-01 | [HTTP2][1]                                |
 
 ## TODO
 
@@ -44,6 +44,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[23]: https://limichange.github.io/log-log-log/browser/%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BE%93%E5%85%A5%20URL%20%E5%9B%9E%E8%BD%A6%E4%B9%8B%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88.html
 [22]: https://limichange.github.io/log-log-log/javascript/deepClone.html
 [21]: https://limichange.github.io/log-log-log/javascript/Set%E3%80%81WeakSet%E3%80%81Map%E5%8F%8AWeakMap.html
 [20]: https://limichange.github.io/log-log-log/browser/cookie.html
