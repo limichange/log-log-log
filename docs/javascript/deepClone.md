@@ -39,3 +39,4 @@ const deepClone = obj => {
 ## links
 
 - [deepClone](https://www.30secondsofcode.org/js/s/deep-clone)
+- [浅拷贝与深拷贝](https://juejin.im/post/5b5dcf8351882519790c9a2e#heading-9)
