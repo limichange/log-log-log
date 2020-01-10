@@ -36,7 +36,52 @@ const deepClone = obj => {
 }
 ```
 
+```js
+export default function klona(x) {
+  if (typeof x !== 'object') return x
+
+  var k,
+    tmp,
+    str = Object.prototype.toString.call(x)
+
+  if (str === '[object Object]') {
+    tmp = {}
+    for (k in x) {
+      tmp[k] = klona(x[k])
+    }
+    return tmp
+  }
+
+  if (str === '[object Array]') {
+    k = x.length
+    for (tmp = new Array(k); k--; ) {
+      tmp[k] = klona(x[k])
+    }
+    return tmp
+  }
+
+  if (str === '[object Set]') return new Set(x)
+  if (str === '[object Date]') return new Date(+x)
+  if (str === '[object Map]') return new Map(x)
+
+  if (str === '[object RegExp]') {
+    tmp = new RegExp(x.source, x.flags)
+    tmp.lastIndex = x.lastIndex
+    return tmp
+  }
+
+  if (str.slice(-6) === 'Array]') {
+    return new x.constructor(x)
+  }
+
+  return x
+}
+```
+
+## https://github.com/lukeed/klona/blob/master/src/index.js
+
 ## links
 
 - [deepClone](https://www.30secondsofcode.org/js/s/deep-clone)
 - [浅拷贝与深拷贝](https://juejin.im/post/5b5dcf8351882519790c9a2e#heading-9)
+- https://github.com/lukeed/klona/blob/master/src/index.js
