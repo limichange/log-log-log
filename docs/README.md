@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-12 | [GraphQL][26]                             |
 | 2020-01-12 | [JS 错误监控][25]                         |
 | 2020-01-11 | [Babel][24]                               |
 | 2020-01-10 | [在浏览器输入 URL 回车之后发生了什么][23] |
@@ -46,6 +47,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[26]: https://limichange.github.io/log-log-log/graphql/GraphQL.html
 [25]: https://limichange.github.io/log-log-log/concept/JS%E9%94%99%E8%AF%AF%E7%9B%91%E6%8E%A7.html
 [24]: https://limichange.github.io/log-log-log/babel/babel.html
 [23]: https://limichange.github.io/log-log-log/browser/%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BE%93%E5%85%A5%20URL%20%E5%9B%9E%E8%BD%A6%E4%B9%8B%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88.html
