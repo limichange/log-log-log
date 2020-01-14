@@ -10,7 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
-| 2020-01-14 | [JS prototype][27]                        |
+| 2020-01-14 | [JS prototype][28]                        |
 | 2020-01-13 | [SSR][27]                                 |
 | 2020-01-12 | [GraphQL][26]                             |
 | 2020-01-12 | [JS 错误监控][25]                         |
@@ -49,6 +49,7 @@
 | #    | [RegExp]    | todo |
 | #    | [prototype] | todo |
 
+[28]: https://limichange.github.io/log-log-log/javascript/prototype.html
 [27]: https://limichange.github.io/log-log-log/SSR/READEME.html
 [26]: https://limichange.github.io/log-log-log/graphql/GraphQL.html
 [25]: https://limichange.github.io/log-log-log/concept/JS%E9%94%99%E8%AF%AF%E7%9B%91%E6%8E%A7.html
