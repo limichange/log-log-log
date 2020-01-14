@@ -42,3 +42,5 @@ o.someProp
 
 - [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 - [三分钟看完 JavaScript 原型与原型链](https://juejin.im/post/5a94c0de5188257a8929d837)
+- [2019 面试准备 - JS 原型与原型链](https://juejin.im/post/5c72a1766fb9a049ea3993e6)
+- [三张图搞懂 JavaScript 的原型对象与原型链](https://juejin.im/post/5835853f570c35005e413b19)
