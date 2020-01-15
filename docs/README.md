@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-14 | [RegExp][29]                              |
 | 2020-01-14 | [JS prototype][28]                        |
 | 2020-01-13 | [SSR][27]                                 |
 | 2020-01-12 | [GraphQL][26]                             |
@@ -41,14 +42,13 @@
 
 ## TODO
 
-| Date | Title       | #    |
-| ---- | ----------- | ---- |
-| #    | [UDP]       | todo |
-| #    | [TCP]       | todo |
-| #    | [Lazyload]  | todo |
-| #    | [RegExp]    | todo |
-| #    | [prototype] | todo |
+| Date | Title      | #    |
+| ---- | ---------- | ---- |
+| #    | [UDP]      | todo |
+| #    | [TCP]      | todo |
+| #    | [Lazyload] | todo |
 
+[29]: https://limichange.github.io/log-log-log/javascript/RegExp.html
 [28]: https://limichange.github.io/log-log-log/javascript/prototype.html
 [27]: https://limichange.github.io/log-log-log/SSR/READEME.html
 [26]: https://limichange.github.io/log-log-log/graphql/GraphQL.html
