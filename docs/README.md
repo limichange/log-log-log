@@ -10,7 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
-| 2020-01-16 | [可伸缩布局方案][30]                      |
+| 2020-01-16 | [vue 如何实现双向绑定][31]                |
 | 2020-01-15 | [可伸缩布局方案][30]                      |
 | 2020-01-14 | [RegExp][29]                              |
 | 2020-01-14 | [JS prototype][28]                        |
@@ -50,6 +50,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[31]: https://limichange.github.io/log-log-log/vue/vue如何实现双向绑定.html
 [30]: https://limichange.github.io/log-log-log/javascript/可伸缩布局方案.html
 [29]: https://limichange.github.io/log-log-log/javascript/RegExp.html
 [28]: https://limichange.github.io/log-log-log/javascript/prototype.html
