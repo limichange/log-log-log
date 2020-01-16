@@ -28,3 +28,5 @@ Proxy 返回的是一个新对象,我们可以只操作新的对象达到目的,
 ## links
 
 - [面试官: 实现双向绑定 Proxy 比 defineproperty 优劣如何?](https://juejin.im/post/5acd0c8a6fb9a028da7cdfaf)
+- [vue 源码分析之如何实现 observer 和 watcher](https://segmentfault.com/a/1190000004384515)
+- [剖析 Vue 实现原理 - 如何实现双向绑定 mvvm](https://github.com/DMQ/mvvm)
