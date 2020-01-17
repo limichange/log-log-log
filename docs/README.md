@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-17 | [http header][32]                         |
 | 2020-01-16 | [vue 如何实现双向绑定][31]                |
 | 2020-01-15 | [可伸缩布局方案][30]                      |
 | 2020-01-14 | [RegExp][29]                              |
@@ -49,6 +50,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[32]: https://limichange.github.io/log-log-log/network/HTTP.html
 [31]: https://limichange.github.io/log-log-log/vue/vue如何实现双向绑定.html
 [30]: https://limichange.github.io/log-log-log/javascript/可伸缩布局方案.html
 [29]: https://limichange.github.io/log-log-log/javascript/RegExp.html
