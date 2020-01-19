@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-19 | [class][35]                               |
 | 2020-01-18 | [react-redux][34]                         |
 | 2020-01-18 | [redux][33]                               |
 | 2020-01-17 | [http header][32]                         |
@@ -52,6 +53,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[35]: https://limichange.github.io/log-log-log/javascript/class.html
 [34]: https://limichange.github.io/log-log-log/redux/react-redux.html
 [33]: https://limichange.github.io/log-log-log/redux/redux.html
 [32]: https://limichange.github.io/log-log-log/network/HTTP.html
