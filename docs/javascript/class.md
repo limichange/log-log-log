@@ -14,7 +14,7 @@ Object.create = function(proto) {
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype)
   subClass.prototype.constructor = subClass
-  subClass.__proto__ = superClass
+  subClass.__proto__ = superClass // todo
 }
 
 _inheritsLoose(son, _father)
