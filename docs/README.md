@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-20 | [use strict][36]                          |
 | 2020-01-19 | [class][35]                               |
 | 2020-01-18 | [react-redux][34]                         |
 | 2020-01-18 | [redux][33]                               |
@@ -53,6 +54,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[36]: https://limichange.github.io/log-log-log/javascript/use strict.html
 [35]: https://limichange.github.io/log-log-log/javascript/class.html
 [34]: https://limichange.github.io/log-log-log/redux/react-redux.html
 [33]: https://limichange.github.io/log-log-log/redux/redux.html
