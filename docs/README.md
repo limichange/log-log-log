@@ -55,6 +55,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[37]: https://limichange.github.io/log-log-log/javascript/virtual-dom.html
 [36]: https://limichange.github.io/log-log-log/javascript/use-strict.html
 [35]: https://limichange.github.io/log-log-log/javascript/class.html
 [34]: https://limichange.github.io/log-log-log/redux/react-redux.html
