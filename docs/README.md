@@ -54,7 +54,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
-[36]: https://limichange.github.io/log-log-log/javascript/use strict.html
+[36]: https://limichange.github.io/log-log-log/javascript/use-strict.html
 [35]: https://limichange.github.io/log-log-log/javascript/class.html
 [34]: https://limichange.github.io/log-log-log/redux/react-redux.html
 [33]: https://limichange.github.io/log-log-log/redux/redux.html
