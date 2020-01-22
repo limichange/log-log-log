@@ -19,6 +19,27 @@ link.className = 'active'
 link.textContent = '首页'
 link.classList.add('hello')
 link.classList.remove('hello')
+
+// 插入 HTML 元素
+document.body.insertAdjacentElement('beforeend', document.createElement('a'))
+
+// <!-- beforebegin -->
+// <div>
+//   <!-- afterbegin -->
+//   <span></span>
+//   <!-- beforeend -->
+// </div>
+// <!-- afterend -->
+
+// 插入文本
+document.body.insertAdjacentText('afterbegin', 'cool!')
+
+// 替换 DOM 元素
+oldElement.replaceWith(newElement)
+
+// 移除 DOM 元素
+const target = document.querySelector('#target')
+target.remove()
 ```
 
 ## links
