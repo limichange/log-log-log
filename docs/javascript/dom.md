@@ -40,6 +40,8 @@ oldElement.replaceWith(newElement)
 // 移除 DOM 元素
 const target = document.querySelector('#target')
 target.remove()
+
+// DOM 观察者：MutationObserver
 ```
 
 ## links
