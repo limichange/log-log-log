@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-24 | [DOM 事件][40]                            |
 | 2020-01-23 | [XSS CSRF][39]                            |
 | 2020-01-22 | [native dom control][38]                  |
 | 2020-01-21 | [virtual dom][37]                         |
@@ -57,6 +58,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[40]: https://limichange.github.io/log-log-log/secure/XSS-CSRF.html
 [39]: https://limichange.github.io/log-log-log/secure/XSS-CSRF.html
 [38]: https://limichange.github.io/log-log-log/javascript/dom.html
 [37]: https://limichange.github.io/log-log-log/javascript/virtual-dom.html
