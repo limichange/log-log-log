@@ -58,13 +58,13 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
-[40]: https://limichange.github.io/log-log-log/secure/XSS-CSRF.html
-[39]: https://limichange.github.io/log-log-log/secure/XSS-CSRF.html
+[40]: https://limichange.github.io/log-log-log/browser/DOM%20%E4%BA%8B%E4%BB%B6.html
+[39]: https://limichange.github.io/log-log-log/secure/XSS%20CSRF.html
 [38]: https://limichange.github.io/log-log-log/javascript/dom.html
-[37]: https://limichange.github.io/log-log-log/javascript/virtual-dom.html
-[36]: https://limichange.github.io/log-log-log/javascript/use-strict.html
+[37]: https://limichange.github.io/log-log-log/javascript/virtual%20dom.html
+[36]: https://limichange.github.io/log-log-log/javascript/use%20strict.html
 [35]: https://limichange.github.io/log-log-log/javascript/class.html
-[34]: https://limichange.github.io/log-log-log/redux/react-redux.html
+[34]: https://limichange.github.io/log-log-log/redux/react%20redux.html
 [33]: https://limichange.github.io/log-log-log/redux/redux.html
 [32]: https://limichange.github.io/log-log-log/network/HTTP.html
 [31]: https://limichange.github.io/log-log-log/vue/vue如何实现双向绑定.html
