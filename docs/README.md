@@ -59,6 +59,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[41]: https://limichange.github.io/log-log-log/browser/%E8%B7%A8%E5%9F%9F.htm
 [40]: https://limichange.github.io/log-log-log/browser/DOM%20%E4%BA%8B%E4%BB%B6.html
 [39]: https://limichange.github.io/log-log-log/secure/XSS%20CSRF.html
 [38]: https://limichange.github.io/log-log-log/javascript/dom.html
