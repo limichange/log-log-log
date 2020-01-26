@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-25 | [HTTP response status codes][42]          |
 | 2020-01-25 | [跨域][41]                                |
 | 2020-01-24 | [DOM 事件][40]                            |
 | 2020-01-23 | [XSS CSRF][39]                            |
@@ -59,6 +60,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[42]: https://limichange.github.io/log-log-log/HTTP/HTTP%20response%20status%20codes.html
 [41]: https://limichange.github.io/log-log-log/browser/%E8%B7%A8%E5%9F%9F.htm
 [40]: https://limichange.github.io/log-log-log/browser/DOM%20%E4%BA%8B%E4%BB%B6.html
 [39]: https://limichange.github.io/log-log-log/secure/XSS%20CSRF.html
