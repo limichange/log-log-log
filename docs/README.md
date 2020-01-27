@@ -61,6 +61,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[43]: https://limichange.github.io/log-log-log/javascript/%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD.html
 [42]: https://limichange.github.io/log-log-log/HTTP/HTTP%20response%20status%20codes.html
 [41]: https://limichange.github.io/log-log-log/browser/%E8%B7%A8%E5%9F%9F.htm
 [40]: https://limichange.github.io/log-log-log/browser/DOM%20%E4%BA%8B%E4%BB%B6.html
