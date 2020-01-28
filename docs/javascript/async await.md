@@ -38,6 +38,7 @@ spawn 就是自动执行器
 function spawn(genF) {
   return new Promise(function(resolve, reject) {
     const gen = genF()
+
     function step(nextF) {
       let next
       try {
@@ -48,6 +49,7 @@ function spawn(genF) {
       if (next.done) {
         return resolve(next.value)
       }
+
       Promise.resolve(next.value).then(
         function(v) {
           step(function() {
@@ -61,6 +63,7 @@ function spawn(genF) {
         }
       )
     }
+
     step(function() {
       return gen.next(undefined)
     })
