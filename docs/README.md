@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-01-28 | [async await 原理][44]                    |
 | 2020-01-27 | [类型判断][43]                            |
 | 2020-01-26 | [HTTP response status codes][42]          |
 | 2020-01-25 | [跨域][41]                                |
@@ -61,6 +62,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[44]: https://limichange.github.io/log-log-log/javascript/async%20await.html
 [43]: https://limichange.github.io/log-log-log/javascript/%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD.html
 [42]: https://limichange.github.io/log-log-log/HTTP/HTTP%20response%20status%20codes.html
 [41]: https://limichange.github.io/log-log-log/browser/%E8%B7%A8%E5%9F%9F.htm
