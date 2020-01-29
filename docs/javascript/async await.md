@@ -46,6 +46,7 @@ function spawn(genF) {
       } catch (e) {
         return reject(e)
       }
+
       if (next.done) {
         return resolve(next.value)
       }
