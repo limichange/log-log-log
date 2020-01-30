@@ -18,6 +18,10 @@ console.log(student instanceof Person) // true
 
 查看对象 B 的 prototype 指向的对象是否在对象 A 的`[[prototype]]`链上。如果在，则返回 true,如果不在则返回 false。不过有一个特殊的情况，当对象 B 的 prototype 为 null 将会报错(类似于空指针异常)。
 
+所以一句话理解 instanceof 的运算规则为：
+
+instanceof 检测左侧的 `__proto__` 原型链上，是否存在右侧的 `prototype` 原型。
+
 ```js
 function _instanceof(A, B) {
   var O = B.prototype // 取B的显示原型
