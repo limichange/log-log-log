@@ -64,6 +64,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[46]: https://limichange.github.io/log-log-log/javascript/instanceof.html
 [45]: https://limichange.github.io/log-log-log/javascript/document.ready%20%E5%92%8C%20window.onload%20.html
 [44]: https://limichange.github.io/log-log-log/javascript/async%20await.html
 [43]: https://limichange.github.io/log-log-log/javascript/%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD.html
