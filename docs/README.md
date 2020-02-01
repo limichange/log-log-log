@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-02-01 | [EventEmitter][48]                        |
 | 2020-01-31 | [array][47]                               |
 | 2020-01-30 | [instanceof][46]                          |
 | 2020-01-29 | [document.ready 和 window.onload][45]     |
@@ -65,6 +66,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[48]: https://limichange.github.io/log-log-log/javascript/EventEmitter.html
 [47]: https://limichange.github.io/log-log-log/javascript/array.html
 [46]: https://limichange.github.io/log-log-log/javascript/instanceof.html
 [45]: https://limichange.github.io/log-log-log/javascript/document.ready%20%E5%92%8C%20window.onload%20.html

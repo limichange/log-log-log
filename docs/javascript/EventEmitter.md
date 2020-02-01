@@ -66,6 +66,54 @@ proto.emitEvent = function emitEvent(evt, args) {
 
   return this
 }
+
+proto.removeListener = function removeListener(evt, listener) {
+  var listeners = this.getListenersAsObject(evt)
+  var index
+  var key
+
+  for (key in listeners) {
+    if (listeners.hasOwnProperty(key)) {
+      index = indexOfListener(listeners[key], listener)
+
+      if (index !== -1) {
+        listeners[key].splice(index, 1)
+      }
+    }
+  }
+
+  return this
+}
+```
+
+```js
+var Jack = {
+  subscribers: {
+    'any': []
+  },
+  //添加订阅
+  subscribe: function(type = 'any', fn) {
+    if (!this.subscribers[type]) {
+      this.subscribers[type] = []
+    }
+    //将订阅方法保存在数组里
+    this.subscribers[type].push(fn)
+  },
+  //退订
+  unsubscribe: function(type = 'any', fn) {
+    //将退订的方法从数组中移除
+    this.subscribers[type] = this.subscribers[type].filter(function(item) {
+      return item !== fn
+    })
+  },
+  //发布订阅
+  publish: function(type = 'any', ...args) {
+    this.subscribers[type].forEach(function(item) {
+      //根据不同的类型调用相应的方法
+      item(...args)
+    })
+  }
+}
 ```
 
 ## links
