@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-02-03 | [Proxy][50]                               |
 | 2020-02-02 | [Service Worker][49]                      |
 | 2020-02-01 | [EventEmitter][48]                        |
 | 2020-01-31 | [array][47]                               |
@@ -67,6 +68,7 @@
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[50]: https://limichange.github.io/log-log-log/javascript/Proxy.html
 [49]: https://limichange.github.io/log-log-log/javascript/Service%20Worker.html
 [48]: https://limichange.github.io/log-log-log/javascript/EventEmitter.html
 [47]: https://limichange.github.io/log-log-log/javascript/array.html
