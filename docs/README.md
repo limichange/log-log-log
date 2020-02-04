@@ -60,6 +60,10 @@
 | 2020-01-01 | [CSS classic layout][2]                   |
 | 2020-01-01 | [HTTP2][1]                                |
 
+```
+git remote set-url origin --push --add <a remote>
+```
+
 ## TODO
 
 | Date | Title      | #    |
