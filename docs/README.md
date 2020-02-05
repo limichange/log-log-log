@@ -11,7 +11,7 @@
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
 | 2020-02-04 | [路由 history hash][52]                   |
-| 2020-02-04 | [Proxy][51]                               |
+| 2020-02-04 | [electron][51]                            |
 | 2020-02-03 | [Proxy][50]                               |
 | 2020-02-02 | [Service Worker][49]                      |
 | 2020-02-01 | [EventEmitter][48]                        |
@@ -74,6 +74,8 @@ git remote set-url origin --push --add <a remote>
 | #    | [TCP]      | todo |
 | #    | [Lazyload] | todo |
 
+[52]: https://limichange.github.io/log-log-log/javascript/%E8%B7%AF%E7%94%B1%20history%20hash.html
+[51]: https://limichange.github.io/log-log-log/electron/electron.html
 [50]: https://limichange.github.io/log-log-log/javascript/Proxy.html
 [49]: https://limichange.github.io/log-log-log/javascript/Service%20Worker.html
 [48]: https://limichange.github.io/log-log-log/javascript/EventEmitter.html
