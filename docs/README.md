@@ -10,7 +10,9 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
-| 2020-02-04 | [路由 history hash][52]                   |
+| 2020-02-07 | [比较 React 和 Vue][54]                   |
+| 2020-02-06 | [React 性能优化][53]                      |
+| 2020-02-05 | [路由 history hash][52]                   |
 | 2020-02-04 | [electron][51]                            |
 | 2020-02-03 | [Proxy][50]                               |
 | 2020-02-02 | [Service Worker][49]                      |
@@ -66,14 +68,8 @@
 git remote set-url origin --push --add <a remote>
 ```
 
-## TODO
-
-| Date | Title      | #    |
-| ---- | ---------- | ---- |
-| #    | [UDP]      | todo |
-| #    | [TCP]      | todo |
-| #    | [Lazyload] | todo |
-
+[54]: https://limichange.github.io/log-log-log/react/%E6%AF%94%E8%BE%83React%E5%92%8CVue.html
+[53]: https://limichange.github.io/log-log-log/react/React%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html#list
 [52]: https://limichange.github.io/log-log-log/javascript/%E8%B7%AF%E7%94%B1%20history%20hash.html
 [51]: https://limichange.github.io/log-log-log/electron/electron.html
 [50]: https://limichange.github.io/log-log-log/javascript/Proxy.html
