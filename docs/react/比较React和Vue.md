@@ -38,6 +38,9 @@ React 使用 JSX - 一种声明性 JavaScript XML，允许开发人员利用 Jav
 - React 里模板中使用的数据可以直接 import 的组件在 render 中调用
 - Vue 里模板中使用的数据必须要在 this 上进行中转，还要 import 一个组件，还要在 components 中声明
 
+在像 React 和 Vue 这样的基于组件的框架中，当您开始扩展应用程序时，需要更加关注状态管理和数据流。这是因为有许多组件相互交互并共享数据。
+在这种情况下，React 提供了一种称为 Flux / Redux 架构的创新解决方案，它代表单向数据流，是着名 MVC 架构的替代方案。现在，如果我们考虑 Vue.js 框架，就会有一个名为 Vuex 的更高级架构，它集成到 Vue 中并提供无与伦比的体验。
+
 ## links
 
 - [如何比较 React 和 Vue?](https://segmentfault.com/a/1190000021698504#item-5)
