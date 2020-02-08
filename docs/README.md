@@ -69,6 +69,7 @@
 git remote set-url origin --push --add <a remote>
 ```
 
+[55]: https://limichange.github.io/log-log-log/concept/Redis.html
 [54]: https://limichange.github.io/log-log-log/react/%E6%AF%94%E8%BE%83React%E5%92%8CVue.html
 [53]: https://limichange.github.io/log-log-log/react/React%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html#list
 [52]: https://limichange.github.io/log-log-log/javascript/%E8%B7%AF%E7%94%B1%20history%20hash.html
