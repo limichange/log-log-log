@@ -24,6 +24,15 @@ xhr.onreadystatechange = function() {
 xhr.send()
 ```
 
+## Fetch
+
+```js
+fetch('http://domain/service', { method: 'GET' })
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .catch(error => console.error('error:', error))
+```
+
 ## links
 
 - [[译]XMLHttpRequest 和 Fetch, 谁最适合 AJAX？](https://juejin.im/post/5e00770551882512360d6462)
