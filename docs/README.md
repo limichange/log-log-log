@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-02-09 | [XHR 和 fetch][56]                        |
 | 2020-02-08 | [Redis][55]                               |
 | 2020-02-07 | [比较 React 和 Vue][54]                   |
 | 2020-02-06 | [React 性能优化][53]                      |
@@ -69,6 +70,7 @@
 git remote set-url origin --push --add <a remote>
 ```
 
+[56]: https://limichange.github.io/log-log-log/javascript/%20XHR%20%E5%92%8C%20fetch.html
 [55]: https://limichange.github.io/log-log-log/concept/Redis.html
 [54]: https://limichange.github.io/log-log-log/react/%E6%AF%94%E8%BE%83React%E5%92%8CVue.html
 [53]: https://limichange.github.io/log-log-log/react/React%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html#list
