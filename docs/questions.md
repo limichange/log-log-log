@@ -664,7 +664,7 @@
   <!-- - 一道 this 指向题，一道原型链题 -->
   <!-- - React setState -->
 - React componentWillMount 做 setState 会干嘛
-- 性能优化
+  <!-- - 性能优化 -->
 - 懒加载怎么实现的
 - 跨域，问的比较细
 - React 同构
@@ -709,15 +709,15 @@
 - 那你比较下 React 和 Vue？（Vue 双向绑定、React all in js
   diff 找到了差距后，渲染时会做什么优化吗（从 shouldComponentUpdate 开始，扯到了 async rendering、- time slicing
 - 说一下你对前端设计思想的理解？（MV\*、函数式、面向对象/过程
-- 你知道双向绑定有什么缺点吗？（触发改变的方式很多？
+  <!-- - 你知道双向绑定有什么缺点吗？（触发改变的方式很多？ -->
   <!-- - 那你说说 js 引擎 gc 机制（引用计数，标记清除 -->
-- 缓存类、hashMap、Node 多进程）
-  多进程复用有去了解过社区内的解决方式吗（专门的 dataBus 进程、Pandora.js 对象代理、主子进程通信、借助- Redis
+  <!-- - 缓存类、hashMap、Node 多进程）
+  多进程复用有去了解过社区内的解决方式吗（专门的 dataBus 进程、Pandora.js 对象代理、主子进程通信、借助- Redis -->
 - 说一下 Node 直出的优缺点？（展示时间优化、SEO，不知怎么扯扯到了骨架屏
 - 骨架屏的概念&作用？（background、懒加载、回流/重绘
-- 数组随机化？
-- 数组去重？
-- 浏览器发起请求的方法？（XHR、fetch
-- 有了解 XHR 和 fetch 的区别吗？
-- 有了解跨域的一些东西吗？
-- 有了解 Promise 一族吗
+  <!-- - 数组随机化？ -->
+    <!-- - 数组去重？ -->
+    <!-- - 浏览器发起请求的方法？（XHR、fetch -->
+    <!-- - 有了解 XHR 和 fetch 的区别吗？ -->
+      <!-- - 有了解跨域的一些东西吗？ -->
+    <!-- - 有了解 Promise 一族吗 -->
