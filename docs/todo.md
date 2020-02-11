@@ -40,3 +40,5 @@
 - [要去大厂应该把这些面试题搞(bei)懂(hui)](https://segmentfault.com/a/1190000021519901)
 - [记一次大厂的面试过程](https://juejin.im/post/5db556376fb9a0207a6ddce7#heading-33)
 - https://decafbad.com/2009/07/drag-and-drop/api-demos.html
+- [百度、有赞、阿里 前端面试总结](https://youyou-tech.com/2019/12/02/%E7%99%BE%E5%BA%A6%E3%80%81%E6%9C%89%E8%B5%9E%E3%80%81%E9%98%BF%E9%87%8C%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/)
+- [面试分享：2018 阿里巴巴前端面试总结(题目+答案)](https://blog.ihoey.com/posts/Interview/2018-02-28-alibaba-interview.html)
