@@ -22,3 +22,4 @@ function traversal(node) {
 ## links
 
 - [第 2 题：如何遍历一个 dom 树](https://juejin.im/post/5ca9de22e51d452b5372ed90)
+- [Node.nodeType](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)

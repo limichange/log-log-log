@@ -72,6 +72,7 @@
 git remote set-url origin --push --add <a remote>
 ```
 
+[58]: https://limichange.github.io/log-log-log/javascript/%E5%A6%82%E4%BD%95%E9%81%8D%E5%8E%86%E4%B8%80%E4%B8%AAdom%E6%A0%91.html
 [57]: https://limichange.github.io/log-log-log/javascript/%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.html#%E6%87%92%E5%8A%A0%E8%BD%BD
 [56]: https://limichange.github.io/log-log-log/javascript/%20XHR%20%E5%92%8C%20fetch.html
 [55]: https://limichange.github.io/log-log-log/concept/Redis.html
