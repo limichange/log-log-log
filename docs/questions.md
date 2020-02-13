@@ -280,7 +280,7 @@
   <!-- - spa 应用，v-dom，diff 算法，mvvm，组件化开发 -->
   <!-- - eventBus 跟 vuex 的区别 -->
 - 抛开 react 的 diff 算法，怎么实现 dom 对比
-- vue 响应式原理，defineproperty，proxy，对比一下两者
+  <!-- - vue 响应式原理，defineproperty，proxy，对比一下两者 -->
   <!-- - vuex -->
   <!-- - keep-alive -->
   <!-- - 闭包 -->
