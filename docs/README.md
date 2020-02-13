@@ -10,6 +10,8 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-02-13 | [初级算法-字符串][60]                     |
+| 2020-02-12 | [初级算法-数组][59]                       |
 | 2020-02-11 | [如何遍历一个 dom 树][58]                 |
 | 2020-02-10 | [懒加载和预加载][57]                      |
 | 2020-02-09 | [XHR 和 fetch][56]                        |
@@ -68,6 +70,8 @@
 | 2020-01-01 | [CSS classic layout][2]                   |
 | 2020-01-01 | [HTTP2][1]                                |
 
+[60]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy
+[59]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy
 [58]: https://limichange.github.io/log-log-log/javascript/%E5%A6%82%E4%BD%95%E9%81%8D%E5%8E%86%E4%B8%80%E4%B8%AAdom%E6%A0%91.html
 [57]: https://limichange.github.io/log-log-log/javascript/%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.html#%E6%87%92%E5%8A%A0%E8%BD%BD
 [56]: https://limichange.github.io/log-log-log/javascript/%20XHR%20%E5%92%8C%20fetch.html
