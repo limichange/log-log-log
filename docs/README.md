@@ -10,6 +10,7 @@
 
 | Date       | Title                                     |
 | ---------- | ----------------------------------------- |
+| 2020-02-16 | [初级算法 - 数学、设计问题][63]           |
 | 2020-02-15 | [初级算法 - 其他][62]                     |
 | 2020-02-14 | [substr 和 substring 的区别][61]          |
 | 2020-02-13 | [初级算法-字符串][60]                     |
@@ -72,6 +73,7 @@
 | 2020-01-01 | [CSS classic layout][2]                   |
 | 2020-01-01 | [HTTP2][1]                                |
 
+[63]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/
 [62]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/26/others
 [61]: https://limichange.github.io/log-log-log/javascript/substr%E5%92%8Csubstring%E7%9A%84%E5%8C%BA%E5%88%AB.html
 [60]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy
