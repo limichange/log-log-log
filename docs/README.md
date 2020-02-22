@@ -79,7 +79,7 @@
 | 2020-01-01 | [CSS classic layout][2]                                |
 | 2020-01-01 | [HTTP2][1]                                             |
 
-[66]: https://limichange.github.io/log-log-log/CSS/css%20动画.html
+[67]: https://limichange.github.io/log-log-log/CSS/css%20动画.html
 [66]: https://limichange.github.io/log-log-log/nodejs/nodejs%20buffer%20stream%E5%8C%BA%E5%88%AB.html
 [65]: https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/6/linked-list/41/
 [64]: https://limichange.github.io/log-log-log/others/%E7%93%B6%E8%A3%85%E6%B0%B4.html
