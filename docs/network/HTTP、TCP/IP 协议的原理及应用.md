@@ -94,6 +94,12 @@ Uniform Resource Name，统一资源名称，简称 URN，它的用处简单说�
 
 ### TCP 连接
 
+在客户端发送正式的 HTTP 请求之前，需要先创建一个 TCP 连接，在创建的 TCP Connect 通道下，所有的 HTTP 请求和响应才能正常的发送和接受。
+
 ## links
 
-- [HTTP、TCP/IP 协议的原理及应用](https://juejin.im/post/5d75c116f265da03d9255dd1#heading-28)
+- 在 HTTP1.0 中，每一次 HTTP 请求都会创建一个 TCP 连接，在请求发送完成，服务器响应以后，这个 TCP 连接就自动断开了。
+- 在 HTTP1.1 中，可以通过手动设置 Connection： keep-alive 请求头来建立 TCP 的持久连接，多个 HTTP 请求可以共用一个 TCP 连接。但是 TCP 连接存在线头阻塞，即若干个请求排队等待发送，一旦有某请求超时等，后续请求只能被阻塞。
+- 在 HTTP2 中，采用了信道复用，使 TCP 连接支持并发请求，即多个请求可同时在一个连接上并行执行。某个请求任务耗时严重，不会影响到其它连接的正常执行吗，这样一来，大部分请求可以使用一个 TCP 连接，而不用创建新的 TCP 连接通道，既节省了三次握手的开销，又节约了服务端维护 TCP 端口的成本。
+
+* [HTTP、TCP/IP 协议的原理及应用](https://juejin.im/post/5d75c116f265da03d9255dd1#heading-28)
