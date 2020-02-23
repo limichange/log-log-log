@@ -55,6 +55,12 @@
 
 ## URI、URL 和 URN
 
+### URI
+
+- Uniform Resource Identifier，统一资源标识符，简称为 URI。
+- 每个 Web 服务器都有一个 URI 标识符，它在世界范围内唯一标识并定位信息资源，一个资源信息有了 URI 标识以后，在互联网上就能通过一个固定的地址访问到这个资源。
+- 它具有两种形式，URN （统一资源名）、URL（统一资源定位符），也就是说 URL 和 URN 是它的子集。
+
 ## links
 
 - [HTTP、TCP/IP 协议的原理及应用](https://juejin.im/post/5d75c116f265da03d9255dd1#heading-28)
