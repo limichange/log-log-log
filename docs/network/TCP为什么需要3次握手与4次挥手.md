@@ -10,6 +10,8 @@
 
 ## 为什么需要“四次挥手”
 
+那可能有人会有疑问，在 tcp 连接握手时为何 ACK 是和 SYN 一起发送，这里 ACK 却没有和 FIN 一起发送呢。原因是因为 tcp 是全双工模式，接收到 FIN 时意味将没有数据再发来，但是还是可以继续发送数据。
+
 ## links
 
 - [TCP 为什么需要 3 次握手与 4 次挥手](https://blog.csdn.net/xifeijian/article/details/12777187)
