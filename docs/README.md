@@ -15,7 +15,7 @@
 | 2020-02-23 | [slice 与 splice][69]                                  |
 | 2020-02-23 | [GET 与 POST 的区别][69]                               |
 | 2020-02-23 | [a 标签锚点][69]                                       |
-| 2020-02-23 | [HTTP、TCP/IP 协议的原理及应用 - HTTPS UDP TCP][69]    |
+| 2020-02-23 | [HTTP、TCP/IP 协议的原理及应用 - HTTPS UDP TCP][70]    |
 | 2020-02-22 | [HTTP、TCP/IP 协议的原理及应用 - 经典网络五层模型][69] |
 | 2020-02-21 | [浏览器渲染原理][68]                                   |
 | 2020-02-20 | [CSS 动画][67]                                         |
@@ -85,6 +85,7 @@
 | 2020-01-01 | [CSS classic layout][2]                                |
 | 2020-01-01 | [HTTP2][1]                                             |
 
+[70]: https://limichange.github.io/log-log-log/network/HTTP%E3%80%81TCP/IP%20%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8.html
 [69]: https://limichange.github.io/log-log-log/network/HTTP%E3%80%81TCP/IP%20%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8.html
 [68]: https://limichange.github.io/log-log-log/browser/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86.html
 [67]: https://limichange.github.io/log-log-log/CSS/css%20动画.html
