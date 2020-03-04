@@ -154,6 +154,8 @@ A/B 测试方案
 
 埋点
 
+A/B 测试的主要场景有两种：对比实验和灰度发布。
+
 ### links
 
 - [A/B Testing Guide](https://vwo.com/ab-testing/)
