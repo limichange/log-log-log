@@ -24,6 +24,8 @@ A/B 测试的主要场景有两种：对比实验和灰度发布。 -->
 - 行为记录分析模块
 - 效果评估模块
 
+![a](https://github.com/limichange/log-log-log/blob/master/docs/others/images/pic1.png?raw=true)
+
 ## links
 
 - [AB 测试平台的工程实现](https://zhuanlan.zhihu.com/p/79961254)
