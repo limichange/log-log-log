@@ -248,19 +248,19 @@
 - 实现一个 on 和 emit
 - 事件模型，捕获与冒泡，哪些事件没有冒泡，没有冒泡的原因是什么
 - 事件代理，中间一个不需要事件怎么办，代理的元素内部还有元素怎么办
-  <!-- - input 事件传播 -->
-  <!-- - ajax 怎么请求数据的，reayState -->
-  <!-- - 防抖节流 -->
-  <!-- - const -->
-  <!-- - 说一些常用 array 的 api -->
-  <!-- - class interface function 的区别 -->
-  <!-- - 面向对象的三大特性 -->
-  <!-- - addEventLinsener 与普通事件绑定的区别 -->
-  <!-- - stopPropagation 包括捕获吗 -->
-  <!-- - 在原型链上添加一个方法让他每隔两秒就打印一次 name 属 -->
-- 一个数组怎么实现下标每隔 3 倒序输出一次
-  <!-- - Event loop 是什么 -->
-  <!-- - 箭头函数和普通函数区别 -->
+    <!-- - input 事件传播 -->
+    <!-- - ajax 怎么请求数据的，reayState -->
+    <!-- - 防抖节流 -->
+    <!-- - const -->
+    <!-- - 说一些常用 array 的 api -->
+    <!-- - class interface function 的区别 -->
+    <!-- - 面向对象的三大特性 -->
+    <!-- - addEventLinsener 与普通事件绑定的区别 -->
+    <!-- - stopPropagation 包括捕获吗 -->
+    <!-- - 在原型链上添加一个方法让他每隔两秒就打印一次 name 属 -->
+  <!-- - 一个数组怎么实现下标每隔 3 倒序输出一次 -->
+    <!-- - Event loop 是什么 -->
+    <!-- - 箭头函数和普通函数区别 -->
 - 原生 dom,输出每一个 li 里的内容（手写）
 - 用 settimeout 实现一个 setinterval （在实现这个过程中，为什么 settimeout 不会发生栈溢出现象）
 - 解释一下 instanceOf 的原理（手动实现一个 instanceOf）
