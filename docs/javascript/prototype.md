@@ -38,6 +38,15 @@ o.someProp
 
 它检查 o 是否具有 someProp 属性。如果没有，它会查找 Object.getPrototypeOf(o).someProp，如果仍旧没有，它会继续查找 Object.getPrototypeOf(Object.getPrototypeOf(o)).someProp。
 
+```js
+function newObj(C) {
+  let newO = Object.create()
+  newO.__proto__ = C.prototype
+  C.call(newO)
+  return newO
+}
+```
+
 ## links
 
 - [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
