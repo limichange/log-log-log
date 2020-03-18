@@ -11,6 +11,24 @@ const themes = {
     background: 'white'
   }
 }
+
+const ThemeContext = React.createContext(themes.light)
+
+function App() {
+  return (
+    <ThemeContext.Provider value>
+      <Toolbar />
+    </ThemeContext.Provider>
+  )
+}
+
+function Toolbar(props) {
+  return (
+    <div>
+      <ThemedButton />
+    </div>
+  )
+}
 ```
 
 ## links
