@@ -23,8 +23,8 @@ https://limichange.github.io/log-log-log/
 | 2020-03-10 | [webpack 原理和机制][86]                               |
 | 2020-03-09 | [http 网络劫持与 DNS 劫持原理及预防][86]               |
 | 2020-03-08 | [React 生命周期][86]                                   |
-| 2020-03-07 | [ES7、ES8、ES9、ES10 新特性][86]                       |
-| 2020-03-06 | [for of 的原理解析][86]                                |
+| 2020-03-07 | [ES7、ES8、ES9、ES10 新特性][88]                       |
+| 2020-03-06 | [for of 的原理解析][87]                                |
 | 2020-03-05 | [Flex][86]                                             |
 | 2020-03-04 | [瀑布流][85]                                           |
 | 2020-03-03 | [Taro][84]                                             |
@@ -111,6 +111,8 @@ https://limichange.github.io/log-log-log/
 | 2020-01-01 | [CSS classic layout][2]                                |
 | 2020-01-01 | [HTTP2][1]                                             |
 
+[88]: https://limichange.github.io/log-log-log/javascript/ES7%E3%80%81ES8%E3%80%81ES9%E3%80%81ES10%E6%96%B0%E7%89%B9%E6%80%A7.html#es8
+[87]: https://limichange.github.io/log-log-log/javascript/for%20of%20%E7%9A%84%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%95%E5%85%A5-iterator
 [86]: https://limichange.github.io/log-log-log/css/flex.html
 [85]: https://limichange.github.io/log-log-log/css/%E7%80%91%E5%B8%83%E6%B5%81.html
 [84]: https://limichange.github.io/log-log-log/others/Taro.html
