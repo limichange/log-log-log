@@ -1,32 +1,30 @@
 # useContext
 
 ```js
-const themes = {
-  light: {
-    foreground: '#000000',
-    background: '#222222'
-  },
-  dark: {
-    foreground: 'red',
-    background: 'white'
-  }
+import React, { useContext } from 'react'
+import './styles.css'
+
+let theme = {
+  background: '#222'
 }
 
-const ThemeContext = React.createContext(themes.light)
+const themeContext = React.createContext(theme.background)
 
-function App() {
-  return (
-    <ThemeContext.Provider value>
-      <Toolbar />
-    </ThemeContext.Provider>
-  )
+function Tool() {
+  const theme = useContext(themeContext)
+
+  return <div>{theme.background}</div>
 }
 
-function Toolbar(props) {
+export default function App() {
   return (
-    <div>
-      <ThemedButton />
-    </div>
+    <themeContext.Provider value={theme}>
+      <div className='App'>
+        <h1>Hello CodeSandbox</h1>
+        <h2>Start editing to see some magic happen!</h2>
+        <Tool />
+      </div>
+    </themeContext.Provider>
   )
 }
 ```
