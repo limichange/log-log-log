@@ -15,3 +15,4 @@ Client entry 的功能很简单，就是挂载我们的 Vue 实例到指定的 d
 
 - [Vue SSR 构建流程](https://juejin.im/post/5b063962f265da0ddb63dac3)
 - [React 中同构（SSR）原理脉络梳理](https://juejin.im/post/5bc7ea48e51d450e46289eab)
+- [客户端激活 (client-side hydration)](https://ssr.vuejs.org/zh/guide/hydration.html)
