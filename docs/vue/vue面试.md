@@ -21,8 +21,6 @@ Mutation：是唯一更改 store 中状态的方法，且必须是同步函数�
 Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。
 Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。
 
-##
-
 ## links
 
 - [30 道 Vue 面试题，内含详细讲解（涵盖入门到精通，自测 Vue 掌握程度）](https://juejin.im/post/5d59f2a451882549be53b170#heading-25)
