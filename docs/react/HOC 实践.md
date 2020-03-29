@@ -28,6 +28,26 @@ class B extends Component {
 
 继承反转的核心是：传入 HOC 的组件会作为返回类的父类来使用。然后在 render 中调用 super.render() 来调用父类的 render 方法。
 
+```js
+function iiHOC(WrappedComponent) {
+  return class extends WrappedComponent {
+    render() {
+      const parentRender = super.render()
+      if (parentRender.nodeName === 'span') {
+        return <span>继承反转</span>
+      }
+    }
+  }
+}
+
+@iiHOC
+class B extends Component {
+  render() {
+    return <span>Inheritance Inversion</span>
+  }
+}
+```
+
 ## links
 
 - [HOC 实践](https://juejin.im/post/5b837692f265da434015865a#heading-4)
