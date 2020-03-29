@@ -12,4 +12,4 @@ ViewModel - 扮演“View”和“Model”之间的使者，帮忙处理 View �
 
 ## links
 
-- [MVVM 模式介绍](https://github.com/xitu/gold-miner/blob/master/TODO%2Fapproaching-android-with-mvvm.md)
+- [MVVM 模式介绍](https://github.com/xitu/gold-miner/blob/master/TODO%2Fapproaching-android-with-mvvm.md) -[]()
