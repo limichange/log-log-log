@@ -56,6 +56,22 @@
 
 经过上面两个阶段，需要转译的代码已经经过转换，生成新的 AST 了，最后一个阶段理所应当就是根据这个 AST 来输出代码。
 
+## @babel/preset-stage-xxx
+
+@babel/preset-stage-xxx 是 ES 在不同阶段语法提案的转码规则而产生的预设，随着被批准为 ES 新版本的组成部分而进行相应的改变（例如 ES6/ES2015）。
+
+提案分为以下几个阶段：
+
+stage-0 - 设想（Strawman）：只是一个想法，可能有 Babel 插件，stage-0 的功能范围最广大，包含 stage-1 , stage-2 以及 stage-3 的所有功能
+stage-1 - 建议（Proposal）：这是值得跟进的
+stage-2 - 草案（Draft）：初始规范
+stage-3 - 候选（Candidate）：完成规范并在浏览器上初步实现
+stage-4 - 完成（Finished）：将添加到下一个年度版本发布中
+
+## useBuiltIns
+
+回过头来再说 @babel/preset-env，他出现的目的就是实现民族大统一，连 stage-x 都干掉了，又怎么会漏掉 Polyfill 这一功能，在 @babel/preset-env 的配置项中提供了 useBuiltIns 这一参数，只要在使用 @babel/preset-env 的时候带上他，Babel 在编译的时候就会自动进行 Polyfill ，不再需要手动的在代码中引入@babel/polyfill 了，同时还能做到按需加载
+
 ## links
 
 - [初学 Babel 工作原理](https://juejin.im/post/5d11d797f265da1bd305676b)
