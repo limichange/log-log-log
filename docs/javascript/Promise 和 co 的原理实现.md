@@ -8,6 +8,42 @@ JavaScript 中有两种异步宏任务 macro-task 和微任务 micro-task
 
 将通过 yield 返回的对象的 value 保持为一个 Promise 对象，执行之，即可拿到程序的执行权。然后通过 Promise.then 和 Promise.reject 方法中调用 generator 的 next 方法，可以交还程序执行权。如此达到自动执行 generator 函数的效果。
 
+await 会把后面的 promise 放到 microtask queue 中，所以当 await 和 setTimeout 放到一起时，会先执行 await 的部分，再执行 setTimeout 的部分（setTimeout 会进入 macrotask，优先级低于 microtask）。比如：
+
+```js
+function spawn(genF) {
+  return new Promise(function(resolve, reject) {
+    const gen = genF()
+    function step(nextF) {
+      let next
+      try {
+        next = nextF()
+      } catch (e) {
+        return reject(e)
+      }
+      if (next.done) {
+        return resolve(next.value)
+      }
+      Promise.resolve(next.value).then(
+        function(v) {
+          step(function() {
+            return gen.next(v)
+          })
+        },
+        function(e) {
+          step(function() {
+            return gen.throw(e)
+          })
+        }
+      )
+    }
+    step(function() {
+      return gen.next(undefined)
+    })
+  })
+}
+```
+
 ## links
 
 - [Promise 和 co 的原理实现](https://segmentfault.com/a/1190000010159031#item-2-1)
