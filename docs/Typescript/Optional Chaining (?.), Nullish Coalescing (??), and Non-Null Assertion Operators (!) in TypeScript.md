@@ -2,10 +2,24 @@
 
 ## Optional Chaining Operator
 
+```js
+const cat = response.data?.animals?.cat
+```
+
 ## Nullish Coalescing Operator
 
 ```js
 const cat = response.data?.animals?.cat ?? 'No cat could be found.'
+```
+
+## Non-Null Assertion Operator
+
+```js
+const addNumbers = (a: number | undefined, b: number) => {
+  const c: number = a!;// no error
+  const d: number = b;
+  return c + d;
+}
 ```
 
 ## links
