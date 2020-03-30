@@ -6,6 +6,7 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                  |
 | ---------- | ------------------------------------------------------ |
+| 2020-03-30 | [Announcing TypeScript 3.9 Beta][86]                   |
 | 2020-03-29 | [requestAnimationFrame][86]                            |
 | 2020-03-29 | [HOC 实践][86]                                         |
 | 2020-03-29 | [Promise 和 co 的原理实现][86]                         |
