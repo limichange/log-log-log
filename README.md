@@ -6,6 +6,7 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-03-31 | [浏览器主线程常驻线程][86]                                                                  |
 | 2020-03-30 | [Optional Chaining (?.), Nullish Coalescing (??), and Non-Null Assertion Operators (!)][86] |
 | 2020-03-30 | [Announcing TypeScript 3.9 Beta][86]                                                        |
 | 2020-03-29 | [requestAnimationFrame][86]                                                                 |

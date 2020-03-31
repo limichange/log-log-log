@@ -4,6 +4,8 @@
 
 requestAnimationFrame 的基本思想让页面重绘的频率与这个刷新频率保持同步
 
+The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
+
 ## links
 
 - [你知道的 requestAnimationFrame【从 0 到 0.1】](https://juejin.im/post/5c3ca3d76fb9a049a979f429)
