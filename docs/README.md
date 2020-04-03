@@ -6,7 +6,11 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
-| 2020-04-01 | [一个 tcp 连接能发几个 http 请求？][86]                                                     |
+| 2020-04-03 | [V8 引擎的内存管理][86]                                                                     |
+| 2020-04-03 | [TDZ][86]                                                                                   |
+| 2020-04-03 | [JavaScript 与 ECMAScript 的区别][86]                                                       |
+| 2020-04-02 | [JSON.stringify][86]                                                                        |
+| 2020-04-01 | [UUID][86]                                                                                  |
 | 2020-04-01 | [一个 tcp 连接能发几个 http 请求？][86]                                                     |
 | 2020-03-31 | [浏览器主线程常驻线程][86]                                                                  |
 | 2020-03-30 | [Optional Chaining (?.), Nullish Coalescing (??), and Non-Null Assertion Operators (!)][86] |
