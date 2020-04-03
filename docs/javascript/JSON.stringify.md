@@ -1,7 +1,7 @@
 # JSON.stringify
 
 ```js
-console.log(JSON.stringify(product,['name' ]);
+console.log(JSON.stringify(product,['name']);
 
 // 结果
 {"name" : "Cake"}
