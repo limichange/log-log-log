@@ -1,5 +1,11 @@
 # redux 原理
 
+- 1.将应用的状态统一放到 state 中，由 store 来管理 state。
+- 2.reducer 的作用是返回一个新的 state 去更新 store 中对用的 state。
+- 3.按 redux 的原则,UI 层每一次状态的改变都应通过 action 去触发，action 传入对应的 reducer 中，reducer 返回一个新的 state 更新 store 中存放的 state，这样就完成了一次状态的更新
+- 4.subscribe 是为 store 订阅监听函数，这些订阅后的监听函数是在每一次 dipatch 发起后依次执行
+- 5.可以添加中间件对提交的 dispatch 进行重写
+
 ## 实现
 
 ```js
@@ -40,7 +46,7 @@ export const createStore = () => {
       case 'plus':
         currentState = {
           ...state,
-          count: currentState.count + 1
+          count: currentState.count + 1,
         }
     }
   }
@@ -53,7 +59,7 @@ export const createStore = () => {
 
 ```js
 import { reducer } from './reducer'
-export const createStore = reducer => {
+export const createStore = (reducer) => {
   let currentState = {}
   function getState() {
     return currentState
@@ -76,7 +82,7 @@ console.log(store.getState()) //获取state
 
 ```js
 import { reducer } from './reducer'
-export const createStore = reducer => {
+export const createStore = (reducer) => {
   let currentState = {}
   function getState() {
     return currentState
@@ -98,7 +104,7 @@ console.log(store.getState()) //获取state
 
 ```js
 import { reducer } from './reducer'
-export const createStore = reducer => {
+export const createStore = (reducer) => {
   let currentState = {}
   let observers = [] //观察者队列
   function getState() {
@@ -106,7 +112,7 @@ export const createStore = reducer => {
   }
   function dispatch(action) {
     currentState = reducer(currentState, action)
-    observers.forEach(fn => fn())
+    observers.forEach((fn) => fn())
   }
   function subscribe(fn) {
     observers.push(fn)
@@ -118,7 +124,7 @@ export const createStore = reducer => {
 
 ```js
 import { reducer } from './reducer'
-export const createStore = reducer => {
+export const createStore = (reducer) => {
   let currentState = {}
   let observers = [] //观察者队列
   function getState() {
@@ -126,7 +132,7 @@ export const createStore = reducer => {
   }
   function dispatch(action) {
     currentState = reducer(currentState, action)
-    observers.forEach(fn => fn())
+    observers.forEach((fn) => fn())
   }
   function subscribe(fn) {
     observers.push(fn)
