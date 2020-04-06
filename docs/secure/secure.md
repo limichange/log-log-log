@@ -79,6 +79,18 @@ CSRF 主要是冒用受害者登录凭证发起恶意的增删改并不会窃取
 服务端通过 Referer Header 和 Origin Header 来进行同源验证
 利用 token 来鉴别，三方跨站请求并不能获取到头部的 token，本站的接口在请求前都会在请求头增加 token 用于身份鉴权，三方请求并不会携带 token
 
+## 防御 XSS 攻击
+
+HttpOnly 防止劫取 Cookie
+用户的输入检查
+服务端的输出检查
+
+## 防御 CSRF 攻击
+
+验证码
+Referer Check
+Token 验证
+
 ## links
 
 - [大前端网络安全精简指南手册 【推荐收藏】](https://mp.weixin.qq.com/s/-zKukqJEtLRfYpMELaeDmQ)
