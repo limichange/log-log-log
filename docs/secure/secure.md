@@ -51,6 +51,34 @@ HTTP-only Cookie: 禁止 JavaScript 读取某些敏感 Cookie，攻击者完成 
 
 验证码：防止脚本冒充用户提交危险操作。
 
+## CSRF 攻击
+
+CSRF（Cross-site request forgery）跨站请求伪造：攻击者诱导受害者进入第三方网站，在第三方网站中，向被攻击网站发送跨站请求。利用受害者在被攻击网站已经获取的注册凭证，绕过后台的用户验证，达到冒充用户对被攻击的网站执行某项操作的目的。
+
+### 1.1 主动型攻击
+
+受害者访问 a.com 并在自己浏览器留下 a.com 的登录态
+
+攻击者诱导受害者访问三方网站 b.com
+
+三方网站 b.com 植有访问 a.com 接口的恶意代码（删除/增加/修改等）
+
+受害者点击 b.com 时候，b.com 带着 a.com 的登陆凭证冒充受害用户执行对 a.com 的恶意操作
+
+### 1.2 被动型攻击
+
+攻击者在 a.com 发布带有恶意链接的帖子或者评论（提交对 a.com 带有增删改的诱导型 img/form/a 标签）
+
+当其他拥有登录态的受害者点击该评论的恶意链接冒用受害者登录凭证发起攻击
+
+CSRF 主要是冒用受害者登录凭证发起恶意的增删改并不会窃取受害者隐私信息
+
+### 如何预防 CSRF 攻击
+
+禁止三方网站获取 cookie,比如设置 Chrome 的 SameSite 属性
+
+服务端通过 Referer Header 和 Origin Header 来进行同源验证
+
 ## links
 
 - [大前端网络安全精简指南手册 【推荐收藏】](https://mp.weixin.qq.com/s/-zKukqJEtLRfYpMELaeDmQ)
