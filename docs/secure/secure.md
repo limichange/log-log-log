@@ -27,6 +27,9 @@ Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种代码注入�
 用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。
 恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网站接口执行攻击者指定的操作。
 
+DOM 型 XSS 跟前两种 XSS 的区别：DOM 型 XSS 攻击中，取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
+
 ## links
 
 - [大前端网络安全精简指南手册 【推荐收藏】](https://mp.weixin.qq.com/s/-zKukqJEtLRfYpMELaeDmQ)
+- [前端安全系列（一）：如何防止 XSS 攻击？](https://www.infoq.cn/article/3mZzJIjrhqdhBkScjjq9)
