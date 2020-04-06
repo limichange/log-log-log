@@ -30,3 +30,22 @@ function Counter() {
 ## links
 
 - [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
+
+```js
+const initState = { num: 0 }
+
+const reducers = (state, action) => {
+  switch (action.type) {
+    case 'add':
+      return {
+        num: state.num + 1,
+      }
+  }
+}
+
+export default function () {
+  const [state, dispatch] = useReducer(reducers, initState)
+
+  return <Button onClick={() => dispatch({ type: 'add' })}>add</Button>
+}
+```
