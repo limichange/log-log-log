@@ -76,8 +76,8 @@ CSRF 主要是冒用受害者登录凭证发起恶意的增删改并不会窃取
 ### 如何预防 CSRF 攻击
 
 禁止三方网站获取 cookie,比如设置 Chrome 的 SameSite 属性
-
 服务端通过 Referer Header 和 Origin Header 来进行同源验证
+利用 token 来鉴别，三方跨站请求并不能获取到头部的 token，本站的接口在请求前都会在请求头增加 token 用于身份鉴权，三方请求并不会携带 token
 
 ## links
 
