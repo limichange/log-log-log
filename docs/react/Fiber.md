@@ -44,6 +44,14 @@ React Fiber 也被称为虚拟栈帧(Virtual Stack Frame)
   - `componentDidUpdate`
   - `componentWillUnmount`
 
+浏览器在一帧内可能会做执行下列任务，而且它们的执行顺序基本是固定的:
+
+- 处理用户输入事件
+- Javascript 执行
+- requestAnimation 调用
+- 布局 Layout
+- 绘制 Paint
+
 ## links
 
 - [React Fiber](https://juejin.im/post/5ab7b3a2f265da2378403e57)
