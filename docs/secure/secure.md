@@ -29,6 +29,28 @@ Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种代码注入�
 
 DOM 型 XSS 跟前两种 XSS 的区别：DOM 型 XSS 攻击中，取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
 
+### 如何防范 xss 攻击
+
+客户端对用户输入的内容进行安全符转义，服务端对上交内容进行安全转义
+
+服务端渲染开启模板引擎自带的 HTML 转义功能。
+
+避免内联事件，尽量不要使用 onLoad="onload('{{data}}')"、onClick="go('{{action}}')" 这种拼接内联事件的写法。在 JavaScript 中通过 .addEventlistener() 事件绑定会更安全。
+
+避免拼接 HTML，前端采用拼接 HTML 的方法比较危险，如果框架允许，使用 createElement、setAttribute 之类的方法实现。或者采用比较成熟的渲染框架，如 Vue/React 等。
+
+时刻保持警惕在插入位置为 DOM 属性、链接等位置时，要打起精神，严加防范。
+
+通过 CSP、输入长度配置、接口安全措施等方法，增加攻击的难度，降低攻击的后果。
+
+主动检测和发现，可使用 XSS 攻击字符串和自动扫描工具寻找潜在的 XSS 漏洞。
+
+尽量避免三方跨域提交内容到服务端
+
+HTTP-only Cookie: 禁止 JavaScript 读取某些敏感 Cookie，攻击者完成 XSS 注入后也无法窃取此 Cookie。
+
+验证码：防止脚本冒充用户提交危险操作。
+
 ## links
 
 - [大前端网络安全精简指南手册 【推荐收藏】](https://mp.weixin.qq.com/s/-zKukqJEtLRfYpMELaeDmQ)
