@@ -8,6 +8,15 @@
 
 模版代码少：相对于 Redux 的各种模版代码，如，actionCreater，reducer，saga／thunk 等，Mobx 则不需要编写这类模板代码；
 
+函数式和面向对象
+
+Mobx 设计更多偏向于面向对象编程（OOP）和响应式编程（Reactive Programming），通常将状态包装成可观察对象，于是我们就可以使用可观察对象的所有能力，一旦状态对象变更，就能自动获得更新。
+
+store 是应用管理数据的地方，在 Redux 应用中，我们总是将所有共享的应用数据集中在一个大的 store 中，而 Mobx 则通常按模块将应用状态划分，在多个独立的 store 中管理。
+
+Redux 需要手动追踪所有状态对象的变更；
+Mobx 中可以监听可观察对象，当其变更时将自动触发监听；
+
 ## links
 
 - [你需要 Mobx 还是 Redux？](https://juejin.im/post/5a7fd72c5188257a766324ae#heading-10)
