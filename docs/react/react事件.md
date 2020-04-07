@@ -41,3 +41,15 @@ React 事件和原生事件最好不要混用。原生事件中如果执行了 s
 ## link
 
 - https://mp.weixin.qq.com/s/vJOAiiP0PSMOgPStZw-rQA
+
+```js
+// compose([fn1,fn2,fn3..]) 转成 fn3(fn2(fn1()))
+
+function compose(funcArray) {
+  let funcResult = null
+
+  for (let i = 0; i < funcArray.length; i++) {
+    funcResult = funcArray[i](funcResult)
+  }
+}
+```
