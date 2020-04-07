@@ -17,7 +17,7 @@ new Promise((resolve, reject) => {
 const status = {
   pending: Symbol('pending'),
   resolved: Symbol('resolved'),
-  rejected: Symbol('rejected')
+  rejected: Symbol('rejected'),
 }
 
 function Promise(fn) {
@@ -59,24 +59,24 @@ function Promise(fn) {
   }
 }
 
-Promise.prototype.then = function(onfulfilled, onRejected) {
+Promise.prototype.then = function (onfulfilled, onRejected) {
   const self = this
 
   onResolved =
     typeof onResolved === 'function'
       ? onResolved
-      : function(v) {
+      : function (v) {
           return v
         }
   onRejected =
     typeof onRejected === 'function'
       ? onRejected
-      : function(r) {
+      : function (r) {
           return r
         }
 
   if (self.status === status.resolved) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {
       try {
         var x = onfulfilled(self.data)
 
@@ -91,7 +91,7 @@ Promise.prototype.then = function(onfulfilled, onRejected) {
     })
   }
   if (self.status === status.rejected) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {
       try {
         var x = onRejected(self.data)
         if (x instanceof Promise) {
@@ -103,7 +103,7 @@ Promise.prototype.then = function(onfulfilled, onRejected) {
     })
   }
   if (self.status === status.pending) {
-    self.onResolvedCallback.push(function(value) {
+    self.onResolvedCallback.push(function (value) {
       try {
         var x = onResolved(self.data)
         if (x instanceof Promise) {
@@ -116,7 +116,7 @@ Promise.prototype.then = function(onfulfilled, onRejected) {
       }
     })
 
-    self.onRejectedCallback.push(function(reason) {
+    self.onRejectedCallback.push(function (reason) {
       try {
         var x = onRejected(self.data)
         if (x instanceof Promise) {
@@ -131,7 +131,7 @@ Promise.prototype.then = function(onfulfilled, onRejected) {
   }
 }
 
-Promise.prototype.catch = function(onRejected) {
+Promise.prototype.catch = function (onRejected) {
   return this.then(null, onRejected)
 }
 ```
@@ -139,7 +139,7 @@ Promise.prototype.catch = function(onRejected) {
 ## Promise.all
 
 ```js
-Promise.all = function(iterators) {
+Promise.all = function (iterators) {
   const promises = Array.from(iterators)
   const resolvedList = new Array(num)
   let resolvedNum = 0
@@ -147,7 +147,7 @@ Promise.all = function(iterators) {
   return new Promise((resolve, reject) => {
     promises.forEach((promise, index) => {
       Promise.resolve(promise)
-        .then(value => {
+        .then((value) => {
           resolvedList[index] = value
 
           if (++resolvedNum === promises.length) {
@@ -163,14 +163,12 @@ Promise.all = function(iterators) {
 ## Promise.race
 
 ```js
-Promise.race = function(iterators) {
+Promise.race = function (iterators) {
   const promises = Array.from(iterators)
 
   return new Promise((resolve, reject) => {
     promises.forEach((promise, index) => {
-      Promise.resolve(promise)
-        .then(resolve)
-        .catch(reject)
+      Promise.resolve(promise).then(resolve).catch(reject)
     })
   })
 }
@@ -179,7 +177,7 @@ Promise.race = function(iterators) {
 ## Promise.any
 
 ```js
-Promise.any = function(iterators) {
+Promise.any = function (iterators) {
   const promises = Array.from(iterators)
   const rejectedList = new Array(num)
   let rejectedNum = 0
@@ -188,7 +186,7 @@ Promise.any = function(iterators) {
     promsies.forEach((promise, index) => {
       Promise.resolve(promise)
         .then(resolve)
-        .catch(error => {
+        .catch((error) => {
           rejectedList[index] = error
 
           if (++rejectedNum === promises.length) {
@@ -209,7 +207,7 @@ const fotmatSettledResult = (success, value) => {
     : { status: 'rejected', reason: value }
 }
 
-Promise.allSettled = function(iterators) {
+Promise.allSettled = function (iterators) {
   const promises = Array.from(iterators)
   const num = promises.length
   const settledList = new Array(num)
@@ -218,13 +216,13 @@ Promise.allSettled = function(iterators) {
   return new Promise((resolve, reject) => {
     promises.forEach((promise, index) => {
       Promise.resolve(promise)
-        .then(value => {
+        .then((value) => {
           settledList[index] = fotmatSettledResult(true, value)
           if (++settledNum === num) {
             resolve(settledList)
           }
         })
-        .catch(e => {
+        .catch((e) => {
           settledList[index] = fotmatSettledResult(false, value)
           if (++settledNum === num) {
             resolve(settledList)
