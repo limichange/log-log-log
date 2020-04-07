@@ -17,6 +17,8 @@
 - Content-Type：
 - application/x-www-form-urlencoded、 multipart/form-data、text/plain
 
+CORS 接收到此次请求后 ， 首先会判断 Origin 是否在允许源（由服务端决定）范围之内，如果验证通过，服务端会在 Response Header 添加 Access-Control-Allow-Origin、Access-Control-Allow-Credentials 等字段。
+
 ## links
 
 - [跨域——CORS 详解](https://zhuanlan.zhihu.com/p/24411090)
