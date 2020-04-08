@@ -21,13 +21,13 @@ function getName() {
 }
 
 //请写出以下输出结果：
-Foo.getName()
-getName()
-Foo().getName()
-getName()
-new Foo.getName()
-new Foo().getName()
-new new Foo().getName()
+Foo.getName() //2
+getName() //4
+Foo().getName() //window
+getName() //1
+new Foo.getName() //
+new Foo().getName() //
+new new Foo().getName() //3
 ```
 
 ## links
