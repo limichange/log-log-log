@@ -7,13 +7,13 @@
 所有会进入的异步都是指的事件回调中的那部分代码.
 
 ```js
-setTimeout(_ => console.log(4)) // 宏任务
+setTimeout((_) => console.log(4)) // 宏任务
 
-new Promise(resolve => {
+new Promise((resolve) => {
   // 同步
   resolve()
   console.log(1)
-}).then(_ => {
+}).then((_) => {
   console.log(3) // 微任务
 })
 
@@ -46,6 +46,9 @@ requestAnimationFrame 姑且也算是宏任务吧，requestAnimationFrame 在 MD
 在官方文档中的定义，setImmediate 为一次 Event Loop 执行完毕后调用。
 setTimeout 则是通过计算一个延迟时间后进行执行。
 
+node 和 浏览器 eventLoop 的主要区别
+两者最主要的区别在于浏览器中的微任务是在每个相应的宏任务中执行的，而 nodejs 中的微任务是在不同阶段之间执行的。
+
 ### 微任务
 
 | #                          | 浏览器 | Node |
@@ -64,7 +67,7 @@ setTimeout 则是通过计算一个延迟时间后进行执行。
 因为，async/await 本质上还是基于 Promise 的一些封装，而 Promise 是属于微任务的一种。所以在使用 await 关键字与 Promise.then 效果类似：
 
 ```js
-setTimeout(_ => console.log(4))
+setTimeout((_) => console.log(4))
 
 async function main() {
   console.log(1)
