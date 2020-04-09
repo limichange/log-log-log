@@ -24,6 +24,8 @@ GET 参数通过 URL 传递，POST 放在 Request body 中。
 
 3. 并不是所有浏览器都会在 POST 中发送两次包，Firefox 就只发送一次。
 
+GET 和 POST 的根本区别在于：GET 请求是幂等性的，而 POST 请求不是
+
 ## links
 
 - [99%的人都理解错了 HTTP 中 GET 与 POST 的区别](https://learnku.com/articles/25881)
