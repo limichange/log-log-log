@@ -6,6 +6,7 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-04-10 | [rename git branch][86]                                                                     |
 | 2020-04-09 | [NoEmitOnErrorsPlugin][86]                                                                  |
 | 2020-04-08 | [一道经典的 JavaScript 面试题][86]                                                          |
 | 2020-04-07 | [redux 和 mobx 的差异][86]                                                                  |
