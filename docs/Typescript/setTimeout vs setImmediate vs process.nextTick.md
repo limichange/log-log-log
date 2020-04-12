@@ -9,16 +9,15 @@ let racer = function () {
 }
 
 racer()
+
+// current event loop
+// nextTick
+// timeout
+// immediate
 ```
+
+We can see from the output that these callbacks aren't executed in the same order they were written in the source code.
 
 ## links
 
 - https://dev.to/logicmason/settimeout-vs-setimmediate-vs-process-nexttick-3lj2
-
-```js
-function executeQueue(...args) {
-  for (let item of args) {
-    item()
-  }
-}
-```
