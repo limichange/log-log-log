@@ -6,6 +6,7 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-04-12 | [IIFE][86]                                                                                  |
 | 2020-04-11 | [ResizeObserver][86]                                                                        |
 | 2020-04-10 | [typescript - Abstract Classes][86]                                                         |
 | 2020-04-10 | [rename git branch][86]                                                                     |
