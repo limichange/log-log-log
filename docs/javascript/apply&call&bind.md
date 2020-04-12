@@ -57,7 +57,7 @@ fn.apply(obj, [arg1, arg2, arg3...]);
 ## 模拟实现
 
 ```js
-Function.prototype.apply = function(context, arr) {
+Function.prototype.apply = function (context, arr) {
   var context = Object(context) || window
   context.fn = this
 
@@ -78,7 +78,7 @@ Function.prototype.apply = function(context, arr) {
 ```
 
 ```js
-Function.prototype.call2 = function(context) {
+Function.prototype.call2 = function (context) {
   var context = context || window
   context.fn = this
 
@@ -95,7 +95,13 @@ Function.prototype.call2 = function(context) {
 ```
 
 ```js
-Function.prototype.bind2 = function(context) {
+Function.prototype.call = function (context, ...args) {
+  this.apply(context, args)
+}
+```
+
+```js
+Function.prototype.bind2 = function (context) {
   if (typeof this !== 'function') {
     throw new Error(
       'Function.prototype.bind - what is trying to be bound is not callable'
@@ -104,9 +110,9 @@ Function.prototype.bind2 = function(context) {
 
   var self = this
   var args = Array.prototype.slice.call(arguments, 1)
-  var fNOP = function() {}
+  var fNOP = function () {}
 
-  var fbound = function() {
+  var fbound = function () {
     self.apply(
       this instanceof self ? this : context,
       args.concat(Array.prototype.slice.call(arguments))
