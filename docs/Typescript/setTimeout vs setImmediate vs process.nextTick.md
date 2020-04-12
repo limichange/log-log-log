@@ -14,3 +14,11 @@ racer()
 ## links
 
 - https://dev.to/logicmason/settimeout-vs-setimmediate-vs-process-nexttick-3lj2
+
+```js
+function executeQueue(...args) {
+  for (let item of args) {
+    item()
+  }
+}
+```
