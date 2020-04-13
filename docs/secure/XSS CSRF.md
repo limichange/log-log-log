@@ -49,3 +49,4 @@ CSRF，即 Cross Site Request Forgery，中译是跨站请求伪造，是一种�
 ## links
 
 - [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
+- [Web 安全总结(面试必备良药)](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649825865&idx=1&sn=a049c26b3f81d8657a6066b8e11a7f05&chksm=f175e88ac602619cd82cca9716d7054007470ac77ba1a2d5b23d667cd0e7af73ebeba62ce835&scene=21#wechat_redirect)
