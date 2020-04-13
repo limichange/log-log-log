@@ -6,6 +6,7 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-04-13 | [0.1 + 0.2 与 0.3][86]                                                                      |
 | 2020-04-12 | [setTimeout vs setImmediate vs process.nextTick][86]                                        |
 | 2020-04-12 | [Read-Only Array and Tuple Types in TypeScript][86]                                         |
 | 2020-04-12 | [IIFE][86]                                                                                  |
