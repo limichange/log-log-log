@@ -126,6 +126,14 @@ Function.prototype.bind2 = function (context) {
 }
 ```
 
+```js
+Function.prototype.bind2 = function (context) {
+  var target = this
+
+  if (!c)
+}
+```
+
 ## links
 
 - [this、apply、call、bind](https://juejin.im/post/59bfe84351882531b730bac2)
