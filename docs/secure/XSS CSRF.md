@@ -42,6 +42,10 @@ CSRF，即 Cross Site Request Forgery，中译是跨站请求伪造，是一种�
 - Referer Check
 - 添加 token 验证
 
+### window.opener
+
+一般来说，打开同源(域名相同)的页面，不会有什么问题。但对于跨域的外部链接来说，存在一个被钓鱼的风险。比如你正在浏览购物网站，从当前网页打开了某个外部链接，在打开的外部页面，可以通过 window.opener.location 改写来源站点的地址。利用这一点，将来源站点改写到钓鱼站点页面上，例如跳转到伪造的高仿购物页面，当再回到购物页面的时候，是很难发现购物网站的地址已经被修改了的，这个时候你的账号就存在被钓鱼的可能了。
+
 ## links
 
 - [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
