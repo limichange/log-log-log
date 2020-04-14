@@ -10,6 +10,8 @@ HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是�
 - HTTPS 的连接很简单，是无状态的
 - HTTPS 协议是由 SSL+HTTP 协议构建的可进行加密传输、身份认证的网络协议，比 HTTP 协议安全
 
+TLS/SSL = 非对称加密 + 对称加密 + 散列算法
+
 ## 为什么要使用 HTTPS
 
 - 建立一个信息安全通道，来保证数据传输的安全
