@@ -8,3 +8,4 @@ React Hook 看起来非常 Magic 的实现，本质上还是通过 Array 来实�
 ## links
 
 - [一文彻底搞懂 react hooks 的原理和实现](https://juejin.im/post/5daee8b7e51d4524ce222825)
+- https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e
