@@ -46,11 +46,25 @@ function curry(fn, fnArgL = fn.length, ...args) {
 function debounce(fn, ms) {
   let timeId
 
-  return function(...args) {
+  return function (...args) {
     clearTimeout(timeId)
     timeId = window.setTimeout(() => {
       fn.apply(this, args)
     }, ms)
   }
+}
+```
+
+```js
+function sum(a, b, c) {
+  return a + b + c
+}
+
+let newSum = curry(sum)
+
+function curry(func) {
+  let argLength = func.length
+
+  return function () {}
 }
 ```
