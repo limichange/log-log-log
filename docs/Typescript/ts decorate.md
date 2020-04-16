@@ -20,6 +20,12 @@ var __decorate =
           r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r
     return c > 3 && r && Object.defineProperty(target, key, r), r
   }
+
+var a = /** @class */ (function () {
+  function a() {}
+  a = __decorate([name], a)
+  return a
+})()
 ```
 
 ## links
