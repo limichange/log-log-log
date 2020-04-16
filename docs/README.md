@@ -6,6 +6,11 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-04-16 | [ts decorate][86]                                                                           |
+| 2020-04-15 | [js RegExp][86]                                                                             |
+| 2020-04-15 | [atob btoa][86]                                                                             |
+| 2020-04-14 | [Symbol][86]                                                                                |
+| 2020-04-14 | [flutter][86]                                                                               |
 | 2020-04-13 | [queueMicrotask][86]                                                                        |
 | 2020-04-13 | [react hooks 的原理和实现][86]                                                              |
 | 2020-04-13 | [Object.getOwnPropertyNames vs Object.keys][86]                                             |
