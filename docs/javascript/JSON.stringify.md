@@ -22,9 +22,9 @@ const user = {
   age: 26,
   toJSON() {
     return {
-      fullName: `${this.firstName} + ${this.lastName}`
+      fullName: `${this.firstName} + ${this.lastName}`,
     }
-  }
+  },
 }
 
 console.log(JSON.stringify(user))
