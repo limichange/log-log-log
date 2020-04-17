@@ -56,15 +56,19 @@ function debounce(fn, ms) {
 ```
 
 ```js
+var curry = (fn) => {
+  return function judge(...args) {
+    return args.length === fn.length
+      ? fn(...args)
+      : (arg) => {
+          return judge(...args, arg)
+        }
+  }
+}
+
 function sum(a, b, c) {
   return a + b + c
 }
 
 let newSum = curry(sum)
-
-function curry(func) {
-  let argLength = func.length
-
-  return function () {}
-}
 ```
