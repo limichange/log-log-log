@@ -6,6 +6,9 @@ https://limichange.github.io/log-log-log/
 
 | Date       | Title                                                                                       |
 | ---------- | ------------------------------------------------------------------------------------------- |
+| 2020-04-17 | [iterator][docs/typescript/ts util type.md]                                                 |
+| 2020-04-17 | [ts util type][86]                                                                          |
+| 2020-04-17 | [ts enum][86]                                                                               |
 | 2020-04-16 | [ts decorate][86]                                                                           |
 | 2020-04-15 | [js RegExp][86]                                                                             |
 | 2020-04-15 | [atob btoa][86]                                                                             |
