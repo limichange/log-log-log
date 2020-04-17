@@ -113,6 +113,20 @@ type T0 = NonNullable<string | number | undefined> // string | number
 type T1 = NonNullable<string[] | null | undefined> // string[]
 ```
 
+## Parameters<T>
+
+```ts
+declare function f1(arg: { a: number; b: string }): void
+type T0 = Parameters<() => string> // []
+type T1 = Parameters<(s: string) => void> // [string]
+type T2 = Parameters<<T>(arg: T) => T> // [unknown]
+type T4 = Parameters<typeof f1> // [{ a: number, b: string }]
+type T5 = Parameters<any> // unknown[]
+type T6 = Parameters<never> // never
+type T7 = Parameters<string> // Error
+type T8 = Parameters<Function> // Error
+```
+
 ## links
 
 - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetu)
