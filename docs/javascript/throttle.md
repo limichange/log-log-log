@@ -5,7 +5,7 @@
 ```js
 const throttle = (fn, wait) => {
   let inThrottle, lastFn, lastTime
-  return function() {
+  return function () {
     const context = this,
       args = arguments
     if (!inThrottle) {
@@ -14,7 +14,7 @@ const throttle = (fn, wait) => {
       inThrottle = true
     } else {
       clearTimeout(lastFn)
-      lastFn = setTimeout(function() {
+      lastFn = setTimeout(function () {
         if (Date.now() - lastTime >= wait) {
           fn.apply(context, args)
           lastTime = Date.now()
@@ -26,7 +26,7 @@ const throttle = (fn, wait) => {
 
 window.addEventListener(
   'resize',
-  throttle(function(evt) {
+  throttle(function (evt) {
     console.log(window.innerWidth)
     console.log(window.innerHeight)
   }, 250)
@@ -43,15 +43,14 @@ https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf
 const throttle = (func, limit) => {
   let lastFunc
   let lastRan
-  return function() {
+  return function (...args) {
     const context = this
-    const args = arguments
     if (!lastRan) {
       func.apply(context, args)
       lastRan = Date.now()
     } else {
       clearTimeout(lastFunc)
-      lastFunc = setTimeout(function() {
+      lastFunc = setTimeout(function () {
         if (Date.now() - lastRan >= limit) {
           func.apply(context, args)
           lastRan = Date.now()
@@ -140,7 +139,7 @@ var nativeMax = Math.max,
  * }, _.now());
  * // => Logs the number of milliseconds it took for the deferred invocation.
  */
-var now = function() {
+var now = function () {
   return root.Date.now()
 }
 
@@ -382,7 +381,7 @@ function throttle(func, wait, options) {
   return debounce(func, wait, {
     'leading': leading,
     'maxWait': wait,
-    'trailing': trailing
+    'trailing': trailing,
   })
 }
 
