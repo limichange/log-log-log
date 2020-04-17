@@ -24,6 +24,20 @@ const todo2 = updateTodo(todo1, {
 })
 ```
 
+## Readonly<T>
+
+```ts
+interface Todo {
+  title: string
+}
+
+const todo: Readonly<Todo> = {
+  title: 'Delete inactive users',
+}
+
+todo.title = 'Hello' // Error: cannot reassign a readonly property
+```
+
 ## links
 
 - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetu)
