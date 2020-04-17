@@ -94,6 +94,25 @@ const todo: TodoPreview = {
 }
 ```
 
+## Exclude<T,U>
+
+Constructs a type by extracting from T all properties that are assignable to U.
+
+```ts
+type T0 = Exclude<'a' | 'b' | 'c', 'a'> // "b" | "c"
+type T1 = Exclude<'a' | 'b' | 'c', 'a' | 'b'> // "c"
+type T2 = Exclude<string | number | (() => void), Function> // string | number
+```
+
+## NonNullable
+
+Constructs a type by excluding null and undefined from T.
+
+```ts
+type T0 = NonNullable<string | number | undefined> // string | number
+type T1 = NonNullable<string[] | null | undefined> // string[]
+```
+
 ## links
 
 - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetu)
