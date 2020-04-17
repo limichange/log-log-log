@@ -58,6 +58,42 @@ const x: Record<Page, PageInfo> = {
 }
 ```
 
+## Pick<T,K>
+
+Constructs a type by picking the set of properties K from T.
+
+```ts
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+
+type TodoPreview = Pick<Todo, 'title' | 'completed'>
+
+const todo: TodoPreview = {
+  title: 'Clean room',
+  completed: false,
+}
+```
+
+## Omit<T,K>
+
+```ts
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+
+type TodoPreview = Omit<Todo, 'description'>
+
+const todo: TodoPreview = {
+  title: 'Clean room',
+  completed: false,
+}
+```
+
 ## links
 
 - [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetu)
