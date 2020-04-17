@@ -35,3 +35,6 @@ for (let num of range) {
 ## links
 
 - https://javascript.info/iterable
+- https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e
+- https://exploringjs.com/es6/ch_iteration.html
+- https://ponyfoo.com/articles/es6-iterators-in-depth
