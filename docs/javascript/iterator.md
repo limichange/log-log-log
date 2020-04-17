@@ -32,6 +32,25 @@ for (let num of range) {
 }
 ```
 
+```js
+let all = {
+  a: 1,
+  b: 2,
+  c: 3,
+  [Symbol.iterator]() {
+    return {
+      items: Object.values(this),
+      next() {
+        return {
+          done: this.items.length === 0,
+          value: this.items.pop(),
+        }
+      },
+    }
+  },
+}
+```
+
 ## links
 
 - https://javascript.info/iterable
