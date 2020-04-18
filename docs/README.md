@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-18 - [npm ci](./NPM/npm-ci.md)
 - 2020-04-17 - [iterator](./javascript/iterator.md)
 - 2020-04-17 - [ts util type](./typescript/ts%20util%20type.md)
 - 2020-04-17 - [ts enum](./Typescript/ts%20enum.md)
