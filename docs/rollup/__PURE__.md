@@ -7,4 +7,5 @@
 
 ## links
 
+- https://github.com/webpack/webpack/issues/2867
 - https://github.com/mishoo/UglifyJS2/issues/1261
