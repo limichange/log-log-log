@@ -10,10 +10,11 @@
 
 - Vue2
 - TypeScript
-- JavaScript
-- ES6+
+- JavaScript ES6+
+- Jest
 
 当然不需要精通这些知识，有一些不太常用的函数或者变量我会标记出来，在相应的地方放上相关的知识链接，方便大家查阅。
+但是为了大家更流畅的学习，建议将 TypeScript 的类型系统学习一遍。因为 vue 作为一个基于 TypeScript 开发，使用了大量的较为高级的用法。
 
 ## 提前准备
 
