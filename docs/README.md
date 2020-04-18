@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-18 - [Update your fork directly on Github](./Github/Update%20your%20fork%20directly%20on%20Github.md)
 - 2020-04-18 - [npm ci](./NPM/npm-ci.md)
 - 2020-04-17 - [iterator](./javascript/iterator.md)
 - 2020-04-17 - [ts util type](./typescript/ts%20util%20type.md)
