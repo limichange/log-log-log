@@ -1,5 +1,6 @@
 # todo
 
+- https://addyosmani.com/blog/profiling-react-js/
 - https://mp.weixin.qq.com/s/Fguh5oG_3Ei4MhNAyij-8Q
 - [初、中级前端应该要掌握的手写代码实现](https://juejin.im/post/5e24590ef265da3e152d27bc)
 - https://www.jianshu.com/p/c180fac01519 蚂蚁金服前端电话面试（一面）
