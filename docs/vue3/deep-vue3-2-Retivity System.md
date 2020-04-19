@@ -1,5 +1,7 @@
 # Deep Vue3 No.2 Retivity System
 
+Retivity System 是 vue3 的核心之一，实现了数据的监听。
+
 下图是代码结构，为了我们方便，我删掉了不重要的部分。剩下的只有三部分，稍微看一下。
 
 ```bash
@@ -16,14 +18,14 @@
 │   ├── reactiveArray.spec.ts
 │   ├── readonly.spec.ts
 │   └── ref.spec.ts
-├── index.js # --------------------- 入口
+├── index.js # --------------------- 发布后的入口
 └── src # -------------------------- 具体实现
     ├── baseHandlers.ts
     ├── collectionHandlers.ts
     ├── computed.ts
     ├── effect.ts
-    ├── index.ts
-    ├── operations.ts
+    ├── index.ts # ----------------- src入口
+    ├── operations.ts #------------- 定义了TrackOpTypes和TriggerOpTypes这两个枚举类型
     ├── reactive.ts
     └── ref.ts
 ```

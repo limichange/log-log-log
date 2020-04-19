@@ -1,5 +1,7 @@
 # todo
 
+- Arrow Functions in Class Properties Might Not Be As Great As We Think
+  https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1
 - https://www.taniarascia.com/writing-an-emulator-in-javascript-chip8/
 - https://addyosmani.com/blog/profiling-react-js/
 - https://mp.weixin.qq.com/s/Fguh5oG_3Ei4MhNAyij-8Q
