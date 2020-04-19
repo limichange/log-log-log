@@ -48,7 +48,9 @@ console.log(isReactive(observedObject)) // true
 
 我们先不着急看别的用法，来看看 reactive 是如何实现的。
 
-reactive → createReactiveObject
+`target` → `reactive` → `createReactiveObject` → `new Proxy(target, handlers)` → `observed`
+
+我们定位到 reactive 的声明
 
 ```ts
 // path: packages/reactivity/src/reactive.ts
@@ -104,8 +106,11 @@ function createReactiveObject(
     : baseHandlers
   observed = new Proxy(target, handlers)
 
-  toProxy.set(target, observed) // 存进缓存
-  toRaw.set(observed, target) // 存进缓存
+  // 存进缓存
+  toProxy.set(target, observed)
+  toRaw.set(observed, target)
+
+  // 创建完毕
   return observed
 }
 ```
