@@ -155,8 +155,8 @@ const readonlyToRaw = new WeakMap<any, any>()
 │   └── ref.spec.ts
 ├── index.js # --------------------- 发布后的入口
 └── src # -------------------------- 具体实现
-    ├── baseHandlers.ts # ---------- 定义了 Proxy 的 handler 行为
-    ├── collectionHandlers.ts
+    ├── baseHandlers.ts # ---------- 定义了 Proxy 里通常类型的 handler 行为
+    ├── collectionHandlers.ts # ---- 定义了 Proxy 里Set、Map、WeakSet 和 WeakMap 的 handler 行为
     ├── computed.ts
     ├── effect.ts
     ├── index.ts # ----------------- lib入口
