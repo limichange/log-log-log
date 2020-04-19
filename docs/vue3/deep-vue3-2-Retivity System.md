@@ -4,7 +4,7 @@ Retivity System 是 vue3 的核心之一，实现了数据的监听。
 
 ## 开始之前
 
-你需要知道`WeakMap`、`Reflect`和`Proxy` 是什么。
+你需要知道`WeakMap`、`Reflect`和`Proxy` 是什么和了解他们的基本用法。
 
 Vue 定义了一些全局变量用于区分构建的环境，这些变量在编译后会直接替换成 Boolean。
 
@@ -160,8 +160,8 @@ const readonlyToRaw = new WeakMap<any, any>()
     ├── computed.ts
     ├── effect.ts
     ├── index.ts # ----------------- src入口
-    ├── operations.ts #------------- 定义了TrackOpTypes和TriggerOpTypes这两个枚举类型
-    ├── reactive.ts
+    ├── operations.ts # ------------ 定义了 TrackOpTypes 和 TriggerOpTypes这两个枚举类型
+    ├── reactive.ts # -------------- 创建 Reactive
     └── ref.ts
 ```
 
