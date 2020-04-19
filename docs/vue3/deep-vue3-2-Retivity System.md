@@ -112,7 +112,7 @@ function createReactiveObject(
   // 使用 Proxy 进行代理
   observed = new Proxy(target, handlers)
 
-  // 存进缓存
+  // 存进缓存，之后的类型检查和转化都需要到对应的WeakMap里查找
   toProxy.set(target, observed)
   toRaw.set(observed, target)
 
