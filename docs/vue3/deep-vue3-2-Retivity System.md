@@ -4,7 +4,7 @@ Retivity System 是 vue3 的核心之一，实现了数据的监听。
 
 ## 开始之前
 
-你需要知道`WeakMap`和`Proxy`是什么。
+你需要知道`WeakMap`、`Reflect`和`Proxy` 是什么。
 
 Vue 定义了一些全局变量用于区分构建的环境，这些变量在编译后会直接替换成 Boolean。
 
@@ -102,7 +102,9 @@ function createReactiveObject(
     return target
   }
 
-  // 根据类型创建处理器
+  // 根据类型创建处理器，具体是如何代理的，逻辑就在处理器里定义
+  // const collectionTypes = new Set<Function>([Set, Map, WeakMap, WeakSet])
+  // 如果类型是Set、Map、WeakMap和WeakSet之外的类型就用普通处理器，否则就用集合处理器来特殊处理
   const handlers = collectionTypes.has(target.constructor)
     ? collectionHandlers
     : baseHandlers
