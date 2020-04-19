@@ -4,7 +4,7 @@ Retivity System 是 vue3 的核心之一，实现了数据的监听。
 
 ## 开始之前
 
-你需要知道`WeakMap`、`Reflect`和`Proxy` 是什么和了解他们的基本用法。
+首先你需要知道`WeakMap`、`WeakSet`、`Reflect`和`Proxy` 是什么和了解他们的基本用法。
 
 Vue 定义了一些全局变量用于区分构建的环境，这些变量在编译后会直接替换成 Boolean。
 
@@ -149,6 +149,47 @@ export function toRaw<T>(observed: T): T {
   return reactiveToRaw.get(observed) || observed
 }
 ```
+
+### markRaw
+
+```ts
+const obj = reactive({
+  foo: { a: 1 },
+  bar: markRaw({ b: 2 }),
+})
+
+isReactive(obj.foo) // true
+isReactive(obj.bar) // false
+```
+
+```ts
+// path: packages/reactivity/src/reactive.ts
+
+// WeakSets for values that are marked readonly or non-reactive during
+// observable creation.
+const rawValues = new WeakSet<any>()
+
+const canObserve = (value: any): boolean => {
+  return (
+    !value._isVue &&
+    !value._isVNode &&
+    isObservableType(toRawType(value)) &&
+    !rawValues.has(value) && // --------------------- 标记为不代理数据
+    !Object.isFrozen(value)
+  )
+}
+
+export function markRaw<T extends object>(value: T): T {
+  rawValues.add(value)
+  return value
+}
+```
+
+## Proxy 的构建
+
+## ref
+
+## effect
 
 ## 原理
 
