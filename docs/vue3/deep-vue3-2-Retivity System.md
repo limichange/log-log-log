@@ -2,6 +2,126 @@
 
 Retivity System 是 vue3 的核心之一，实现了数据的监听。
 
+## 开始之前
+
+你需要知道`WeakMap`是什么。
+
+Vue 定义了一些全局变量用于区分构建的环境，这些变量在编译后会直接替换成 Boolean。
+
+```ts
+// path: packages/global.d.ts
+
+// Global compile-time constants
+declare var __DEV__: boolean
+declare var __TEST__: boolean
+declare var __BROWSER__: boolean
+declare var __BUNDLER__: boolean
+declare var __RUNTIME_COMPILE__: boolean
+declare var __GLOBAL__: boolean
+declare var __NODE_JS__: boolean
+declare var __COMMIT__: string
+declare var __VERSION__: string
+
+// Feature flags
+declare var __FEATURE_OPTIONS__: boolean
+declare var __FEATURE_SUSPENSE__: boolean
+```
+
+## 使用
+
+我们先来看看如何监听一个对象。
+
+```ts
+import { reactive, isReactive } from '@vue/reactivity'
+
+// 创建 object
+let originObject = { name: 'originObject' }
+
+// 监听 object
+const observedObject = reactive(originObject)
+
+// 顺便检查下类型
+console.log(isReactive(observedObject)) // true
+```
+
+好，逻辑很简单，我们创建了一个对象，然后用 reactive 函数把对象作为参数创建了一个可监听的新对象。
+
+我们先不着急看别的用法，来看看 reactive 是如何实现的。
+
+reactive → createReactiveObject
+
+```ts
+// path: packages/reactivity/src/reactive.ts
+
+export function reactive(target: object) {
+  // if trying to observe a readonly proxy, return the readonly version.
+  if (readonlyToRaw.has(target)) {
+    return target
+  }
+
+  // 可以看到 reactive 是用 createReactiveObject 来创建的
+  //
+  return createReactiveObject(
+    target,
+    rawToReactive,
+    reactiveToRaw,
+    mutableHandlers,
+    mutableCollectionHandlers
+  )
+}
+```
+
+```ts
+function createReactiveObject(
+  target: unknown,
+  toProxy: WeakMap<any, any>,
+  toRaw: WeakMap<any, any>,
+  baseHandlers: ProxyHandler<any>,
+  collectionHandlers: ProxyHandler<any>
+) {
+  if (!isObject(target)) {
+    if (__DEV__) {
+      console.warn(`value cannot be made reactive: ${String(target)}`)
+    }
+    return target
+  }
+  // target already has corresponding Proxy
+  let observed = toProxy.get(target)
+  if (observed !== void 0) {
+    return observed
+  }
+  // target is already a Proxy
+  if (toRaw.has(target)) {
+    return target
+  }
+  // only a whitelist of value types can be observed.
+  if (!canObserve(target)) {
+    return target
+  }
+  const handlers = collectionTypes.has(target.constructor)
+    ? collectionHandlers
+    : baseHandlers
+  observed = new Proxy(target, handlers)
+  toProxy.set(target, observed)
+  toRaw.set(observed, target)
+  return observed
+}
+```
+
+```ts
+// path: packages/reactivity/src/reactive.ts
+
+// WeakMaps that store {raw <-> observed} pairs.
+const rawToReactive = new WeakMap<any, any>()
+const reactiveToRaw = new WeakMap<any, any>()
+const rawToReadonly = new WeakMap<any, any>()
+const readonlyToRaw = new WeakMap<any, any>()
+```
+
+定义了 4 个 WeakMap 来存储你的观察对象。
+
+## 原理
+
 下图是代码结构，为了我们方便，我删掉了不重要的部分。剩下的只有三部分，稍微看一下。
 
 ```bash
