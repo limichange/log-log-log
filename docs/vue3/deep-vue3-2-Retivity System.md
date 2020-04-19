@@ -202,7 +202,9 @@ export function markRaw<T extends object>(value: T): T {
 
 ## effect
 
-## 原理
+## computed
+
+## 结构
 
 下图是代码结构，为了我们方便，我删掉了不重要的部分。剩下的只有三部分，稍微看一下。
 
