@@ -79,22 +79,23 @@ function createReactiveObject(
   baseHandlers: ProxyHandler<any>,
   collectionHandlers: ProxyHandler<any>
 ) {
+  // 如果传入的不是 object 那么就不作处理
   if (!isObject(target)) {
     if (__DEV__) {
       console.warn(`value cannot be made reactive: ${String(target)}`)
     }
     return target
   }
-  // target already has corresponding Proxy
+  // 检查object的观察对象是否已经被创建过了
   let observed = toProxy.get(target)
   if (observed !== void 0) {
     return observed
   }
-  // target is already a Proxy
+  // 检查object是不是已经过了
   if (toRaw.has(target)) {
     return target
   }
-  // only a whitelist of value types can be observed.
+  // 检查类型是否支持
   if (!canObserve(target)) {
     return target
   }
@@ -102,11 +103,14 @@ function createReactiveObject(
     ? collectionHandlers
     : baseHandlers
   observed = new Proxy(target, handlers)
-  toProxy.set(target, observed)
-  toRaw.set(observed, target)
+
+  toProxy.set(target, observed) // 存进缓存
+  toRaw.set(observed, target) // 存进缓存
   return observed
 }
 ```
+
+内部的缓存，如果一个对象已经被观察了，那么就可以直接返回这个创建好的观察对象。
 
 ```ts
 // path: packages/reactivity/src/reactive.ts
