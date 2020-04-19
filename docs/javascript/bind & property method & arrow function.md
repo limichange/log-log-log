@@ -10,4 +10,5 @@ You should only bind with .bind() or arrow function a method if you’re going t
 
 ## links
 
+- [autobind-decorator](https://github.com/andreypopp/autobind-decorator)
 - [Arrow Functions in Class Properties Might Not Be As Great As We Think](https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1)
