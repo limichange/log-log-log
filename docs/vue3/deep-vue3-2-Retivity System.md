@@ -27,7 +27,7 @@ declare var __FEATURE_OPTIONS__: boolean
 declare var __FEATURE_SUSPENSE__: boolean
 ```
 
-## 使用
+## 使用 reactive
 
 我们先来看看如何监听一个对象。
 
@@ -133,7 +133,22 @@ const rawToReadonly = new WeakMap<any, any>()
 const readonlyToRaw = new WeakMap<any, any>()
 ```
 
-定义了 4 个 WeakMap 来存储你的观察对象。
+定义了 4 个 WeakMap 来存储你的观察对象，是整个机制的数据核心。当创建了一个代理后，就会保存到这些 WeakMap 当中。
+
+```ts
+// path: packages/reactivity/src/reactive.ts
+
+// 当我们在里面找到了这么一个代理的话，就说明这是一个代理类型的变量。
+export function isProxy(value: unknown): boolean {
+  return readonlyToRaw.has(value) || reactiveToRaw.has(value)
+}
+
+// 将代理转化成原对象，只要通过键值对就能轻松找到
+export function toRaw<T>(observed: T): T {
+  observed = readonlyToRaw.get(observed) || observed
+  return reactiveToRaw.get(observed) || observed
+}
+```
 
 ## 原理
 
@@ -188,9 +203,9 @@ export {
   UnwrapRef,
 } from './ref'
 export {
-  reactive,
+  reactive, // 监听对象
   readonly,
-  isReactive,
+  isReactive, // 检查是否是观察者
   isReadonly,
   isProxy,
   shallowReactive,
