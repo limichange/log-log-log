@@ -150,6 +150,17 @@ export function toRaw<T>(observed: T): T {
 }
 ```
 
+### baseHandlers
+
+```ts
+import {
+  mutableHandlers,
+  readonlyHandlers,
+  shallowReactiveHandlers,
+  shallowReadonlyHandlers,
+} from './baseHandlers'
+```
+
 ### markRaw
 
 ```ts
