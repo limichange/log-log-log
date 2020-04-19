@@ -155,13 +155,13 @@ const readonlyToRaw = new WeakMap<any, any>()
 │   └── ref.spec.ts
 ├── index.js # --------------------- 发布后的入口
 └── src # -------------------------- 具体实现
-    ├── baseHandlers.ts
+    ├── baseHandlers.ts # ---------- 定义了 Proxy 的 handler 行为
     ├── collectionHandlers.ts
     ├── computed.ts
     ├── effect.ts
-    ├── index.ts # ----------------- src入口
+    ├── index.ts # ----------------- lib入口
     ├── operations.ts # ------------ 定义了 TrackOpTypes 和 TriggerOpTypes这两个枚举类型
-    ├── reactive.ts # -------------- 创建 Reactive
+    ├── reactive.ts # -------------- 通过 Proxy 来创建 Reactive
     └── ref.ts
 ```
 
