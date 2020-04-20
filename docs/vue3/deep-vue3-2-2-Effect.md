@@ -74,6 +74,8 @@ function createReactiveEffect<T = any>(
 
 ```ts
 let shouldTrack = true
+
+// avoid cross-component dependency leaks in setup()
 const trackStack: boolean[] = []
 
 export function pauseTracking() {
@@ -90,6 +92,18 @@ export function resetTracking() {
   const last = trackStack.pop()
   shouldTrack = last === undefined ? true : last
 }
+```
+
+## Core
+
+```ts
+// The main WeakMap that stores {target -> key -> dep} connections.
+// Conceptually, it's easier to think of a dependency as a Dep class
+// which maintains a Set of subscribers, but we simply store them as
+// raw Sets to reduce memory overhead.
+type Dep = Set<ReactiveEffect>
+type KeyToDepMap = Map<any, Dep>
+const targetMap = new WeakMap<any, KeyToDepMap>()
 ```
 
 ## track
