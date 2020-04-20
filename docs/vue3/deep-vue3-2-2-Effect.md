@@ -2,6 +2,11 @@
 
 你会想 Effect 什么？为什么要他？
 
+Effect 可以处理变量依赖，实现依赖监控。
+
+```ts
+```
+
 ### function effect
 
 这是第一层，主要有两个判断。一个是看传入的是不是 Effect，如果是的话就把存着的 fn.raw 拿出来。还一个就是根据配置是否立即执行。
@@ -107,5 +112,39 @@ const targetMap = new WeakMap<any, KeyToDepMap>()
 ```
 
 ## track
+
+其实就是做一个 Dep 关联，把 activeEffect 和
+
+```ts
+// packages/reactivity/src/effect.ts
+
+export function track(target: object, type: TrackOpTypes, key: unknown) {
+  if (!shouldTrack || activeEffect === undefined) {
+    return
+  }
+  let depsMap = targetMap.get(target)
+  if (depsMap === void 0) {
+    depsMap = new Map()
+    targetMap.set(target, depsMap)
+  }
+  let dep = depsMap.get(key)
+  if (dep === void 0) {
+    dep = new Set()
+    depsMap.set(key, dep)
+  }
+  if (!dep.has(activeEffect)) {
+    dep.add(activeEffect)
+    activeEffect.deps.push(dep)
+    if (__DEV__ && activeEffect.options.onTrack) {
+      activeEffect.options.onTrack({
+        effect: activeEffect,
+        target,
+        type,
+        key,
+      })
+    }
+  }
+}
+```
 
 ## trigger
