@@ -42,7 +42,11 @@ todo.title = 'Hello' // Error: cannot reassign a readonly property
 
 ## Record<K,T>
 
+https://stackoverflow.com/questions/51936369/what-is-the-record-type-in-typescript
+
 Constructs a type with a set of properties K of type T. This utility can be used to map the properties of a type to another type.
+
+A Record<K, T> is an object type whose property keys are K and whose property values are T. That is, keyof Record<K, T> is equivalent to K, and Record<K, T>[K] is (basically) equivalent to T.
 
 ```ts
 interface PageInfo {
@@ -51,7 +55,12 @@ interface PageInfo {
 
 type Page = 'home' | 'about' | 'contact'
 
-const x: Record<Page, PageInfo> = {
+const x: Record<
+  'home' | 'about' | 'contact',
+  {
+    title: string
+  }
+> = {
   about: { title: 'about' },
   contact: { title: 'contact' },
   home: { title: 'home' },

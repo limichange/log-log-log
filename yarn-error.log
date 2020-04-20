@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/limichange/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/limichange/.cargo/bin:/Users/limichange/.rvm/bin:/Users/limichange/limiCode/flutter/bin:/Users/limichange/.rvm/bin:/Users/limichange/limiCode/flutter/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  13.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect ECONNREFUSED 151.101.0.133:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16)
+
+npm manifest: 
+  {
+    "name": "log-log-log",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "dev": "vuepress dev docs",
+      "build": "vuepress build docs",
+      "deploy": "sh build.sh"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/limichange/log-log-log.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/limichange/log-log-log/issues"
+    },
+    "homepage": "https://github.com/limichange/log-log-log#readme",
+    "dependencies": {
+      "vuepress": "^1.2.0"
+    },
+    "devDependencies": {
+      "vuepress-plugin-autobar": "github:boboidream/vuepress-bar"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
