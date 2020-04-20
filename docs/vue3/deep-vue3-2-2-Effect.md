@@ -122,19 +122,26 @@ export function track(target: object, type: TrackOpTypes, key: unknown) {
   if (!shouldTrack || activeEffect === undefined) {
     return
   }
+
+  // depsMap target -> key
   let depsMap = targetMap.get(target)
   if (depsMap === void 0) {
     depsMap = new Map()
     targetMap.set(target, depsMap)
   }
+
+  // dep key -> dep
   let dep = depsMap.get(key)
   if (dep === void 0) {
     dep = new Set()
     depsMap.set(key, dep)
   }
+
   if (!dep.has(activeEffect)) {
+    // dep和effect做关联
     dep.add(activeEffect)
     activeEffect.deps.push(dep)
+
     if (__DEV__ && activeEffect.options.onTrack) {
       activeEffect.options.onTrack({
         effect: activeEffect,
