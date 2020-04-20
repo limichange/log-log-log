@@ -27,7 +27,7 @@ declare var __FEATURE_OPTIONS__: boolean
 declare var __FEATURE_SUSPENSE__: boolean
 ```
 
-## 使用 reactive
+## reactive
 
 我们先来看看如何监听一个对象。
 
@@ -45,6 +45,8 @@ console.log(isReactive(observedObject)) // true
 ```
 
 好，逻辑很简单，我们创建了一个对象，然后用 reactive 函数把对象作为参数创建了一个可监听的新对象。
+
+### Proxy 的构建
 
 我们先不着急看别的用法，来看看 reactive 是如何实现的。
 
@@ -195,8 +197,6 @@ export function markRaw<T extends object>(value: T): T {
   return value
 }
 ```
-
-## Proxy 的构建
 
 ## ref
 
