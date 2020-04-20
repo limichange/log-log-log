@@ -2,13 +2,13 @@
 
 你会想 Effect 什么？为什么要他？
 
-```ts
-export const EMPTY_OBJ: { readonly [key: string]: any } = __DEV__
-  ? Object.freeze({})
-  : {}
-```
+### function effect
+
+这是第一层，主要有两个判断。一个是看传入的是不是 Effect，如果是的话就把存着的 fn.raw 拿出来。还一个就是根据配置是否立即执行。
 
 ```ts
+// path: packages/reactivity/src/effect.ts
+
 export function effect<T = any>(
   fn: () => T,
   options: ReactiveEffectOptions = EMPTY_OBJ
@@ -16,10 +16,54 @@ export function effect<T = any>(
   if (isEffect(fn)) {
     fn = fn.raw
   }
-  const effect = createReactiveEffect(fn, options)
+  const effect = createReactiveEffect(fn, options) // 主要还是 createReactiveEffect
   if (!options.lazy) {
     effect()
   }
+  return effect
+}
+```
+
+开发模式下冻结对象防止你出错。但是由于 freeze 是有开销的，既然开发模式已经避免了错误，发布模式就可以不用特殊处理了。 via: @JackWorks
+
+```ts
+export const EMPTY_OBJ: { readonly [key: string]: any } = __DEV__
+  ? Object.freeze({})
+  : {}
+```
+
+### function createReactiveEffect
+
+```ts
+function createReactiveEffect<T = any>(
+  fn: (...args: any[]) => T,
+  options: ReactiveEffectOptions
+): ReactiveEffect<T> {
+  const effect = function reactiveEffect(...args: unknown[]): unknown {
+    if (!effect.active) {
+      return options.scheduler ? undefined : fn(...args)
+    }
+    if (!effectStack.includes(effect)) {
+      cleanup(effect)
+      try {
+        enableTracking()
+        effectStack.push(effect)
+        activeEffect = effect
+        return fn(...args)
+      } finally {
+        effectStack.pop()
+        resetTracking()
+        activeEffect = effectStack[effectStack.length - 1]
+      }
+    }
+  } as ReactiveEffect
+
+  effect.id = uid++ // ---------| 这些是必要的属性
+  effect._isEffect = true // ---|
+  effect.active = true // ------|
+  effect.raw = fn // -----------|
+  effect.deps = [] // ----------|
+  effect.options = options // --|
   return effect
 }
 ```
