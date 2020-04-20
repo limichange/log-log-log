@@ -8,16 +8,16 @@ module.exports = {
   dest: 'dist',
   plugins: ['tag', 'category', 'autobar'],
   markdown: {
-    lineNumbers: true
+    // lineNumbers: true
   },
   serviceWorker: false,
   base: '/log-log-log/',
   configureWebpack: {
     resolve: {
       alias: {
-        '@': path.join(__dirname, 'public', 'assets')
-      }
-    }
+        '@': path.join(__dirname, 'public', 'assets'),
+      },
+    },
   },
   themeConfig: {
     repo: 'limichange/log-log-log',
@@ -36,24 +36,24 @@ module.exports = {
           ['javascript/throttle', 'throttle'],
           ['javascript/promise', 'promise'],
           ['javascript/clone', 'clone'],
-          ['javascript/questions', 'questions']
-        ]
+          ['javascript/questions', 'questions'],
+        ],
       },
       {
         title: 'CSS',
         children: [
           ['css/BFC', 'BFC'],
-          ['css/position', 'position']
-        ]
+          ['css/position', 'position'],
+        ],
       },
       {
         title: 'Vue',
-        children: [['vue/start', 'Vue']]
+        children: [['vue/start', 'Vue']],
       },
       {
         title: 'xxx',
-        children: [['shit/start', 'yyy']]
-      }
+        children: [['shit/start', 'yyy']],
+      },
     ],
     nav: [
       // {
@@ -66,6 +66,6 @@ module.exports = {
       // { text: 'Home', link: '/' },
       // { text: 'Guide', link: '/guide/' },
       // { text: 'External', link: 'https://google.com' }
-    ]
-  }
+    ],
+  },
 }
