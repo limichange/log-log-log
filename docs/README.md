@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-20 - [prefetch-preload](./HTML/prefetch-preload.md)
 - 2020-04-20 - [reflect.deleteProperty vs delete](./javascript/reflect.deleteProperty-delete.md)
 - 2020-04-20 - [CSS color](./CSS/css%20%E9%A2%9C%E8%89%B2%E5%80%BC.md)
 - 2020-04-20 - [never-unknown-any](./Typescript/never-unknown-any.md)
