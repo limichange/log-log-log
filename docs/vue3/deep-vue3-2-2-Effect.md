@@ -34,6 +34,8 @@ export const EMPTY_OBJ: { readonly [key: string]: any } = __DEV__
 
 ### function createReactiveEffect
 
+其实整个过程没有太复杂的逻辑，主要的作用还是把 fn 给存起来，放到 effectStack。
+
 ```ts
 function createReactiveEffect<T = any>(
   fn: (...args: any[]) => T,
@@ -67,3 +69,29 @@ function createReactiveEffect<T = any>(
   return effect
 }
 ```
+
+#### enableTracking()
+
+```ts
+let shouldTrack = true
+const trackStack: boolean[] = []
+
+export function pauseTracking() {
+  trackStack.push(shouldTrack)
+  shouldTrack = false
+}
+
+export function enableTracking() {
+  trackStack.push(shouldTrack)
+  shouldTrack = true
+}
+
+export function resetTracking() {
+  const last = trackStack.pop()
+  shouldTrack = last === undefined ? true : last
+}
+```
+
+## track
+
+## trigger
