@@ -18,6 +18,8 @@ export function ref(value?: unknown) {
 
 ## convert
 
+其实本质还是把一个 value 转换成 reactive 对象
+
 ```ts
 const convert = <T extends unknown>(val: T): T =>
   isObject(val) ? reactive(val) : val
