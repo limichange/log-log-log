@@ -49,7 +49,7 @@ declare var __FEATURE_SUSPENSE__: boolean
 └── src # -------------------------- 具体实现
     ├── baseHandlers.ts # ---------- 定义了 Proxy 里通常类型的 handler 行为
     ├── collectionHandlers.ts # ---- 定义了 Proxy 里Set、Map、WeakSet 和 WeakMap 的 handler 行为
-    ├── computed.ts
+    ├── computed.ts # -------------- 计算属性
     ├── effect.ts
     ├── index.ts # ----------------- lib入口
     ├── operations.ts # ------------ 定义了 TrackOpTypes 和 TriggerOpTypes这两个枚举类型

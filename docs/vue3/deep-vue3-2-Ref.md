@@ -55,3 +55,11 @@ function createRef(value: unknown, shallow = false) {
   return r
 }
 ```
+
+## unRef
+
+```ts
+export function unref<T>(ref: T): T extends Ref<infer V> ? V : T {
+  return isRef(ref) ? (ref.value as any) : ref
+}
+```
