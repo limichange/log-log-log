@@ -165,6 +165,7 @@ export function trigger(
   oldValue?: unknown,
   oldTarget?: Map<unknown, unknown> | Set<unknown>
 ) {
+  // 查看是否有依赖
   const depsMap = targetMap.get(target)
   if (!depsMap) {
     // never been tracked
@@ -173,6 +174,7 @@ export function trigger(
 
   const effects = new Set<ReactiveEffect>()
   const computedRunners = new Set<ReactiveEffect>()
+
   const add = (effectsToAdd: Set<ReactiveEffect> | undefined) => {
     if (effectsToAdd) {
       effectsToAdd.forEach((effect) => {

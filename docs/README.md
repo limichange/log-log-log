@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-22 - [webpack-contrib / mini-css-extract-plugin](./webpack/mini-css-extract-plugin.md)
 - 2020-04-21 - [ts infer](./Typescript/ts%20infer.md)
 - 2020-04-20 - [浏览器如何验证 HTTPS 证书的合法性](./browser/浏览器如何验证HTTPS证书的合法性.md)
 - 2020-04-20 - [prefetch-preload](./HTML/prefetch-preload.md)
