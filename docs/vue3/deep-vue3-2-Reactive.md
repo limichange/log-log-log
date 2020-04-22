@@ -168,3 +168,39 @@ export function markRaw<T extends object>(value: T): T {
   return value
 }
 ```
+
+### set
+
+```ts
+function createSetter(shallow = false) {
+  return function set(
+    target: object,
+    key: string | symbol,
+    value: unknown,
+    receiver: object
+  ): boolean {
+    const oldValue = (target as any)[key]
+    if (!shallow) {
+      value = toRaw(value)
+      if (!isArray(target) && isRef(oldValue) && !isRef(value)) {
+        oldValue.value = value
+        return true
+      }
+    } else {
+      // in shallow mode, objects are set as-is regardless of reactive or not
+    }
+
+    const hadKey = hasOwn(target, key)
+    const result = Reflect.set(target, key, value, receiver)
+    // don't trigger if target is something up in the prototype chain of original
+    if (target === toRaw(receiver)) {
+      if (!hadKey) {
+        trigger(target, TriggerOpTypes.ADD, key, value)
+      } else if (hasChanged(value, oldValue)) {
+        trigger(target, TriggerOpTypes.SET, key, value, oldValue)
+      }
+    }
+    return result
+  }
+}
+```
