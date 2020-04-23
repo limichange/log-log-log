@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-23 - [check URL](./javascript/check%20URL.md)
 - 2020-04-23 - [Performance impact of SVG/SMIL reflow/repaint?](./svg/svg-repaint-reflow.md)
 - 2020-04-22 - [Error Boundaries](./react/Error%20Boundaries.md)
 - 2020-04-22 - [webpack-contrib / mini-css-extract-plugin](./webpack/mini-css-extract-plugin.md)
