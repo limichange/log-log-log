@@ -8,3 +8,4 @@
 - https://online.visual-paradigm.com/
 - https://app.liuchengtu.com/
 - https://ts-ast-viewer.com/
+- https://vue-next-template-explorer.netlify.app/

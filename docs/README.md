@@ -4,7 +4,8 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
-- 2020-04-22 - [Error Boundaries]()
+- 2020-04-23 - [Performance impact of SVG/SMIL reflow/repaint?](./svg/svg-repaint-reflow.md)
+- 2020-04-22 - [Error Boundaries](./react/Error%20Boundaries.md)
 - 2020-04-22 - [webpack-contrib / mini-css-extract-plugin](./webpack/mini-css-extract-plugin.md)
 - 2020-04-21 - [ts infer](./Typescript/ts%20infer.md)
 - 2020-04-20 - [浏览器如何验证 HTTPS 证书的合法性](./browser/浏览器如何验证HTTPS证书的合法性.md)
