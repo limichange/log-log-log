@@ -4,7 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
-- 2020-04-26 - [js Bitwise operators]()
+- 2020-04-26 - [js Bitwise operators](./javascript/bitwise-operators.md)
 - 2020-04-25 - [vue3 reactive image](./vue3/vue3-reactive-image.md)
 - 2020-04-25 - [modify your commit date](./Git/modify-your-commit-date.md)
 - 2020-04-25 - [js shallow copy](./javascript/shallow-copy.md)
