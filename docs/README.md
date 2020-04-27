@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-27 - [react strict mode](./react/react-strict-mode.md)
 - 2020-04-27 - [js break foreach](./javascript/break-js-foreach.md)
 - 2020-04-26 - [js Bitwise operators](./javascript/bitwise-operators.md)
 - 2020-04-25 - [vue3 reactive image](./vue3/vue3-reactive-image.md)
