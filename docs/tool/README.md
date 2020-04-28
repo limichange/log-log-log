@@ -12,3 +12,4 @@
 - https://whimsical.com/
 - https://overflow.io/
 - https://u.nu/
+- https://getcleanshot.com/
