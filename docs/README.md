@@ -4,6 +4,8 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-04-30 - [Array.prototype.copyWithin](./javascript/Array.prototype.copyWithin.md)
+- 2020-04-29 - [Symbol.hasInstance](./javascript/Symbol.hasInstance.md)
 - 2020-04-28 - [rollup base](./rollup/rollup-base.md)
 - 2020-04-28 - [vue-dist-file](./vue/vue-dist-file.md)
 - 2020-04-27 - [react strict mode](./react/react-strict-mode.md)
