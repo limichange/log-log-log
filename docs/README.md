@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-05-03 - [String.raw](./javascript/String.raw.md)
 - 2020-05-02 - [requestIdleCallback](./javascript/requestIdleCallback.md)
 - 2020-05-01 - [lerna](./others/lerna.md)
 - 2020-04-30 - [Array.prototype.copyWithin](./javascript/Array.prototype.copyWithin.md)
