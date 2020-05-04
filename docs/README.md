@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-05-04 - [window.mediaMatch](./javascript/mediaMatch.md)
 - 2020-05-04 - [async-iterables](./javascript/async-iterables.md)
 - 2020-05-03 - [String.raw](./javascript/String.raw.md)
 - 2020-05-02 - [requestIdleCallback](./javascript/requestIdleCallback.md)
