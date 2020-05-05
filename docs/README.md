@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-05-05 - [list-style](./CSS/list-style.md)
 - 2020-05-05 - [widows & orphans](./CSS/widows-orphans.md)
 - 2020-05-04 - [window.mediaMatch](./javascript/mediaMatch.md)
 - 2020-05-04 - [async-iterables](./javascript/async-iterables.md)
