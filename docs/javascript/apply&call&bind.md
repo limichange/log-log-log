@@ -156,20 +156,26 @@ Function.prototype.myApply = function (context) {
   return r
 }
 
-let obj = {
-  name: 'joker',
+Function.prototype.bind = function (context) {
+  let _me = this
+  let bindArgs = [].slice.call(arguments, 1)
+  function Fn() {}
+  let fBound = function () {
+    let fnArgs = [].slice.call(arguments)
+    return _me.apply(
+      this instanceof fBound ? this : context,
+      bindArgs.concat(fnArgs)
+    )
+  }
+  Fn.prototype = this.prototype
+  fBound.prototype = new Fn()
+  return fBound
 }
-
-function fn() {
-  console.log(this.name)
-}
-Function.prototype.bind = function (context) {}
-let bindFn = fn.bind(obj)
-bindFn()
 ```
 
 ## links
 
+- [apply call bind new](https://juejin.im/post/5c73a602e51d457fd6235f66#heading-12)
 - [this、apply、call、bind](https://juejin.im/post/59bfe84351882531b730bac2)
 - [js 中 call、apply、bind 那些事](https://qianlongo.github.io/2016/04/26/js%E4%B8%ADcall%E3%80%81apply%E3%80%81bind%E9%82%A3%E4%BA%9B%E4%BA%8B/#more)
 - [回味 JS 基础:call apply 与 bind](https://juejin.im/post/57dc97f35bbb50005e5b39bd)
