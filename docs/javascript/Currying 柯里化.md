@@ -72,3 +72,17 @@ function sum(a, b, c) {
 
 let newSum = curry(sum)
 ```
+
+```ts
+
+funciton curry(func) {
+  return function newFunc(...args) {
+    return args.length === l
+      ? func(...args)
+      : (...args2) => newFunc(...args, ...args2)
+  }
+}
+
+curry(Math.min)
+
+```
