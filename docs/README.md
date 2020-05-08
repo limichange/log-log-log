@@ -4,7 +4,8 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
-- 2020-05-07 - [Symbol Properties](./javascript/Symbol/symbol-properties.md)
+- 2020-05-08 - [CSS overflow-anchor](./CSS/overflow-anchor.md)
+- 2020-05-07 - [JS Symbol Properties](./javascript/Symbol/symbol-properties.md)
 - 2020-05-06 - [Jest API Globals](./Jest/jest-api-globals.md)
 - 2020-05-05 - [list-style](./CSS/list-style.md)
 - 2020-05-05 - [widows & orphans](./CSS/widows-orphans.md)
