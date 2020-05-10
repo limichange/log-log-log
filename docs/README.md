@@ -4,7 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
-- 2020-05-10 - []()
+- 2020-05-10 - [TS ECMAScript Private Fields](./Typescript/ECMAScript-Private-Fields.md)
 - 2020-05-09 - [JS Trailing Commas](./javascript/Trailing-Commas.md)
 - 2020-05-08 - [CSS overflow-anchor](./CSS/overflow-anchor.md)
 - 2020-05-07 - [JS Symbol Properties](./javascript/Symbol/symbol-properties.md)
