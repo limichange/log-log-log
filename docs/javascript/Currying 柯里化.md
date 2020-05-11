@@ -29,11 +29,6 @@ curry(Math.pow)(2)(10) // 1024
 curry(Math.min, 3)(10)(50)(2) // 2
 ```
 
-## links
-
-- [curry](https://www.30secondsofcode.org/js/s/curry)
-- [JavaScript 专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
-
 ```js
 function curry(fn, fnArgL = fn.length, ...args) {
   return args.length >= fnArgL
@@ -86,3 +81,8 @@ funciton curry(func) {
 curry(Math.min)
 
 ```
+
+## links
+
+- [curry](https://www.30secondsofcode.org/js/s/curry)
+- [JavaScript 专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
