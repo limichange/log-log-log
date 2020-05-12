@@ -14,3 +14,4 @@
 - https://u.nu/
 - https://getcleanshot.com/
 - https://bundlephobia.com/ - Find out the cost of adding a new frontend dependency to your project
+- https://regexr.com/
