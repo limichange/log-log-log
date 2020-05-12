@@ -36,7 +36,8 @@ function directory() {
 # git
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git(%{$fg_bold[red]%}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[blue]%}) 🔥";
+# ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[blue]%}) 🔥";
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[blue]%})%{$fg[yellow]%} ✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[blue]%})";
 
 function update_git_status() {
@@ -57,7 +58,7 @@ function update_command_status() {
     then
         arrow="%{$fg_bold[green]%}❱❱❱";
     else
-        arrow="%{$fg_bold[red]%}❱";
+        arrow="%{$fg_bold[red]%}❱❱❱";
     fi
     COMMAND_STATUS="${arrow}${reset_font}${color_reset}";
 }
@@ -105,7 +106,8 @@ output_command_execute_after() {
     local color_cost="$fg_no_bold[cyan]";
     cost="${color_cost}${cost}${color_reset}";
 
-    echo -e "${time} ${cost} ${cmd}";
+    # echo -e "${time} ${cost} ${cmd}";
+    # echo -e "${time} ${cost} ${cmd}";
     echo -e "";
 }
 
@@ -182,6 +184,6 @@ TRAPALRM() {
 
 
 # prompt
-# PROMPT='🉑 $(real_time) $(directory) $(git_status)$(command_status) ';
-PROMPT='⛩  $(directory) $(git_status)⛩
+# PROMPT='$(real_time) $(directory) $(git_status)$(command_status) ';
+PROMPT='⛩  $(real_time) $(directory) $(git_status)⛩
 $(command_status) ';
