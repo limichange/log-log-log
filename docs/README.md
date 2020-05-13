@@ -1,6 +1,6 @@
 # log log log
 
-https://limichange.github.io/log-log-log/
+https://limichange.tech
 
 ## 记录
 
