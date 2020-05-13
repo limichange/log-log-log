@@ -11,7 +11,7 @@ module.exports = {
     // lineNumbers: true
   },
   serviceWorker: false,
-  base: '/log-log-log/',
+  base: '/',
   configureWebpack: {
     resolve: {
       alias: {
