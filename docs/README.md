@@ -4,6 +4,7 @@ https://limichange.github.io/log-log-log/
 
 ## 记录
 
+- 2020-05-13 - [Typescript Interface Type](./Typescript/Typescript-Interfaec-Type.md)
 - 2020-05-12 - [Rollup Strip](./rollup/rollup-strip.md)
 - 2020-05-11 - [JS PWA](./browser/PWA.md)
 - 2020-05-11 - [Concept Typing](./concept/Duck-typing.md)
