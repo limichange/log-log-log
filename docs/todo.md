@@ -1,5 +1,6 @@
 # todo
 
+- https://v8.dev/blog/fast-async
 - https://www.taniarascia.com/writing-an-emulator-in-javascript-chip8/
 - https://addyosmani.com/blog/profiling-react-js/
 - https://mp.weixin.qq.com/s/Fguh5oG_3Ei4MhNAyij-8Q
