@@ -4,6 +4,7 @@ https://limichange.tech
 
 ## 记录
 
+- 2020-05-14 - [Typescript Bottom and Top types](./Typescript/Bottom-and-Top-types-in-TypeScript.md)
 - 2020-05-13 - [Typescript Interface Type](./Typescript/Typescript-Interfaec-Type.md)
 - 2020-05-12 - [Rollup Strip](./rollup/rollup-strip.md)
 - 2020-05-11 - [JS PWA](./browser/PWA.md)
