@@ -4,7 +4,7 @@ const path = require('path')
 
 module.exports = {
   title: 'log log log',
-  description: '一份涵盖大部分前端程序员所需要掌握的核心知识',
+  description: "limichange's blog",
   dest: 'dist',
   plugins: ['tag', 'category', 'autobar'],
   markdown: {
