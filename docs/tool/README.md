@@ -12,6 +12,7 @@
 
 ## website
 
+- https://devhints.io/vim
 - https://vim.rtorr.com/
 - [Responsively - Develop responsive web-apps 5x faster](https://github.com/manojVivek/responsively-app)
 - https://www.openvim.com/
