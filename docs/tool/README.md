@@ -6,6 +6,10 @@
 - https://code.visualstudio.com/ Visual Studio Code
 - https://www.alfredapp.com/ Alfred 💸
 
+## tool
+
+- neofetch
+
 ## website
 
 - https://www.openvim.com/
