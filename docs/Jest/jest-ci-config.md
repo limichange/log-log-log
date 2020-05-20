@@ -1,8 +1,8 @@
-# The-Ideal-Number-Of-Workers-In-Jest
+# The Ideal Number Of Workers In Jest
 
 Use `--runInBand` when running `jest` in CI and use `--maxWorkers=3` on your laptop.
 
-# Notes and conclusions
+## Notes and conclusions
 
 Doing `--runInBand` is the same as `--maxWorker=1` apparently.
 

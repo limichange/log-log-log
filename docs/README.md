@@ -4,7 +4,7 @@ https://limichange.tech
 
 ## 记录
 
-- 2020-05-19 - [Jest the ideal number of workers in jest](./Jest/jest-The-Ideal-Number-Of-Workers-In-Jest.md.md)
+- 2020-05-19 - [Jest the ideal number of workers in jest](./Jest/jest-ci-config.md)
 - 2020-05-19 - [Git remove file](./Git/GIt-Remove.md)
 - 2020-05-19 - [Rust fixed lock file error](./Rust/Rust-Fixed-Lock-File-Error.md)
 - 2020-05-18 - [Tool neofetch](./tool/neofetch.md)
@@ -21,7 +21,7 @@ https://limichange.tech
 - 2020-05-09 - [JS Trailing Commas](./javascript/Trailing-Commas.md)
 - 2020-05-08 - [CSS overflow-anchor](./CSS/overflow-anchor.md)
 - 2020-05-07 - [JS Symbol Properties](./javascript/Symbol/symbol-properties.md)
-- 2020-05-06 - [Jest API Globals](./Jest/jest-api-globals.md)
+- 2020-05-06 - [Jest API Globals](./Jest/jest-api.md)
 - 2020-05-05 - [list-style](./CSS/list-style.md)
 - 2020-05-05 - [widows & orphans](./CSS/widows-orphans.md)
 - 2020-05-04 - [window.mediaMatch](./javascript/mediaMatch.md)
