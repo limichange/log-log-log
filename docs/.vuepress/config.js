@@ -27,34 +27,6 @@ module.exports = {
     displayAllHeaders: false, // Default: false
     editLinks: true,
     sidebarDepth: 2,
-    sidebar: [
-      {
-        title: 'JavaScript',
-        children: [
-          ['javascript/debounce', 'debounce'],
-          ['javascript/prototype', 'prototype'],
-          ['javascript/throttle', 'throttle'],
-          ['javascript/promise', 'promise'],
-          ['javascript/clone', 'clone'],
-          ['javascript/questions', 'questions'],
-        ],
-      },
-      {
-        title: 'CSS',
-        children: [
-          ['css/BFC', 'BFC'],
-          ['css/position', 'position'],
-        ],
-      },
-      {
-        title: 'Vue',
-        children: [['vue/start', 'Vue']],
-      },
-      {
-        title: 'xxx',
-        children: [['shit/start', 'yyy']],
-      },
-    ],
     nav: [
       // {
       //   text: 'External',
