@@ -10,6 +10,8 @@
 
 - neofetch
 - https://regexper.com/
+- https://github.com/keycastr/keycastrk
+- https://www.digitalocean.com/community/tools/nginx
 
 ## website
 
