@@ -3,8 +3,7 @@
 | Name                      | status |
 | ------------------------- | ------ |
 | let                       | [ ]    |
-| const                     | [ ]    |
-|                           | [ ]    |
+| const                     | [x]    |
 | Block scoping             | [ ]    |
 | Backtick strings          | [ ]    |
 | Binary and octal literals | [ ]    |
@@ -14,6 +13,6 @@
 | Function arguments        | [ ]    |
 | Reassigning keys          | [ ]    |
 | Object destructuring      | [ ]    |
-| Object spread             | [ ]    |
-| Array spread              | [ ]    |
+| Object spread             | [x]    |
+| Array spread              | [x]    |
 | Function arguments        | [ ]    |
