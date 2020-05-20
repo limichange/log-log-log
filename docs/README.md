@@ -4,6 +4,7 @@ https://limichange.tech
 
 ## 记录
 
+- 2020-05-19 - [Just the ideal number of workers in jest](./Jest/The-Ideal-Number-Of-Workers-In-Jest.md.md)
 - 2020-05-19 - [Git remove file](./Git/GIt-Remove.md)
 - 2020-05-19 - [Rust fixed lock file error](./Rust/Rust-Fixed-Lock-File-Error.md)
 - 2020-05-18 - [Tool neofetch](./tool/neofetch.md)
