@@ -6,7 +6,17 @@ module.exports = {
   title: 'log log log',
   description: "limichange's blog",
   dest: 'dist',
-  plugins: ['tag', 'category', 'autobar'],
+  plugins: [
+    'tag',
+    'category',
+    'autobar',
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': '233462683', // UA-00000000-0
+      },
+    ],
+  ],
   markdown: {
     // lineNumbers: true
   },
