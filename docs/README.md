@@ -4,6 +4,7 @@ https://limichange.tech
 
 ## 记录
 
+- 2020-05-21 - [charAt-chatCodeAt-ChatPointAt](./javascript/charAt-chatCodeAt-ChatPointAt.md)
 - 2020-05-20 - [Object.is](./javascript/Object.is.md)
 - 2020-05-19 - [Jest the ideal number of workers in jest](./Jest/jest-ci-config.md)
 - 2020-05-19 - [Git remove file](./Git/GIt-Remove.md)
