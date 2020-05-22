@@ -35,6 +35,10 @@
 - https://bundlephobia.com/ - Find out the cost of adding a new frontend dependency to your project
 - https://regexr.com/
 
+# learn
+
+- https://serviceworke.rs
+
 # UI
 
 - https://www.ui8.net/ui8/products/ux-framework
