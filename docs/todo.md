@@ -1,11 +1,11 @@
 # todo
 
+- https://marijnhaverbeke.nl/blog/collaborative-editing-cm.html
 - https://v8.dev/blog/fast-async
 - https://www.taniarascia.com/writing-an-emulator-in-javascript-chip8/
 - https://addyosmani.com/blog/profiling-react-js/
 - https://mp.weixin.qq.com/s/Fguh5oG_3Ei4MhNAyij-8Q
 - [初、中级前端应该要掌握的手写代码实现](https://juejin.im/post/5e24590ef265da3e152d27bc)
-- https://www.jianshu.com/p/c180fac01519 蚂蚁金服前端电话面试（一面）
 - https://juejin.im/post/5c83f7d15188257e566edcf1 记录一次蚂蚁金服前端电话面试
 - https://github.com/NLRX-WJC/Learn-Vue-Source-Code Learn-Vue-Source-Code
 - https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/common.md Node interview of ElemeFE
