@@ -37,7 +37,7 @@
 
 # learn
 
-- https://serviceworke.rs
+- [Service Worker Cookbook](https://serviceworke.rs)
 
 # UI
 
