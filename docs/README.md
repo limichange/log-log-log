@@ -4,6 +4,7 @@ https://limichange.tech
 
 ## 记录
 
+- 2020-05-26 - [Electron screen](./electron/Electron-screen.md)
 - 2020-05-25 - [RxJS Subject](./rxjs/rxjs-subject.md)
 - 2020-05-24 - [ydict](./tool/ydict.md)
 - 2020-05-23 - [RxJS](./rxjs/rxjs.md)
