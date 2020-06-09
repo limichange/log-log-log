@@ -52,3 +52,8 @@
 # spec
 
 - https://tc39.es/
+
+# Video
+
+- https://www.youtube.com/watch?v=comQ1-x2a1Q&t=1343s
+- https://dev.to/mitchartemis/creating-a-global-configurable-shortcut-for-macos-apps-in-swift-25e9
