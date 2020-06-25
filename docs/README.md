@@ -4,7 +4,7 @@ https://limichange.tech
 
 ## 记录
 
-- 2020-06-06 - [打算将这个 log 切换成两个部分]
+- 2020-06-06 - [6 月份在家忙事情](https://www.google.com/)
 - 2020-06-05 - [鸽了](https://www.google.com/)
 - 2020-06-04 - [鸽了](https://www.google.com/)
 - 2020-06-03 - [鸽了](https://www.google.com/)
