@@ -12,6 +12,7 @@
 - https://regexper.com/
 - https://github.com/keycastr/keycastr
 - https://www.digitalocean.com/community/tools/nginx
+- https://magic.reactjs.net/htmltojsx.htm
 
 ## website
 
