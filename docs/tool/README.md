@@ -8,6 +8,7 @@
 
 ## tool
 
+- https://developer.baidu.com/map/custom/
 - neofetch
 - https://regexper.com/
 - https://github.com/keycastr/keycastr
