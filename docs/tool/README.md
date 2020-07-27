@@ -6,6 +6,13 @@
 - https://code.visualstudio.com/ Visual Studio Code
 - https://www.alfredapp.com/ Alfred 💸
 
+## design tool
+
+- https://bggenerator.com/
+- https://background-generator.com/
+- https://www.blobmaker.app/
+- https://getwaves.io/
+
 ## tool
 
 - https://developer.baidu.com/map/custom/
